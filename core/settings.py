@@ -45,10 +45,12 @@ INSTALLED_APPS = [
     "django_extensions",
     "django_filters",
     # My Application
-    "dashboard.apps.DashboardConfig",
-    "authenticate.apps.AuthenticateConfig",
-    "bidding_supplier.apps.BiddingSupplierConfig",
-    "reports.apps.ReportsConfig",
+    "dashboard",
+    "authenticate",
+    "bidding_supplier",
+    "reports",
+    "services",
+    "equipments",
 ]
 
 MIDDLEWARE = [

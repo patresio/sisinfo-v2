@@ -94,14 +94,14 @@ class HistoryRemovalDeliveryEquipment(models.Model):
     professional = models.ForeignKey(
         ProfessionalUser,
         on_delete=models.DO_NOTHING,
-        verbose_name="profissional",
-        related_name="profissional",
+        verbose_name="tecnico",
+        related_name="tecnico",
     )
     pro_accountable = models.ForeignKey(
         ProfessionalUser,
         on_delete=models.DO_NOTHING,
-        verbose_name="profissional responsável",
-        related_name="responsável",
+        verbose_name="tecnico responsavel",
+        related_name="responsavel",
     )
     status = models.BooleanField("status", default=False)
     charger = models.BooleanField("carregador", default=False)
