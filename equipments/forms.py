@@ -13,15 +13,17 @@ class EquipmentForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         for field in self.fields.values():
-            if field not in [self.fields["description"]]:
+            if field not in [self.fields["description"], self.fields["status"]]:
                 field.widget.attrs["class"] = (
                     "block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 )
-            else:
+            elif field in [self.fields["description"]]:
                 field.widget.attrs["class"] = (
                     "block p-2.5 px-0 mt-1 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 )
                 field.widget.attrs["rows"] = "4"
+            else:
+                field.widget.attrs["class"] = "sr-only peer"
 
 
 class HistoryRemovalDelivreyEquipmentForm(forms.ModelForm):
