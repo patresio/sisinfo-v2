@@ -6,6 +6,7 @@ from django.shortcuts import redirect, render
 from django.urls import reverse
 
 from equipments.forms import EquipmentForm
+from equipments.models import Equipment
 
 
 # Create your views here.
@@ -22,3 +23,12 @@ def equipment_register(request):
     form = EquipmentForm()
     context = {"form": form, "btn": "Cadastrar Novo Equipamento"}
     return render(request, "equipment_register.html", context)
+
+
+@login_required(login_url="login")
+def equipments(request):
+    equipments = Equipment.objects.all()
+    context = {
+        "equipments": equipments,
+    }
+    return render(request, "equipments.html", context)

@@ -3,45 +3,51 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.messages import constants
 from django.core.paginator import Paginator
 from django.shortcuts import get_object_or_404, redirect, render
-from django.shortcuts import resolve_url as r
 from django.urls import reverse
 
-from dashboard.filters import BiddingFilter, DirectionFilter, MaterialFilter, SectorFilter
+from dashboard.filters import (
+    BiddingFilter,
+    DirectionFilter,
+    MaterialFilter,
+    SectorFilter,
+)
 from dashboard.forms import BiddingForm, DirectionForm, MaterialForm, SectorForm
 from dashboard.models import Bidding, Direction, Material, Sector
+from equipments.models import Equipment
 from reports.models import Report
 
 
 # Create your views here.
-@login_required(login_url='login')
+@login_required(login_url="login")
 def index(request):
-    total_reports_user = Report.objects.filter(
-        professional=request.user).count()
+    total_reports_user = Report.objects.filter(professional=request.user).count()
     total_reports = Report.objects.all().count()
     total_sectors = Sector.objects.all().count()
     total_directions = Direction.objects.all().count()
-    total_reports_accountable = Report.objects.all().filter(
-        pro_accountable=request.user).count()
+    total_reports_accountable = (
+        Report.objects.all().filter(pro_accountable=request.user).count()
+    )
+    total_equipments = Equipment.objects.all().count()
     context = {
-        'total_reports': total_reports,
-        'total_reports_user': total_reports_user,
-        'total_sectors': total_sectors,
-        'total_directions': total_directions,
-        'total_reports_accountable': total_reports_accountable,
+        "total_reports": total_reports,
+        "total_reports_user": total_reports_user,
+        "total_sectors": total_sectors,
+        "total_directions": total_directions,
+        "total_reports_accountable": total_reports_accountable,
+        "total_equipments": total_equipments,
     }
     return render(request, "index.html", context)
 
 
 ##############################################
-@login_required(login_url='login')
+@login_required(login_url="login")
 def directions(request):
     diretorias = Direction.objects.all()
     if request.method == "POST":
         form = DirectionForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.add_message(request, constants.SUCCESS,
-                                 "Inserido com sucesso!")
+            messages.add_message(request, constants.SUCCESS, "Inserido com sucesso!")
         else:
             messages.add_message(request, constants.ERROR, "Ocorreu um erro!")
         return redirect(reverse("dashboard:diretorias"))
@@ -59,7 +65,7 @@ def directions(request):
     return render(request, "setores/diretorias.html", context)
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def direction_detail(request, slug):
     diretoria = get_object_or_404(Direction, slug=slug)
     setores = Sector.objects.filter(direction=diretoria.id)
@@ -79,7 +85,7 @@ def direction_detail(request, slug):
     return render(request, "setores/diretoria_detail.html", context)
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def direction_update(request, slug):
     diretoria = get_object_or_404(Direction, slug=slug)
     form = DirectionForm(instance=diretoria)
@@ -115,7 +121,7 @@ def extract_update_form_direction(form, request):
     return redirect(reverse("dashboard:diretorias"))
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def direction_delete(request, id, slug):
     diretoria = get_object_or_404(Direction, id=id, slug=slug)
     diretoria.delete()
@@ -128,15 +134,14 @@ def direction_delete(request, id, slug):
 
 
 ##############################################
-@login_required(login_url='login')
+@login_required(login_url="login")
 def sectors(request):
     setores = Sector.objects.all()
     if request.method == "POST":
         form = SectorForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.add_message(request, constants.SUCCESS,
-                                 "Inserido com sucesso!")
+            messages.add_message(request, constants.SUCCESS, "Inserido com sucesso!")
         else:
             messages.add_message(request, constants.ERROR, "Ocorreu um erro!")
         return redirect(reverse("dashboard:setores"))
@@ -156,7 +161,7 @@ def sectors(request):
     return render(request, "setores/setores.html", context)
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def sector_detail(request, slug):
     setor = get_object_or_404(Sector, slug=slug)
     context = {
@@ -165,7 +170,7 @@ def sector_detail(request, slug):
     return render(request, "setores/setor_detail.html", context)
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def sector_update(request, slug):
     setor = get_object_or_404(Sector, slug=slug)
     form = SectorForm(instance=setor)
@@ -204,7 +209,7 @@ def extract_update_form_sector(form, request):
     return redirect(reverse("dashboard:setores"))
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def sector_delete(request, id, slug):
     setor = get_object_or_404(Sector, id=id, slug=slug)
     setor.delete()
@@ -215,15 +220,14 @@ def sector_delete(request, id, slug):
 
 
 ##############################################
-@login_required(login_url='login')
+@login_required(login_url="login")
 def biddings(request):
     licitacoes = Bidding.objects.all()
     if request.method == "POST":
         form = BiddingForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.add_message(request, constants.SUCCESS,
-                                 "Inserido com sucesso!")
+            messages.add_message(request, constants.SUCCESS, "Inserido com sucesso!")
         else:
             messages.add_message(request, constants.ERROR, "Ocorreu um erro!")
         return redirect(reverse("dashboard:licitacoes"))
@@ -242,7 +246,7 @@ def biddings(request):
     return render(request, "licitacao/biddings.html", context)
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def bidding_detail(request, slug):
     licitacao = get_object_or_404(Bidding, slug=slug)
     materiais = Material.objects.filter(bidding=licitacao.id)
@@ -251,8 +255,7 @@ def bidding_detail(request, slug):
         form_material = MaterialForm(request.POST)
         if form_material.is_valid():
             form_material.save()
-            messages.add_message(request, constants.SUCCESS,
-                                 "Inserido com sucesso!")
+            messages.add_message(request, constants.SUCCESS, "Inserido com sucesso!")
         else:
             messages.add_message(request, constants.ERROR, "Ocorreu um erro!")
         return redirect(reverse("dashboard:licitacao", kwargs={"slug": slug}))
@@ -271,7 +274,7 @@ def bidding_detail(request, slug):
     return render(request, "licitacao/bidding_detail.html", context)
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def bidding_update(request, slug):
     licitacao = get_object_or_404(Bidding, slug=slug)
     form = BiddingForm(instance=licitacao)
@@ -308,7 +311,7 @@ def extract_update_form_bidding(form, request):
     return redirect(reverse("dashboard:licitacoes"))
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def bidding_delete(request, slug, id):
     licitacao = get_object_or_404(Bidding, id=id, slug=slug)
     licitacao.delete()
@@ -320,7 +323,7 @@ def bidding_delete(request, slug, id):
     return redirect(reverse("dashboard:licitacoes"))
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def materials(request):
     materiais = Material.objects.all()
     total_materiais = materiais.count()
@@ -328,8 +331,7 @@ def materials(request):
         form_material = MaterialForm(request.POST)
         if form_material.is_valid():
             form_material.save()
-            messages.add_message(request, constants.SUCCESS,
-                                 "Inserido com sucesso!")
+            messages.add_message(request, constants.SUCCESS, "Inserido com sucesso!")
         else:
             messages.add_message(request, constants.ERROR, "Ocorreu um erro!")
         return redirect(reverse("dashboard:materiais"))
@@ -346,7 +348,7 @@ def materials(request):
     return render(request, "licitacao/materials.html", context)
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def material_detail(request, slug):
     material = get_object_or_404(Material, slug=slug)
     context = {
@@ -355,7 +357,7 @@ def material_detail(request, slug):
     return render(request, "licitacao/material_detail.html", context)
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def material_update(request, slug):
     material = get_object_or_404(Material, slug=slug)
     form_material = MaterialForm(instance=material)
@@ -394,7 +396,7 @@ def extract_update_form_material(form, request):
     return redirect(reverse("dashboard:materiais"))
 
 
-@login_required(login_url='login')
+@login_required(login_url="login")
 def material_delete(request, slug, id):
     material = get_object_or_404(Material, slug=slug, id=id)
     material.delete()
