@@ -1,0 +1,93 @@
+[
+    {
+        "model": "equipments.equipment",
+        "pk": 1,
+        "fields": {
+            "id_equipment": "PMNH5666000000074010",
+            "slug": "pmnh5666000000074010",
+            "patrimony": "5666",
+            "kind": "01",
+            "description": "dafsddasfsdf",
+            "sector": 74,
+            "status": true
+        }
+    },
+    {
+        "model": "equipments.equipment",
+        "pk": 2,
+        "fields": {
+            "id_equipment": "PMNH6325000000002030",
+            "slug": "pmnh6325000000002030",
+            "patrimony": "6325",
+            "kind": "03",
+            "description": "dfasdfasdfadf",
+            "sector": 2,
+            "status": true
+        }
+    },
+    {
+        "model": "equipments.equipment",
+        "pk": 3,
+        "fields": {
+            "id_equipment": "PMNH9874000000007010",
+            "slug": "pmnh9874000000007010",
+            "patrimony": "9874",
+            "kind": "01",
+            "description": "Teste",
+            "sector": 7,
+            "status": true
+        }
+    },
+    {
+        "model": "equipments.equipment",
+        "pk": 4,
+        "fields": {
+            "id_equipment": "PMNH7896000000045010",
+            "slug": "pmnh7896000000045010",
+            "patrimony": "7896",
+            "kind": "01",
+            "description": "fadfs",
+            "sector": 45,
+            "status": true
+        }
+    },
+    {
+        "model": "equipments.equipment",
+        "pk": 5,
+        "fields": {
+            "id_equipment": "PMNH444400042030",
+            "slug": "pmnh444400042030",
+            "patrimony": "4444",
+            "kind": "03",
+            "description": "dafsdf",
+            "sector": 42,
+            "status": true
+        }
+    },
+    {
+        "model": "equipments.equipment",
+        "pk": 6,
+        "fields": {
+            "id_equipment": "PMNH999999000004010",
+            "slug": "pmnh999999000004010",
+            "patrimony": "999999",
+            "kind": "01",
+            "description": "dfasdf",
+            "sector": 4,
+            "status": true
+        }
+    },
+    {
+        "model": "equipments.equipment",
+        "pk": 7,
+        "fields": {
+            "id_equipment": "PMNH8888000000001010",
+            "slug": "pmnh8888000000001010",
+            "patrimony": "8888",
+            "kind": "01",
+            "description": "dfasd",
+            "sector": 1,
+            "status": true
+        }
+    }
+]

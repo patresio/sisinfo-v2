@@ -59,27 +59,28 @@ class Equipment(models.Model):
                 if not self.id_equipment:
                     self.id_equipment = (
                         "PMNH"
-                        + f"{(self.patrimony):10}"
+                        + f"{(self.patrimony):010}"
                         + f"{self.sector.id:03}"
                         + f"{(self.kind):03}"
                     )
+                print(self.id_equipment)
                 self.slug = slugify(self.id_equipment)
             else:
                 if (
                     self.id_equipment
                     != "PMNH"
-                    + f"{(self.patrimony):10}"
+                    + f"{(self.patrimony):010}"
                     + +f"{self.sector.id:03}"
                     + f"{(self.kind):03}"
                 ):
                     self.id_equipment = (
                         "PMNH"
-                        + f"{(self.patrimony):10}"
+                        + f"{(self.patrimony):010}"
                         + f"{self.sector.id:03}"
                         + f"{(self.kind):03}"
                     )
                 self.slug = slugify(self.id_equipment)
-
+                print(self.id_equipment)
         return super().save()
 
 
