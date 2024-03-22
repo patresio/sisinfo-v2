@@ -114,7 +114,7 @@
                     {% for equipment in page_obj %}
                     <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-100 even:dark:bg-gray-800 border-b dark:border-gray-700">
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            <a href="#">{{equipment.id_equipment}}</a>
+                            <a href="{{equipment.get_absolute_url}}">{{equipment.id_equipment}}</a>
                         </th>
                         <td class="px-6 py-4">
                             {{equipment.patrimony}}
