@@ -87,7 +87,7 @@ class Equipment(models.Model):
 class HistoryRemovalDeliveryEquipment(models.Model):
     number_history = models.CharField("historico", max_length=18)
     equipment = models.ForeignKey(
-        Equipment, on_delete=models.DO_NOTHING, verbose_name="Equipamento"
+        Equipment, on_delete=models.CASCADE, verbose_name="Equipamento"
     )
     slug = models.SlugField("slug")
     observation = models.TextField("observação")
