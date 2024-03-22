@@ -31,5 +31,4 @@ class EquipmentFilter(django_filters.FilterSet):
 
     class Meta:
         model = Equipment
-        fields = "__all__"
-        exclude = ["date"]
+        fields = ["id_equipment", "patrimony", "kind", "sector", "status"]

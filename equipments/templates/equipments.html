@@ -4,16 +4,91 @@
 {% endblock title %}
 {% block content %}
 <!-- TITULO -->
-<div class="flex items-center justify-end h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-6">
-    <p class="text-2xl text-gray-400 dark:text-gray-500">
-        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"><mark class="px-2 text-white bg-blue-700 rounded dark:bg-blue-500">
-            Equipamentos
-        </mark>
+<!-- Titulo -->
+<div class="flex items-center justify-between h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-6">
+    <div class="sm:rounded-lg px-10"> 
+        <a href="{% url 'equipments:register_equipment' %}">
+            <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 flex justify-center items-center gap-2">
+                Novo Equipamento
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                </svg>
+            </button>
+
+        </a>
+    </div>
+    <div class="sm:rounded-lg px-10">   
+        <h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
+            <mark class="px-2 text-white bg-blue-700 rounded dark:bg-blue-500">
+                Equipamentos
+            </mark>
         </h1>
-    </p>
+    </div>
+</div>
+<!-- MESSAGES -->
+{% include "include/_alert.html" %}
+<div class="items-center max-w-full w-full h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-4 gap-3 flex">
+    <form action="" method="get" class="w-full flex justify-start p-2 max-w-full gap-3 items-center me-2">
+        <div class="py-5 flex">
+            <div class="relative mt-1">
+                <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                </div>
+                {{ my_filter.form.id_equipment }}
+            </div>
+        </div>
+        <div class="py-5 flex">
+            <div class="relative mt-1">
+                <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                </div>
+                {{ my_filter.form.patrimony }}
+            </div>
+        </div>
+        <div class="py-5 flex">
+            <div class="relative mt-1">
+                <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                </div>
+                {{ my_filter.form.kind }}
+            </div>
+        </div>
+        <div class="py-5 flex">
+            <div class="relative mt-1">
+                <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                </div>
+                {{ my_filter.form.sector }}
+            </div>
+        </div>       
+        {% comment %} <div class="py-5 flex">
+            <div class="relative mt-1">
+                <div class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                </div>
+                {{ my_filter.form.status }}
+            </div>
+        </div> {% endcomment %}
+        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 flex justify-center items-center gap-4 font-medium rounded-lg text-sm p-2.5 me-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            <svg class="w-4 h-4 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+            Pesquisar
+        </button>
+    </form>
 </div>
 <!-- LISTA DE DADOS -->
-    <div class="flex items-center max-w-full w-full h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-6">
+    <div class="flex items-center max-w-full w-full h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-6 flex-col gap-3">
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg max-w-full w-full px-10">
             <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <thead class="text-xs text-white uppercase bg-blue-700 dark:bg-gray-700 dark:text-gray-400">
@@ -36,7 +111,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for equipment in equipments %}
+                    {% for equipment in page_obj %}
                     <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-100 even:dark:bg-gray-800 border-b dark:border-gray-700">
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             <a href="#">{{equipment.id_equipment}}</a>
@@ -78,5 +153,16 @@
                 </tbody>
             </table>
         </div>
+         <!-- Pagination -->
+        {% include "include/_pagination.html" %}
     </div>
+   
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/datepicker.min.js"></script>
+<script>
+    var select_fields = document.getElementsByTagName('select')
+    for (var field in select_fields) {
+        select_fields[field].className += 'block pt-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-full max-w-full'
+    }
+</script>
 {% endblock content %}

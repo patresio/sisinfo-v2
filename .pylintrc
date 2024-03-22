@@ -23,8 +23,7 @@ disable=
             E0307,
             W0223, # Abstract Method
             E0602, # Undefinied Var
-
-
+            W0621,
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
 # only in one or another interpreter, leading to false positives when analysed.

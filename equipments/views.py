@@ -2,9 +2,11 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.messages import constants
+from django.core.paginator import Paginator
 from django.shortcuts import redirect, render
 from django.urls import reverse
 
+from equipments.filters import EquipmentFilter
 from equipments.forms import EquipmentForm
 from equipments.models import Equipment
 
@@ -28,7 +30,15 @@ def equipment_register(request):
 @login_required(login_url="login")
 def equipments(request):
     equipments = Equipment.objects.all()
+    my_filter = EquipmentFilter(request.GET, queryset=equipments)
+    equipments = my_filter.qs
+    # Paginação
+    paginator = Paginator(equipments, 20)  # show 20 equipments per page
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+
     context = {
-        "equipments": equipments,
+        "page_obj": page_obj,
+        "my_filter": my_filter,
     }
     return render(request, "equipments.html", context)
