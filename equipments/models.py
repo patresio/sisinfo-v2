@@ -91,6 +91,8 @@ class HistoryRemovalDeliveryEquipment(models.Model):
     )
     slug = models.SlugField("slug")
     observation = models.TextField("observação")
+    sector = models.ForeignKey(Sector, on_delete=models.CASCADE, verbose_name="Setor")
+    room = models.CharField("Sala", null=True, blank=True)
     employee = models.CharField("funcionário", max_length=20, null=True)
     professional = models.ForeignKey(
         ProfessionalUser,

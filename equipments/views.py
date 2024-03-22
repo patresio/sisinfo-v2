@@ -7,7 +7,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 
 from equipments.filters import EquipmentFilter
-from equipments.forms import EquipmentForm
+from equipments.forms import EquipmentForm, HistoryRemovalDeliveryEquipmentForm
 from equipments.models import Equipment
 
 
@@ -51,3 +51,22 @@ def equipment_view(request, slug):
         "equipment": equipment,
     }
     return render(request, "equipment.html", context)
+
+
+@login_required(login_url="login")
+def equipment_delivery_removal(request, slug):
+    if request.method == "POST":
+        form = HistoryRemovalDeliveryEquipmentForm(request.POST, request=request)
+        if form.is_valid():
+            form.save()
+            messages.add_message(request, constants.SUCCESS, "Inserido com sucesso!")
+        else:
+            messages.add_message(request, constants.ERROR, "Ocorreu um erro!")
+        return redirect(reverse("equipments:history_equipments", kwargs={"slug": slug}))
+    equipment = get_object_or_404(Equipment, slug=slug)
+    form = HistoryRemovalDeliveryEquipmentForm(request=request)
+    context = {
+        "form": form,
+        "equipment": equipment,
+    }
+    return render(request, "equipment_delivery_removal.html", context)

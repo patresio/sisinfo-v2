@@ -26,16 +26,18 @@ class EquipmentForm(forms.ModelForm):
                 field.widget.attrs["class"] = "sr-only peer"
 
 
-class HistoryRemovalDelivreyEquipmentForm(forms.ModelForm):
+class HistoryRemovalDeliveryEquipmentForm(forms.ModelForm):
 
     class Meta:
         model = HistoryRemovalDeliveryEquipment
         fields = [
             "equipment",
-            "observation",
             "employee",
+            "sector",
+            "room",
             "professional",
             "pro_accountable",
+            "observation",
             "status",
             "charger",
             "props",
@@ -49,7 +51,9 @@ class HistoryRemovalDelivreyEquipmentForm(forms.ModelForm):
         return " ".join(words)
 
     def __init__(self, *args, **kwargs):
-        self.request = kwargs.pop("request")  # store value of request
+        self.request = kwargs.pop(
+            "request"
+        )  # Lembrar de colocar na view quando chamar o form (request=request)
         super().__init__(*args, **kwargs)
         for field in self.fields.values():
             if field in [self.fields["observation"]]:
@@ -77,6 +81,7 @@ class HistoryRemovalDelivreyEquipmentForm(forms.ModelForm):
                     field.widget.attrs["value"] = self.request.user.id
                     field.widget.attrs["selected"] = self.request.user.id
                     field.widget.attrs["data-placeholder"] = self.request.user
+                    field.widget.attrs["disabled"] = True
                     field.initial = self.request.user.id
                 if field in [self.fields["pro_accountable"]]:
                     if (
@@ -90,6 +95,7 @@ class HistoryRemovalDelivreyEquipmentForm(forms.ModelForm):
                         field.widget.attrs["value"] = self.request.user.id
                         field.widget.attrs["selected"] = self.request.user.id
                         field.widget.attrs["data-placeholder"] = self.request.user
+                        field.widget.attrs["disabled"] = True
                         field.initial = self.request.user.id
                     else:
                         professional = ProfessionalUser.objects.filter(is_tech=True)

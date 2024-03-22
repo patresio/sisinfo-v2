@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # Third Apps
     "django_extensions",
     "django_filters",
+    "widget_tweaks",
     # My Application
     "dashboard",
     "authenticate",
