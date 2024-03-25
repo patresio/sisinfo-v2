@@ -57,12 +57,15 @@ def equipment_view(request, slug):
 def equipment_delivery_removal(request, slug):
     if request.method == "POST":
         form = HistoryRemovalDeliveryEquipmentForm(request.POST, request=request)
+        print(form.errors)
         if form.is_valid():
             form.save()
             messages.add_message(request, constants.SUCCESS, "Inserido com sucesso!")
         else:
             messages.add_message(request, constants.ERROR, "Ocorreu um erro!")
-        return redirect(reverse("equipments:history_equipments", kwargs={"slug": slug}))
+        return redirect(
+            reverse("equipments:history_equipment_register", kwargs={"slug": slug})
+        )
     equipment = get_object_or_404(Equipment, slug=slug)
     form = HistoryRemovalDeliveryEquipmentForm(request=request)
     context = {

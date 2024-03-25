@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 
 from django.db import models
 from django.shortcuts import resolve_url as r
@@ -85,7 +85,7 @@ class Equipment(models.Model):
 
 
 class HistoryRemovalDeliveryEquipment(models.Model):
-    number_history = models.CharField("historico", max_length=18)
+    number_history = models.CharField("historico", max_length=30)
     equipment = models.ForeignKey(
         Equipment, on_delete=models.CASCADE, verbose_name="Equipamento"
     )
@@ -111,7 +111,7 @@ class HistoryRemovalDeliveryEquipment(models.Model):
     props = models.BooleanField("acessórios", default=False)
     delivery = models.BooleanField("entrega", default=False)
     removal = models.BooleanField("retirada", default=False)
-    date = models.DateTimeField("data", auto_now_add=True)
+    date = models.DateTimeField("data", auto_now_add=True, null=True, blank=True)
 
     class Meta:
         ordering = ["-date", "status"]

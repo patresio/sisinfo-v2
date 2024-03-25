@@ -12,12 +12,12 @@ app_name = "equipments"
 
 urlpatterns = [
     path("", equipments, name="equipments"),
+    path("register_equipment", equipment_register, name="register_equipment"),
     path("<slug:slug>", equipment_view, name="equipment_view"),
     path(
-        "history/<slug:slug>",
+        "history/<slug:slug>/register",
         equipment_delivery_removal,
-        name="history_equipments",
+        name="history_equipment_register",
     ),
     # path("equipments/history/<slug:slug>", equipment_view, name="equipment_view"),
-    path("register_equipment", equipment_register, name="register_equipment"),
 ]
