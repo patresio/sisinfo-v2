@@ -29,7 +29,41 @@
                 {{equipment.id_equipment}}
             </mark>
         </h1>
-    </div>        
+    </div>
+</div>
+<!-- Informações -->
+<div class="grid grid-cols-2 gap-4 mb-4 h-auto">
+    <div class="flex-col items-center justify-center rounded bg-gray-100 h-full max-h-full dark:bg-gray-800 p-4 gap-3">
+        <dl class="max-w-full text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700 w-full mb-8">
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Indentifação do Equipamento:</dt>
+                <dd class="text-lg font-bold text-blue-700">{{equipment.id_equipment}}</dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Patrimônio:</dt>
+                <dd class="text-lg font-semibold">{{ equipment.patrimony }}</dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Setor:</dt>
+                <dd class="text-lg font-semibold">{{ equipment.sector }}</dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Status:</dt>
+                <dd class="text-lg font-semibold">{{ equipment.status }}</dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Tipo do equipamento:</dt>
+                <dd class="text-lg font-semibold">{{ equipment.get_kind_display }}</dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Descrição:</dt>
+                <dd class="text-lg font-semibold">{{ equipment.description }}</dd>
+            </div>
+        </dl>
+    </div>
+    <div class="flex-col items-center justify-center rounded bg-gray-100 h-full max-h-full dark:bg-gray-800 p-4 gap-3">
+        
+    </div>
 </div>
 {% endblock content %}
 #TODO: Terminar a parte de equipamentos

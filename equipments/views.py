@@ -8,7 +8,7 @@ from django.urls import reverse
 
 from equipments.filters import EquipmentFilter
 from equipments.forms import EquipmentForm, HistoryRemovalDeliveryEquipmentForm
-from equipments.models import Equipment
+from equipments.models import Equipment, HistoryRemovalDeliveryEquipment
 
 
 # Create your views here.
@@ -47,9 +47,8 @@ def equipments(request):
 @login_required(login_url="login")
 def equipment_view(request, slug):
     equipment = get_object_or_404(Equipment, slug=slug)
-    context = {
-        "equipment": equipment,
-    }
+    historys = HistoryRemovalDeliveryEquipment.objects.filter(equipment=equipment.id)
+    context = {"equipment": equipment, "historys": historys}
     return render(request, "equipment.html", context)
 
 
