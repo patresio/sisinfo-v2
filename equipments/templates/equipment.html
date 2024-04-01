@@ -62,7 +62,9 @@
         </dl>
     </div>
     <div class="flex-col items-center justify-center rounded bg-gray-100 h-full max-h-full dark:bg-gray-800 p-4 gap-3">
-        
+        {% for history in historys %}
+            {{history.date}} - {{history.status}}
+        {% endfor %}
     </div>
 </div>
 {% endblock content %}
