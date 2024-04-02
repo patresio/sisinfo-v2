@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date, datetime
 
 from django.db import models
 from django.shortcuts import resolve_url as r
@@ -126,9 +126,14 @@ class HistoryRemovalDeliveryEquipment(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.slug:
+            count = HistoryRemovalDeliveryEquipment.objects.filter(
+                date__date=date.today()
+            ).count()
             if not self.number_history:
                 self.number_history = (
-                    datetime.now().strftime("%Y%m%d") + f"{self.equipment.id_equipment}"
+                    datetime.now().strftime("%Y%m%d")
+                    + f"{self.equipment.id_equipment[:8]}"
+                    + f"{(count + 1):03}"
                 )
             self.slug = slugify(self.number_history)
         return super().save()

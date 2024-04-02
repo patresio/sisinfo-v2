@@ -44,6 +44,14 @@
                 <dd class="text-lg font-semibold">{{ equipment.patrimony }}</dd>
             </div>
             <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Tipo do equipamento:</dt>
+                <dd class="text-lg font-semibold">{{ equipment.get_kind_display }}</dd>
+            </div>
+        </dl>
+    </div>
+    <div class="flex-col items-center justify-center rounded bg-gray-100 h-full max-h-full dark:bg-gray-800 p-4 gap-3">
+        <dl class="max-w-full text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700 w-full mb-8">
+            <div class="flex flex-col pb-3">
                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Setor:</dt>
                 <dd class="text-lg font-semibold">{{ equipment.sector }}</dd>
             </div>
@@ -52,20 +60,73 @@
                 <dd class="text-lg font-semibold">{{ equipment.status }}</dd>
             </div>
             <div class="flex flex-col pb-3">
-                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Tipo do equipamento:</dt>
-                <dd class="text-lg font-semibold">{{ equipment.get_kind_display }}</dd>
-            </div>
-            <div class="flex flex-col pb-3">
                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Descrição:</dt>
                 <dd class="text-lg font-semibold">{{ equipment.description }}</dd>
             </div>
         </dl>
     </div>
-    <div class="flex-col items-center justify-center rounded bg-gray-100 h-full max-h-full dark:bg-gray-800 p-4 gap-3">
-        {% for history in historys %}
-            {{history.date}} - {{history.status}}
-        {% endfor %}
+</div>
+<div class="flex flex-col items-center justify-between h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-6">
+    <div class="sm:rounded-lg px-10">   
+        <h1 class="mb-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
+            <mark class="px-2 text-white bg-blue-700 rounded dark:bg-blue-500">
+                Histórico de entrega e retirada
+            </mark>
+        </h1>
+    </div>
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg max-w-full w-full px-10">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-white uppercase bg-blue-700 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Data
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Funcionário
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Sala
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Status
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Retirada/Entrega
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for history in historys %}
+                <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-100 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <a href="{{ history.get_absolute_url }}">{{ history.date }}</a>
+                    </th>
+                    <td class="px-6 py-4">
+                        {{ history.employee }}
+                    </td>
+                    <td class="px-6 py-4">
+                        {{ history.room }}
+                    </td>
+                    <td class="px-6 py-4">
+                        {{history.status}}
+                    </td>
+                    <td class="px-6 py-4 flex justify-normal items-center gap-2">
+                        {% if history.delivery == True %}
+                            <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400 w-20 text-center">Retirada</span>
+                        {% elif history.removal == True %}
+                            <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400 w-20 text-center">Entrega</span>
+                        {% else %}
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-300 border border-yellow-300 text-center">Valor não informado</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td class="px-6 py-4" colspan="5">Nenhum histórico cadastrado!</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 </div>
 {% endblock content %}
-#TODO: Terminar a parte de equipamentos

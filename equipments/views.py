@@ -72,3 +72,10 @@ def equipment_delivery_removal(request, slug):
         "equipment": equipment,
     }
     return render(request, "equipment_delivery_removal.html", context)
+
+
+def history_removal_delivery_view(request, slug):
+    print(slug)
+    history = get_object_or_404(HistoryRemovalDeliveryEquipment, slug=slug)
+    context = {"history": history}
+    return render(request, "delivery_removal_view.html", context)
