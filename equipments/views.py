@@ -53,18 +53,49 @@ def equipment_view(request, slug):
 
 
 @login_required(login_url="login")
+def equipment_update(request, slug):
+    equipment = get_object_or_404(Equipment, slug=slug)
+    form = EquipmentForm(instance=equipment)
+    if request.method == "POST":
+        form = EquipmentForm(request.POST, instance=equipment)
+        if form.is_valid():
+            return extract_update_form_equipment(form, request)
+        else:
+            messages.add_message(request, constants.ERROR, "Ocorreu um erro!")
+        return redirect(reverse("equipments:update_equipment", kwargs={"slug": slug}))
+    context = {"form": form, "btn": "Atualizar Equipamento"}
+    return render(request, "equipment_register.html", context)
+
+
+def extract_update_form_equipment(form, request):
+    equipment = form.save(commit=False)
+    equipment.patrimony = form.cleaned_data["patrimony"]
+    equipment.kind = form.cleaned_data["kind"]
+    equipment.description = form.cleaned_data["description"]
+    equipment.sector = form.cleaned_data["sector"]
+    equipment.status = form.cleaned_data["status"]
+    equipment.save()
+    messages.add_message(request, constants.SUCCESS, "Atualizado com Sucesso!")
+
+
+@login_required(login_url="login")
 def equipment_delivery_removal(request, slug):
     if request.method == "POST":
         form = HistoryRemovalDeliveryEquipmentForm(request.POST, request=request)
         print(form.errors)
         if form.is_valid():
             form.save()
-            messages.add_message(request, constants.SUCCESS, "Inserido com sucesso!")
+            messages.add_message(
+                request,
+                constants.SUCCESS,
+                "Cadastro de retirada e entrega de equipamento inserido com sucesso!",
+            )
+            return redirect(reverse("equipments:equipments"))
         else:
             messages.add_message(request, constants.ERROR, "Ocorreu um erro!")
-        return redirect(
-            reverse("equipments:history_equipment_register", kwargs={"slug": slug})
-        )
+            return redirect(
+                reverse("equipments:history_equipment_register", kwargs={"slug": slug})
+            )
     equipment = get_object_or_404(Equipment, slug=slug)
     form = HistoryRemovalDeliveryEquipmentForm(request=request)
     context = {

@@ -25,7 +25,7 @@ class Equipment(models.Model):
     )
     id_equipment = models.CharField(
         "identificação do equipamento",
-        max_length=20,
+        max_length=30,
         unique=True,
         blank=True,
         null=True,
@@ -54,33 +54,27 @@ class Equipment(models.Model):
         return r("equipments:equipment_view", slug=self.slug)
 
     def save(self, *args, **kwargs):
+        count = Equipment.objects.filter(sector=self.sector).count()
+        var_id_equipment = (
+            "PMNH"
+            + f"{self.patrimony:010}"
+            + f"{self.sector.id:03}"
+            + f"{self.kind:02}"
+            + f"{(count + 1):04}"
+        )
         if self.patrimony != "0":
             if not self.slug:
                 if not self.id_equipment:
-                    self.id_equipment = (
-                        "PMNH"
-                        + f"{(self.patrimony):010}"
-                        + f"{self.sector.id:03}"
-                        + f"{(self.kind):03}"
-                    )
-                print(self.id_equipment)
+                    self.id_equipment = var_id_equipment
                 self.slug = slugify(self.id_equipment)
-            else:
-                if (
-                    self.id_equipment
-                    != "PMNH"
-                    + f"{(self.patrimony):010}"
-                    + +f"{self.sector.id:03}"
-                    + f"{(self.kind):03}"
-                ):
-                    self.id_equipment = (
-                        "PMNH"
-                        + f"{(self.patrimony):010}"
-                        + f"{self.sector.id:03}"
-                        + f"{(self.kind):03}"
-                    )
+            elif self.id_equipment != var_id_equipment:
+                self.id_equipment = var_id_equipment
                 self.slug = slugify(self.id_equipment)
-                print(self.id_equipment)
+        else:
+            if not self.slug:
+                if not self.id_equipment:
+                    self.id_equipment = var_id_equipment
+                self.slug = slugify(self.id_equipment)
         return super().save()
 
 
@@ -91,8 +85,8 @@ class HistoryRemovalDeliveryEquipment(models.Model):
     )
     slug = models.SlugField("slug")
     observation = models.TextField("observação")
-    sector = models.ForeignKey(Sector, on_delete=models.CASCADE, verbose_name="Setor")
-    room = models.CharField("Sala", null=True, blank=True)
+    sector = models.ForeignKey(Sector, on_delete=models.CASCADE, verbose_name="setor")
+    room = models.CharField("sala", null=True, blank=True)
     employee = models.CharField("funcionário", max_length=20, null=True)
     professional = models.ForeignKey(
         ProfessionalUser,
