@@ -100,7 +100,7 @@ class MaterialReport(models.Model):
             self.unitary_price = novo_decimal
         return super().save()
 
-    def total_price(self):
+    def total_price(self):  # [method-hidden]
         self.total_price = float(self.quantity) * float(self.unitary_price)
         return Decimal(self.total_price).quantize(Decimal("00000000.00"))
 

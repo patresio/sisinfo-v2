@@ -18,6 +18,10 @@
     <div class="grid grid-cols-2 gap-4 mb-4 h-auto bg-gray-100  dark:bg-gray-800 rounded p-4">
         <div class="flex-col items-center justify-center border-2 border-blue-500 rounded bg-white dark:bg-gray-500 p-4 gap-3">
             <div class="relative z-0 w-full mb-5 group">
+                {{ form.equipment.errors }}{{ form.equipment }}
+                <label for="{{ form.equipment.id_for_label }}" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">{{ form.equipment.label }}</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
                 {{ form.sector.errors }}{{ form.sector }}
                 <label for="{{ form.sector.id_for_label }}" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">{{ form.sector.label }}</label>
             </div>
@@ -112,6 +116,18 @@
             deleteCssClass: 'text-2xl',
         });
     })
+
+document.getElementById('id_equipment').childNodes.forEach((e, i, a) => {
+    if (e.value == '{{equipment.id}}'){
+        e.selected = "selected";
+    }
+});
+document.getElementById('id_sector').childNodes.forEach((e, i, a) => {
+    if (e.value == '{{equipment.sector.id}}'){
+        e.selected = "selected";
+    }
+});
+
 </script>
 
 {% endblock script %}

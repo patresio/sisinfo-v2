@@ -45,7 +45,6 @@ class ReportForm(forms.ModelForm):
                     field.widget.attrs["value"] = self.request.user.id
                     field.widget.attrs["selected"] = self.request.user.id
                     field.widget.attrs["data-placeholder"] = self.request.user
-                    field.widget.attrs["disabled"] = True
                     field.initial = self.request.user.id
                 if field in [self.fields["pro_accountable"]]:
                     if (
@@ -59,7 +58,6 @@ class ReportForm(forms.ModelForm):
                         field.widget.attrs["value"] = self.request.user.id
                         field.widget.attrs["selected"] = self.request.user.id
                         field.widget.attrs["data-placeholder"] = self.request.user
-                        field.widget.attrs["disabled"] = True
                         field.initial = self.request.user.id
                     else:
                         professional = ProfessionalUser.objects.filter(is_tech=True)

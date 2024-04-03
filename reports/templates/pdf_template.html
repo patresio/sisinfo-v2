@@ -41,6 +41,9 @@
                         <address id="from">
                             <p><b>Diretoria:</b> {{report.sector.direction.name}}</p>
                             <p><b>Setor:</b> {{report.sector.name}}</p>
+                            {% if report.equipment != None %}
+                            <p><b>Equipamento:</b> {{report.equipment.id_equipment}}</p>
+                            {% endif %}
                             <p><b>Funcionário:</b> {{report.employee}}</p>
                             <p><b>Técnico Responsável:</b> {{report.pro_accountable}}</p>
                         </address>

@@ -40,6 +40,12 @@
                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Indentifação do Laudo:</dt>
                 <dd class="text-lg font-bold text-blue-700">{{report.number_report}}</dd>
             </div>
+            {% if report.equipment != None %}
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Equipamento:</dt>
+                <dd class="text-lg font-semibold">{{ report.equipment }}</dd>
+            </div>
+            {% endif %}
             <div class="flex flex-col pb-3">
                 <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Setor:</dt>
                 <dd class="text-lg font-semibold">{{ report.sector }}</dd>

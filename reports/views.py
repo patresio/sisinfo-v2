@@ -6,6 +6,7 @@ from django.forms import inlineformset_factory
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 
+from equipments.models import Equipment
 from reports.filters import ReportFilter
 from reports.forms import (
     MaterialReportForm,
@@ -59,6 +60,35 @@ def report_register(request):
         Report, MaterialReport, form=MaterialReportForm, extra=2
     )
     context = {"form": form, "form_material": form_material}
+    return render(request, "register_reports.html", context)
+
+
+@login_required(login_url="login")
+def report_register_equipment(request, slug):
+    equipment = get_object_or_404(Equipment, slug=slug)
+    if request.method == "POST":
+        form = ReportForm(request.POST, request=request)
+        form_material_factory = inlineformset_factory(
+            Report, MaterialReport, form=MaterialReportForm
+        )
+        form_material = form_material_factory(request.POST)
+        if form.is_valid() and form_material.is_valid():
+            report = form.save()
+            form_material.instance = report
+            form_material.save()
+            messages.add_message(
+                request, constants.SUCCESS, f"Laudo {report.slug} salvo com sucesso!"
+            )
+        else:
+            messages.add_message(
+                request, constants.ERROR, "Ocorreu um erro tente novamente!"
+            )
+        return redirect(reverse("reports:reports"))
+    form = ReportForm(request=request)
+    form_material = inlineformset_factory(
+        Report, MaterialReport, form=MaterialReportForm, extra=2
+    )
+    context = {"form": form, "form_material": form_material, "equipment": equipment}
     return render(request, "register_reports.html", context)
 
 
