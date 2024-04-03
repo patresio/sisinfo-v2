@@ -9,6 +9,7 @@ from equipments.views import (
     equipment_view,
     equipments,
     history_removal_delivery_view,
+    pdf_delivery_removal,
 )
 
 app_name = "equipments"
@@ -30,5 +31,10 @@ urlpatterns = [
         "history/<slug:slug>/view",
         history_removal_delivery_view,
         name="history_removal_delivery_view",
+    ),
+    path(
+        "history/<slug:slug>/pdf",
+        pdf_delivery_removal,
+        name="pdf_delivery_removal",
     ),
 ]

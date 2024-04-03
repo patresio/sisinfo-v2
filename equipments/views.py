@@ -8,6 +8,7 @@ from django.urls import reverse
 from equipments.filters import EquipmentFilter
 from equipments.forms import EquipmentForm, HistoryRemovalDeliveryEquipmentForm
 from equipments.models import Equipment, HistoryRemovalDeliveryEquipment
+from reports.models import Report
 
 
 # Create your views here.
@@ -47,7 +48,8 @@ def equipments(request):
 def equipment_view(request, slug):
     equipment = get_object_or_404(Equipment, slug=slug)
     historys = HistoryRemovalDeliveryEquipment.objects.filter(equipment=equipment.id)
-    context = {"equipment": equipment, "historys": historys}
+    reports = Report.objects.filter(equipment=equipment.id)
+    context = {"equipment": equipment, "historys": historys, "reports": reports}
     return render(request, "equipment.html", context)
 
 
@@ -135,7 +137,15 @@ def equipment_delivery_removal(request, slug):
     return render(request, "equipment_delivery_removal.html", context)
 
 
+@login_required(login_url="login")
 def history_removal_delivery_view(request, slug):
     history = get_object_or_404(HistoryRemovalDeliveryEquipment, slug=slug)
     context = {"history": history}
     return render(request, "delivery_removal_view.html", context)
+
+
+@login_required(login_url="login")
+def pdf_delivery_removal(request, slug):
+    history = get_object_or_404(HistoryRemovalDeliveryEquipment, slug=slug)
+    context = {"history": history}
+    return render(request, "pdf_delivery_removal.html", context)

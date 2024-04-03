@@ -1,4 +1,83 @@
 {% extends "_base.html" %}
 {% block content %}
-{{history}}
+<!-- Titulo -->
+<div class="flex items-center justify-end h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-6">
+    <div class="sm:rounded-lg px-10">   
+        <h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
+            {% if history.delivery == True %}
+                <span class="bg-green-100 text-green-800 me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400 w-20 text-center">Retirada</span>
+            {% elif history.removal == True %}
+                <span class="bg-red-100 text-red-800 me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400 w-20 text-center">Entrega</span>
+            {% endif %}
+        </h1>
+    </div>
+</div>
+<!-- Informações -->
+<div class="grid grid-cols-2 gap-4 mb-4 h-auto">
+    <div class="flex-col items-center justify-center rounded bg-gray-100 h-full max-h-full dark:bg-gray-800 p-4 gap-3">
+        <dl class="max-w-full text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700 w-full mb-8">
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Equipamento:</dt>
+                <dd class="text-lg font-bold text-blue-700">
+                    <a href="{{history.equipment.get_absolute_url}}">
+                        {{history.equipment}}
+                    </a>
+                </dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">ID Histórico:</dt>
+                <dd class="text-lg font-bold text-teal-700">{{history.number_history}}</dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Técnico Responsável:</dt>
+                <dd class="text-lg font-bold text-teal-700">{{history.pro_accountable}}</dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Carregador:</dt>
+                <dd class="text-lg font-bold text-teal-700">
+                    {% if history.charger %}
+                        SIM
+                    {% else %}
+                        NÃO
+                    {% endif %}
+                </dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Acessórios:</dt>
+                <dd class="text-lg font-bold text-teal-700">
+                    {% if history.props %}
+                        SIM
+                    {% else %}
+                        NÃO
+                    {% endif %}
+                </dd>
+            </div>
+
+        </dl>
+    </div>
+    <div class="flex-col items-center justify-center rounded bg-gray-100 h-full max-h-full dark:bg-gray-800 p-4 gap-3">
+        <dl class="max-w-full text-gray-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700 w-full mb-8">
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Setor:</dt>
+                <dd class="text-lg font-semibold">{{history.sector.name}}</dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Sala:</dt>
+                <dd class="text-lg font-semibold">{{history.room}}</dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Funcionário:</dt>
+                <dd class="text-lg font-semibold">{{history.employee}}</dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Data:</dt>
+                <dd class="text-lg font-semibold">{{history.date}}</dd>
+            </div>
+            <div class="flex flex-col pb-3">
+                <dt class="mb-1 text-gray-500 md:text-lg dark:text-gray-400">Observação:</dt>
+                <dd class="text-lg font-semibold">{{history.observation}}</dd>
+            </div>
+        </dl>
+    </div>
+</div>
 {% endblock content %}
