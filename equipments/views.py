@@ -1,4 +1,3 @@
-# Create your views here.
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.messages import constants
@@ -59,14 +58,46 @@ def equipment_update(request, slug):
     if request.method == "POST":
         form = EquipmentForm(request.POST, instance=equipment)
         if form.is_valid():
-            return extract_update_form_equipment(form, request)
+            extract_update_form_equipment(form, request)
+            new_equipment = Equipment.objects.filter(id=equipment.id)
+            slug = new_equipment[0].slug
+            return redirect(
+                reverse("equipments:update_equipment", kwargs={"slug": slug})
+            )
         else:
             messages.add_message(request, constants.ERROR, "Ocorreu um erro!")
-        return redirect(reverse("equipments:update_equipment", kwargs={"slug": slug}))
+            return redirect(
+                reverse("equipments:update_equipment", kwargs={"slug": slug})
+            )
     context = {"form": form, "btn": "Atualizar Equipamento"}
     return render(request, "equipment_register.html", context)
 
 
+# Disabled Equipment
+@login_required(login_url="login")
+def disabled_equipment(request, slug):
+    equipment = get_object_or_404(Equipment, slug=slug)
+    equipment.status = False
+    equipment.save()
+    messages.add_message(
+        request, constants.WARNING, f"Equipamento {equipment} desabilitado"
+    )
+    return redirect(reverse("equipments:equipments"))
+
+
+# Enabled Equipment
+@login_required(login_url="login")
+def enabled_equipment(request, slug):
+    equipment = get_object_or_404(Equipment, slug=slug)
+    equipment.status = True
+    equipment.save()
+    messages.add_message(
+        request, constants.WARNING, f"Equipamento {equipment} Habilitado"
+    )
+    return redirect(reverse("equipments:equipments"))
+
+
+# Extract forms equipments, request post
 def extract_update_form_equipment(form, request):
     equipment = form.save(commit=False)
     equipment.patrimony = form.cleaned_data["patrimony"]
@@ -82,7 +113,6 @@ def extract_update_form_equipment(form, request):
 def equipment_delivery_removal(request, slug):
     if request.method == "POST":
         form = HistoryRemovalDeliveryEquipmentForm(request.POST, request=request)
-        print(form.errors)
         if form.is_valid():
             form.save()
             messages.add_message(
@@ -106,7 +136,6 @@ def equipment_delivery_removal(request, slug):
 
 
 def history_removal_delivery_view(request, slug):
-    print(slug)
     history = get_object_or_404(HistoryRemovalDeliveryEquipment, slug=slug)
     context = {"history": history}
     return render(request, "delivery_removal_view.html", context)
