@@ -8,6 +8,7 @@ from django.template.defaultfilters import slugify
 from authenticate.models import ProfessionalUser
 from bidding_supplier.models import Supplier
 from dashboard.models import Material, Sector
+from equipments.models import Equipment
 from reports.managers import KindInterestRequestMaterialQuerySet
 
 
@@ -39,6 +40,9 @@ class Report(models.Model):
     )
     created_at = models.DateTimeField("criado em", auto_now_add=True)
     updated_at = models.DateTimeField("atualizado em", auto_now=True)
+    equipment = models.ForeignKey(
+        Equipment, verbose_name="equipamento", on_delete=models.SET_NULL, null=True
+    )
 
     class Meta:
         ordering = ["-created_at", "status", "-updated_at"]
