@@ -30,32 +30,32 @@
                 <div id="conteudo">
                     <div id="div_data_reports">
                         <dl>
-                            <dt>Numero do Laudo</dt>
-                            <dd>{{report.number_report}}</dd>
+                            <dt>Numero do Histórico</dt>
+                            <dd>{{history.number_history}}</dd>
                             <dt>Data</dt>
-                            <dd>{{report.created_at}}</dd>
+                            <dd>{{history.date}}</dd>
                         </dl>
                     </div>
 
                     <aside>
                         <address id="from">
-                            <p><b>Diretoria:</b> {{report.sector.direction.name}}</p>
-                            <p><b>Setor:</b> {{report.sector.name}}</p>
-                            {% if report.equipment != None %}
-                            <p><b>Equipamento:</b> {{report.equipment.id_equipment}}</p>
-                            {% endif %}
-                            <p><b>Funcionário:</b> {{report.employee}}</p>
-                            <p><b>Técnico Responsável:</b> {{report.pro_accountable}}</p>
+                            <p><b>Equipamento:</b> {{history.equipment.id_equipment}}</p>
+                            <p><b>Diretoria:</b> {{history.sector.direction.name}}</p>
+                            <p><b>Setor:</b> {{history.sector.name}}</p>
+                            <p><b>Sala:</b> {{history.room}}</p>
+                            <p><b>Funcionário:</b> {{history.employee}}</p>
+                            <p><b>Técnico Responsável:</b> {{history.pro_accountable}}</p>
                         </address>
 
-                        <address id="to">
+                        {% comment %} <address id="to">
                             Ao receber ou retirar um equipamento. <b>FAVOR</b> dar baixa no sistema <b><i>Setor de TI</i></b>
-                        </address>
+                        </address> {% endcomment %}
                     </aside>
 
                     <article>
-                        <p><b>Justificativa:</b> {{report.justification}}</p>
+                        <p><b>Observação:</b> {{history.observation}}</p>
                     </article>
+                    <br />
                     <table id="materials">
                         <thead>
                             <tr>
@@ -76,11 +76,17 @@
                     </table>
                 </div><!-- Final da div conteudo -->
                 <div id="rodape">
-                    ____________________________________________<br/>
-                    <p><b>{{report.pro_accountable}}</b></p>
-                    <br>
-                    Prefeitura Municipal de Novo Horizonte - SISInfo &copy;
-
+                    {% if history.delivery %}
+                        ____________________________________________<br/>
+                        <p><b>{{history.employee}}</b></p>
+                        <br>
+                        Prefeitura Municipal de Novo Horizonte - SISInfo &copy;
+                    {% else %}
+                         ____________________________________________<br/>
+                        <p><b>{{history.pro_accountable}}</b></p>
+                        <br>
+                        Prefeitura Municipal de Novo Horizonte - SISInfo &copy;
+                    {% endif %}
                 </div>
             </div><!-- Final da Página -->
         </div>
