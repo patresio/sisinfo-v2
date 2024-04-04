@@ -7,7 +7,7 @@ from services.models import Service
 class ServiceForm(forms.ModelForm):
     class Meta:
         model = Service
-        fiels = [
+        fields = [
             "number_service",
             "call",
             "fullname_employee",

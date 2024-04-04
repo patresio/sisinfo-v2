@@ -10,7 +10,7 @@ urlpatterns = [
     path("suppliers/", include("bidding_supplier.urls")),
     path("reports/", include("reports.urls")),
     path("equipments/", include("equipments.urls")),
-    # path("services/", include("services.urls")),
+    path("services/", include("services.urls")),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
