@@ -41,7 +41,11 @@ class Report(models.Model):
     created_at = models.DateTimeField("criado em", auto_now_add=True)
     updated_at = models.DateTimeField("atualizado em", auto_now=True)
     equipment = models.ForeignKey(
-        Equipment, verbose_name="equipamento", on_delete=models.SET_NULL, null=True
+        Equipment,
+        verbose_name="equipamento",
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
     )
 
     class Meta:

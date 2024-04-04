@@ -41,6 +41,9 @@ class Equipment(models.Model):
         related_name="setores",
     )
     status = models.BooleanField("status", default=True)
+    serial_number = models.CharField(
+        "numero de série", default=0, max_length=50, null=True, blank=True
+    )
 
     class Meta:
         ordering = ["id_equipment", "sector", "status", "kind", "patrimony"]

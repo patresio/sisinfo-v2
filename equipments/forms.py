@@ -8,7 +8,14 @@ class EquipmentForm(forms.ModelForm):
 
     class Meta:
         model = Equipment
-        fields = ["patrimony", "kind", "description", "sector", "status"]
+        fields = [
+            "patrimony",
+            "kind",
+            "description",
+            "sector",
+            "status",
+            "serial_number",
+        ]
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
