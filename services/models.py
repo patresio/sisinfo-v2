@@ -73,7 +73,7 @@ class Service(models.Model):
         return self.number_service
 
     def get_absolute_url(self):
-        return r("services:service_view", slug=self.slug)
+        return r("services:service-detail", slug=self.slug)
 
     def days_service_open(self):
         """

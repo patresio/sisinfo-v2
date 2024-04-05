@@ -3,8 +3,89 @@
 Atendimentos
 {% endblock title %}
 {% block content %}
-<h1 class="text-center mb-5">Serviços</h1>
-{% for service in services %}
-    {{service}}
-{% endfor %}
+<!-- Titulo -->
+<div class="flex items-center justify-between h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-6">
+    <div class="sm:rounded-lg px-10"> 
+        <a href="{% url 'services:register' %}">
+            <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 flex justify-center items-center gap-2">
+                Novo Atendimento
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                </svg>
+            </button>
+
+        </a>
+    </div>
+    <div class="sm:rounded-lg px-10">   
+        <h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
+            <mark class="px-2 text-white bg-blue-700 rounded dark:bg-blue-500">
+                Atendimentos
+            </mark>
+        </h1>
+    </div>
+</div>
+<!-- MESSAGES -->
+{% include "include/_alert.html" %}
+<!-- SEARCH -->
+<div class="items-center max-w-full w-full h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-4 gap-3 flex">
+    <form action="" method="get" class="w-full flex justify-start p-2 max-w-full gap-3 items-center me-2">
+    </form>
+</div>
+<!-- SERVICES -->
+<div class="flex items-center max-w-full w-full h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-6 flex-col gap-3">
+    <div class="relative overflow-x-auto shadow-md sm:rounded-lg max-w-full w-full px-10">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-white uppercase bg-blue-700 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Protocolo do Atendimento
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Patrimônio
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Setor
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Tipo Equipamento
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for equipment in page_obj %}
+                {% if equipment.status %}
+                <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-100 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                {% else %}
+                <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-100 even:dark:bg-gray-800 border-b dark:border-gray-700 line-through">
+                {% endif %}
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <a href="{{equipment.get_absolute_url}}">{{equipment.id_equipment}}</a>
+                    </th>
+                    <td class="px-6 py-3">
+                        {{equipment.patrimony}}
+                    </td>
+                    <td class="px-6 py-3">
+                        {{equipment.sector.name}}
+                    </td>
+                    <td class="px-6 py-3">
+                        {{equipment.get_kind_display}}
+                    </td>
+                    <td class="px-6 py-2 flex gap-1 justify-end">
+                        
+                    </td>
+                </tr>
+                {% empty %}
+                            <tr>
+                                <td class="px-6 py-4" colspan="5">Nenhuma equipamento cadastrado!!!</td>
+                            </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+        <!-- Pagination -->
+    {% include "include/_pagination.html" %}
+</div>
 {% endblock content %}
