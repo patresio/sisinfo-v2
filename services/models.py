@@ -27,11 +27,11 @@ class Service(models.Model):
         null=True,
     )
     call = models.CharField(
-        "tipo de atendimento", max_length=2, choices=KIND_SERVICE_CALL, default="02"
+        "atendimento via", max_length=2, choices=KIND_SERVICE_CALL, default="02"
     )
     slug = models.SlugField("slug")
     fullname_employee = models.CharField(
-        "nome completo do funcionario", max_length=100, null=True, blank=True
+        "nome completo do funcionário(a)", max_length=100, null=True, blank=True
     )
     sector = models.ForeignKey(
         Sector,
@@ -39,17 +39,17 @@ class Service(models.Model):
         verbose_name="setor",
         related_name="setor",
     )
-    room = models.CharField("sala referente", max_length=20, blank=True)
+    room = models.CharField("sala", max_length=20, blank=True)
     professional = models.ForeignKey(
         ProfessionalUser,
         on_delete=models.DO_NOTHING,
-        verbose_name="profissional",
+        verbose_name="profissional do atendimento",
         related_name="profissional_atendimento",
     )
     pro_accountable = models.ForeignKey(
         ProfessionalUser,
         on_delete=models.DO_NOTHING,
-        verbose_name="profissional responsável",
+        verbose_name="profissional responsável que monitorará o atendimento",
         related_name="profissional_responsavel_atendimento",
     )
     status = models.BooleanField("status", default=True)

@@ -4,6 +4,7 @@ from django.contrib.messages import constants
 from django.shortcuts import render
 
 from services.forms import ServiceForm
+from services.models import Service
 
 
 # Create your views here.
@@ -16,5 +17,14 @@ def register_service(request):
             messages.add_message(request, constants.SUCCESS, "Inserido com sucesso!")
         else:
             messages.add_message(request, constants.ERROR, "Ocorreu um erro!")
-    context = {}
+    form = ServiceForm(request=request)
+    btn = "Cadastrar Atendimento"
+    context = {"form": form, "btn": btn}
     return render(request, "register_service.html", context)
+
+
+@login_required(login_url="login")
+def services(request):
+    services = Service.objects.all()
+    context = {"services": services}
+    return render(request, "services.html", context)
