@@ -82,7 +82,7 @@ class Service(models.Model):
         if self.created_at != self.updated_at:
             if self.status:
                 return f"{str((date.today() - self.created_at.date()).days)}"
-            return "0"
+            return ""
         if (date.today() - self.update_at.date()).days > -1:
             return f"{str((date.today() - self.created_at.date()).days)}"
 
