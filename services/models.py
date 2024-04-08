@@ -65,7 +65,7 @@ class Service(models.Model):
     details = models.TextField("detalhes do atendimento")
 
     class Meta:
-        ordering = ["-created_at", "status", "-updated_at"]
+        ordering = ["-status", "-updated_at", "-created_at"]
         verbose_name = "atendimento"
         verbose_name_plural = "atendimentos"
 
@@ -105,3 +105,18 @@ class Service(models.Model):
                 )
             self.slug = slugify(self.number_service)
         return super().save()
+
+
+class OrderofService(models.Model):
+    """
+    Status
+    Descrição do problema
+    Tipo de Serviço
+    Descrição da Solução
+    Profissional (Responsável)
+    Laudo
+    Equipamento
+    Atendimento
+    """
+
+    pass

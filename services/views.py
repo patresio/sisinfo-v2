@@ -30,7 +30,7 @@ def register_service(request):
 def services(request):
     services = Service.objects.all()
     # paginacao
-    paginator = Paginator(services, 20) # show 20 services per page
+    paginator = Paginator(services, 20)  # show 20 services per page
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
     context = {"page_obj": page_obj}
@@ -41,3 +41,19 @@ def service_detail(request, slug):
     service = get_object_or_404(Service, slug=slug)
     context = {"service": service}
     return render(request, "service_detail.html", context)
+
+
+def service_closed(request, slug):
+    service = get_object_or_404(Service, slug=slug)
+    service.status = False
+    service.save()
+    messages.add_message(
+        request, constants.SUCCESS, f"Atendimento {service} fechado com sucesso."
+    )
+    return redirect(reverse("services:services"))
+
+
+def service_edit(request, slug):
+    service = get_object_or_404(Service, slug=slug)
+    service.save()
+    return redirect(reverse("services:services"))
