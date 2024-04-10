@@ -109,14 +109,18 @@ class Service(models.Model):
 
 class OrderofService(models.Model):
     """
-    Status
+    Atendimento
+    Profissional_opened (Responsável)
+    Profissional_received (Responsável)
     Descrição do problema
     Tipo de Serviço
     Descrição da Solução
-    Profissional (Responsável)
-    Laudo
-    Equipamento
-    Atendimento
+    Status
+    remote?
+    Laudo (null)
+    Equipamento (null)
+    created_at
+    updated_at
     """
 
     pass

@@ -7,10 +7,10 @@
 <div class="flex items-center justify-end h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-6">
     <div class="sm:rounded-lg px-10">   
         <h1 class="mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl dark:text-white">
-            {% if history.delivery == True %}
-                <span class="bg-green-100 text-green-800 me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400 w-20 text-center">Retirada</span>
-            {% elif history.removal == True %}
-                <span class="bg-red-100 text-red-800 me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400 w-20 text-center">Entrega</span>
+            {% if history.delivery %}
+                <span class="bg-green-100 text-green-800 me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400 w-20 text-center">Entrega</span>
+            {% elif history.removal %}
+                <span class="bg-red-100 text-red-800 me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400 w-20 text-center">Retirada</span>
             {% endif %}
         </h1>
     </div>

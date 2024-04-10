@@ -5,6 +5,7 @@ from django.core.paginator import Paginator
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 
+from services.filters import ServiceFilter
 from services.forms import ServiceForm
 from services.models import Service
 
@@ -29,11 +30,13 @@ def register_service(request):
 @login_required(login_url="login")
 def services(request):
     services = Service.objects.all()
+    my_filter = ServiceFilter(request.GET, queryset=services)
+    services = my_filter.qs
     # paginacao
     paginator = Paginator(services, 20)  # show 20 services per page
     page_number = request.GET.get("page")
     page_obj = paginator.get_page(page_number)
-    context = {"page_obj": page_obj}
+    context = {"page_obj": page_obj, "my_filter": my_filter}
     return render(request, "services.html", context)
 
 
