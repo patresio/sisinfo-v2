@@ -40,12 +40,27 @@ def services(request):
     return render(request, "services.html", context)
 
 
+@login_required(login_url="login")
+def my_services(request):
+    services = Service.objects.filter(pro_accountable=request.user)
+    my_filter = ServiceFilter(request.GET, queryset=services)
+    services = my_filter.qs
+    # paginacao
+    paginator = Paginator(services, 20)  # show 20 services per page
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    context = {"page_obj": page_obj, "my_filter": my_filter}
+    return render(request, "services.html", context)
+
+
+@login_required(login_url="login")
 def service_detail(request, slug):
     service = get_object_or_404(Service, slug=slug)
     context = {"service": service}
     return render(request, "service_detail.html", context)
 
 
+@login_required(login_url="login")
 def service_closed(request, slug):
     service = get_object_or_404(Service, slug=slug)
     service.status = False
@@ -56,6 +71,7 @@ def service_closed(request, slug):
     return redirect(reverse("services:services"))
 
 
+@login_required(login_url="login")
 def service_edit(request, slug):
     service = get_object_or_404(Service, slug=slug)
     service.save()

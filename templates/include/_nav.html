@@ -95,10 +95,13 @@
             </button>
             <ul id="dropdown-atendimento" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="{% url 'services:register' %}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Cadastrar Atendimento</a>
+                     <a href="{% url 'services:my-services' %}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Meus Atendimentos</a>
                   </li>
                   <li>
-                     <a href="{% url 'services:services' %}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Visualizar Atendimentos</a>
+                     <a href="{% url 'services:services' %}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Todos Atendimentos</a>
+                  </li>
+                  <li>
+                     <a href="{% url 'services:register' %}" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Cadastrar Atendimento</a>
                   </li>
             </ul>
          </li>
