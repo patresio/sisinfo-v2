@@ -1,0 +1,74 @@
+[
+    {
+        "model": "bidding_supplier.supplier",
+        "fields": {
+            "company": "ACSMA COMERCIO LTDA",
+            "trade": "ACSMA",
+            "cnpj": "45152139000199",
+            "slug": "acsma",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "fields": {
+            "company": "LEGACY DISTRIBUIDORA DE INFORMATICA E EL",
+            "trade": "LEGACY",
+            "cnpj": "45152139000199",
+            "slug": "legacy",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "fields": {
+            "company": "PROSUN INFORMATICA LTDA",
+            "trade": "PROSUN",
+            "cnpj": "45152139000199",
+            "slug": "prosun",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "fields": {
+            "company": "RIO PRETO DISTRIBUICAO DE EQUIPAMENTOS D",
+            "trade": "RPDISTRIBUICAO",
+            "cnpj": "45152139000199",
+            "slug": "rio-preto-dist",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "fields": {
+            "company": "SINCES TECNOLOGIA COMERCIO E SERVICOS LT",
+            "trade": "SINCES",
+            "cnpj": "45152139000199",
+            "slug": "sinces",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "fields": {
+            "company": "INFOSAT GAMERS LTDA",
+            "trade": "INFOSAT",
+            "cnpj": "45152139000199",
+            "slug": "infosat",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    }
+]

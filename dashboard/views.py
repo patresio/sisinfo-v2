@@ -15,6 +15,7 @@ from dashboard.forms import BiddingForm, DirectionForm, MaterialForm, SectorForm
 from dashboard.models import Bidding, Direction, Material, Sector
 from equipments.models import Equipment
 from reports.models import Report
+from services.models import Service
 
 
 # Create your views here.
@@ -28,6 +29,7 @@ def index(request):
         Report.objects.all().filter(pro_accountable=request.user).count()
     )
     total_equipments = Equipment.objects.all().count()
+    total_my_services = Service.objects.filter(professional=request.user).count()
     context = {
         "total_reports": total_reports,
         "total_reports_user": total_reports_user,
@@ -35,6 +37,7 @@ def index(request):
         "total_directions": total_directions,
         "total_reports_accountable": total_reports_accountable,
         "total_equipments": total_equipments,
+        "total_my_service": total_my_services,
     }
     return render(request, "index.html", context)
 

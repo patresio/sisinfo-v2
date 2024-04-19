@@ -1,0 +1,170 @@
+[
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "CABO ADAPTADOR COM PLUG, 2XP2",
+            "slug": "cabo-adaptador-com-plug-2xp2-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "17.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "HEADSET - 20 HZ",
+            "slug": "headset-20-hz-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "17.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "MICROFONE",
+            "slug": "microfone-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "189.0",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "WEBCAM",
+            "slug": "webcam-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "161.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "HD SSD 480 GB",
+            "slug": "hd-ssd-480-gb-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "288.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "CASE DE GAVETA PARA HD EXTERNO 2.5",
+            "slug": "case-de-gaveta-para-hd-externo-2-5-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "94.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "PEN DRIVE 32GB",
+            "slug": "pen-drive-32gb-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "40.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "SSD 960 GB",
+            "slug": "ssd-960-gb-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "394.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "SSD EXTERNO 1TB PORTATIL",
+            "slug": "ssd-externo-1tb-portatil-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "526.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "SWITCH 10/100/1000 MBPS 5 PORTAS",
+            "slug": "switch-10-100-1000-mbps-5-portas-5",
+            "status": "1",
+            "bidding": 1,
+            "price": "96.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "SWITCH 10/100/1000 - 16 PORTAS",
+            "slug": "switch-10-100-1000-16-portas-5",
+            "status": "1",
+            "bidding": 1,
+            "price": "329.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "SWITCH 10/100/1000 - 8 PORTAS",
+            "slug": "switch-10-100-1000-8-portas-5",
+            "status": "1",
+            "bidding": 1,
+            "price": "96.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "SWITCH 28 PORTAS 10/100/1000",
+            "slug": "switch-28-portas-10-100-1000-5",
+            "status": "1",
+            "bidding": 1,
+            "price": "1550.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "BATERIA 634477 PARA NOTEBOOK VAIO FE14 VJFE42F11X",
+            "slug": "bateria-634477-para-notebook-vaio-fe14-vjfe42f11x-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "220.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    }
+]

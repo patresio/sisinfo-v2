@@ -1,0 +1,51 @@
+[
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 1,
+        "fields": {
+            "company": "Digiart Informatica Novo Horizonte Ltda",
+            "trade": "DIGIART",
+            "cnpj": "45152139000199",
+            "slug": "digiart",
+            "address": "Rua Dr. Altino Arantes, Nº 761\r\nCentro\r\nCEP: 14960-000\r\nNovo Horizonte - SP",
+            "created_at": "2024-04-16T11:01:36.058Z",
+            "update_at": "2024-04-17T11:59:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 2,
+        "fields": {
+            "company": "F.s. Comércio E Serviços Eireli",
+            "trade": "EIRELI",
+            "cnpj": "45152139000199",
+            "slug": "eireli",
+            "address": "",
+            "created_at": "2024-04-16T12:14:20.488Z",
+            "update_at": "2024-04-16T12:14:20.488Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 3,
+        "fields": {
+            "company": "Rei Dos Cartuchos Equipamentos E Suprime",
+            "trade": "REI DOS CARTUCHOS",
+            "cnpj": "45152139000199",
+            "slug": "rei-dos-cartuchos",
+            "address": "",
+            "created_at": "2024-04-16T12:16:46.922Z",
+            "update_at": "2024-04-16T12:16:46.923Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.contact",
+        "pk": 1,
+        "fields": {
+            "supplier": 1,
+            "kind": "P",
+            "value": "1735423314",
+            "whatsapp": false
+        }
+    }
+]

@@ -12,8 +12,7 @@ from bidding_supplier.models import Supplier
 ############################ SETORES E DIRETORIAS ############################################
 ##############################################################################################
 class AbsctactDirectionSector(models.Model):
-    name = models.CharField("nome", max_length=200,
-                            blank=True, null=True, unique=True)
+    name = models.CharField("nome", max_length=200, blank=True, null=True, unique=True)
     slug = models.SlugField("slug")
     accountable = models.CharField("responsavel", max_length=200, blank=True)
 
@@ -88,7 +87,8 @@ class AbsBiddingMaterial(models.Model):
 
     def save(self, *args, **kwargs):
         if not self.slug:
-            self.slug = slugify(self.name)
+            slug = slugify(self.name)
+            self.slug = slug[:48]
         return super().save()
 
 
@@ -128,8 +128,14 @@ class Material(AbsBiddingMaterial):
         "valor", max_digits=8, decimal_places=2, blank=True, null=True
     )
     readjustment = models.FloatField("reajuste", default=0)
-    supplier = models.ForeignKey(Supplier, on_delete=models.SET_NULL,
-                                 verbose_name='fornecedor', related_name='fornecedores', blank=True, null=True)
+    supplier = models.ForeignKey(
+        Supplier,
+        on_delete=models.SET_NULL,
+        verbose_name="fornecedor",
+        related_name="fornecedores",
+        blank=True,
+        null=True,
+    )
 
     class Meta:
         ordering = ("status", "bidding", "name")

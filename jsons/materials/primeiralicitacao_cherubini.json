@@ -1,0 +1,206 @@
+[
+    {
+        "model": "bidding_supplier.supplier",
+        "fields": {
+            "company": "CHERUBINI INFORM\u00c1TICA ME",
+            "trade": "CHERUBINI",
+            "cnpj": "45152139000199",
+            "slug": "cherubini",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "Mem\u00f3ria RAM 4GB DDR4 2400 Mhz",
+            "slug": "memoria-ram-4gb-ddr4-2400-mhz-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "65.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "Cabo de for\u00e7a para pc",
+            "slug": "cabo-de-forca-para-pc-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "6.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "Fonte ATX 230 W para computador",
+            "slug": "fonte-atx-230-w-para-computador-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "60.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "Gabinete Torre Atx para Computador com 1 baia externa e 2 baias internas ",
+            "slug": "gabinete-torre-atx-para-computador-com-1-baia-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "81.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "HD SSD 240 GB",
+            "slug": "hd-ssd-240-gb-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "179.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "MEM\u00d3RIA RAM 8GB DDR4 2666 MHZ",
+            "slug": "memoria-ram-8gb-ddr4-2666-mhz-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "120.01",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "MOUSE OPTICO USB ",
+            "slug": "mouse-optico-usb-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "6.50",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "MOUSE PAD",
+            "slug": "mouse-pad-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "5.99",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "par de Caixas de som para computador",
+            "slug": "par-de-caixas-de-som-para-computador-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "28.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "Placa M\u00e3e Gigabyte H510m H  Soquete Lga 1200",
+            "slug": "placa-mae-gigabyte-h510m-h-soquete-lga-1200-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "540.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "Placa M\u00e3e Gigabyte H610M H DDR4 Intel Soquete LGA 1700",
+            "slug": "placa-mae-gigabyte-h610m-h-ddr4-intel-soquete-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "610.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "Processador Cpu Intel Core i3-10100 3.6 GHZ LGA 1200 6 MB",
+            "slug": "processador-cpu-intel-core-i3-10100-3-6-ghz-l-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "599.90",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "Processador cpu Intel core i5-11400 2.6 ghz LGA 1200 12mb",
+            "slug": "processador-cpu-intel-core-i5-11400-2-6-ghz-l-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "850.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "Processador Intel Core i3-12100 3.3GHz LGA 1700 12MB",
+            "slug": "processador-intel-core-i3-12100-3-3ghz-lga-17-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "740.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "Processador Intel Core i5-12400 2.5GHz LGA 1700 18MB",
+            "slug": "processador-intel-core-i5-12400-2-5ghz-lga-17-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "760.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "Teclado USB para computador",
+            "slug": "teclado-usb-para-computador-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "24.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    }
+]

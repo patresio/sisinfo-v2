@@ -1,0 +1,548 @@
+[
+    {
+        "model": "dashboard.material",
+        "pk": 1,
+        "fields": {
+            "name": "ANTENA/RÁDIO UNIFI AP PRO",
+            "slug": "antenaradio-unifi-ap-pro",
+            "status": "1",
+            "bidding": 1,
+            "price": "1200.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 2,
+        "fields": {
+            "name": "FONTE POE 48 V 0.5 AMP PARA UNIFI",
+            "slug": "fonte-poe-48-v-05-amp-para-unifi",
+            "status": "1",
+            "bidding": 1,
+            "price": "130.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 3,
+        "fields": {
+            "name": "FONTE POE PARA RÁDIO NANOSTATION GIGABIT DA MA",
+            "slug": "fonte-poe-para-radio-nanostation-gigabit-da-ma",
+            "status": "1",
+            "bidding": 1,
+            "price": "110.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 4,
+        "fields": {
+            "name": "FONTE POE PARA RÁDIO NANOSTATION M5 DA MARCA U",
+            "slug": "fonte-poe-para-radio-nanostation-m5-da-marca-u",
+            "status": "1",
+            "bidding": 1,
+            "price": "80.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 5,
+        "fields": {
+            "name": "ROUTEBOARD MIKROTIK HAP LITE - RB941-2ND-TC",
+            "slug": "routeboard-mikrotik-hap-lite-rb941-2nd-tc",
+            "status": "1",
+            "bidding": 1,
+            "price": "200.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 6,
+        "fields": {
+            "name": "FONTE ATX 500W REAL",
+            "slug": "fonte-atx-500w-real",
+            "status": "1",
+            "bidding": 1,
+            "price": "280.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 7,
+        "fields": {
+            "name": "GABINETE MID TOWER COM 3 VENTILADORES",
+            "slug": "gabinete-mid-tower-com-3-ventiladores",
+            "status": "1",
+            "bidding": 1,
+            "price": "480.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 8,
+        "fields": {
+            "name": "PLACA DE VÍDEO, 12GB, GDDR6; 02 (DUAS) VENTOINHAS",
+            "slug": "placa-de-video-12gb-gddr6-02-duas-ventoinhas",
+            "status": "1",
+            "bidding": 1,
+            "price": "2150.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 9,
+        "fields": {
+            "name": "ESTABILIZADOR 2000 VA",
+            "slug": "estabilizador-2000-va",
+            "status": "1",
+            "bidding": 1,
+            "price": "750.26",
+            "readjustment": 0.0,
+            "supplier": 2
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 10,
+        "fields": {
+            "name": "ESTABILIZADOR 500 VA",
+            "slug": "estabilizador-500-va",
+            "status": "1",
+            "bidding": 1,
+            "price": "202.32",
+            "readjustment": 0.0,
+            "supplier": 2
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 11,
+        "fields": {
+            "name": "NOBREAK BIVOLT 600 VA",
+            "slug": "nobreak-bivolt-600-va",
+            "status": "1",
+            "bidding": 1,
+            "price": "435.00",
+            "readjustment": 0.0,
+            "supplier": 2
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 12,
+        "fields": {
+            "name": "NOBREAK 800 VA BIVOLT AUTOMÁTICO",
+            "slug": "nobreak-800-va-bivolt-automatico",
+            "status": "1",
+            "bidding": 1,
+            "price": "506.91",
+            "readjustment": 0.0,
+            "supplier": 2
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 13,
+        "fields": {
+            "name": "ALICATE DE CRIMPAGEM P/ CABEAMENTO DE REDE RJ4",
+            "slug": "alicate-de-crimpagem-p-cabeamento-de-rede-rj4",
+            "status": "1",
+            "bidding": 1,
+            "price": "19.52",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 14,
+        "fields": {
+            "name": "BATERIA PARA NOBREAK 12V - 7AH - SELADA",
+            "slug": "bateria-para-nobreak-12v-7ah-selada",
+            "status": "1",
+            "bidding": 1,
+            "price": "97.80",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 15,
+        "fields": {
+            "name": "BATERIA PARA NOBREAK ACBA 120800 12V 18AH REGUL",
+            "slug": "bateria-para-nobreak-acba-120800-12v-18ah-regul",
+            "status": "1",
+            "bidding": 1,
+            "price": "318.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 16,
+        "fields": {
+            "name": "BATERIA PLACA MÃE",
+            "slug": "bateria-placa-mae",
+            "status": "1",
+            "bidding": 1,
+            "price": "0.80",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 17,
+        "fields": {
+            "name": "CABO EXTENSOR USB",
+            "slug": "cabo-extensor-usb",
+            "status": "1",
+            "bidding": 1,
+            "price": "5.80",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 18,
+        "fields": {
+            "name": "CABO HDMI PARA HDI",
+            "slug": "cabo-hdmi-para-hdi",
+            "status": "1",
+            "bidding": 1,
+            "price": "10.30",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 19,
+        "fields": {
+            "name": "CABO USB 2.0 PARA IMPRESSORA",
+            "slug": "cabo-usb-20-para-impressora",
+            "status": "1",
+            "bidding": 1,
+            "price": "5.10",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 20,
+        "fields": {
+            "name": "CABO VGA PARA MONITOR",
+            "slug": "cabo-vga-para-monitor",
+            "status": "1",
+            "bidding": 1,
+            "price": "9.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 21,
+        "fields": {
+            "name": "DESENGRIPANTE",
+            "slug": "desengripante",
+            "status": "1",
+            "bidding": 1,
+            "price": "7.96",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 22,
+        "fields": {
+            "name": "DVD-R",
+            "slug": "dvd-r",
+            "status": "1",
+            "bidding": 1,
+            "price": "0.95",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 23,
+        "fields": {
+            "name": "FONTE UNIVERSAL P/ NOTEBOOK",
+            "slug": "fonte-universal-p-notebook",
+            "status": "1",
+            "bidding": 1,
+            "price": "33.63",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 24,
+        "fields": {
+            "name": "LEITOR DE CÓDIGO DE BARRAS COM PEDESTAL",
+            "slug": "leitor-de-codigo-de-barras-com-pedestal",
+            "status": "1",
+            "bidding": 1,
+            "price": "84.01",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 25,
+        "fields": {
+            "name": "PARAFUSO COM PORCA GAIOLA",
+            "slug": "parafuso-com-porca-gaiola",
+            "status": "1",
+            "bidding": 1,
+            "price": "0.91",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 26,
+        "fields": {
+            "name": "PLACA DE VÍDEO 1GB, GDDR3, 64 BITS",
+            "slug": "placa-de-video-1gb-gddr3-64-bits",
+            "status": "1",
+            "bidding": 1,
+            "price": "115.50",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 27,
+        "fields": {
+            "name": "PLACA USB 3.0 PCI EXPRESS 1X PC 4 PORTAS SAÍDAS",
+            "slug": "placa-usb-30-pci-express-1x-pc-4-portas-saidas",
+            "status": "1",
+            "bidding": 1,
+            "price": "70.10",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 28,
+        "fields": {
+            "name": "SPRAY LIMPA CONTATO - 300ML",
+            "slug": "spray-limpa-contato-300ml",
+            "status": "1",
+            "bidding": 1,
+            "price": "11.44",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 29,
+        "fields": {
+            "name": "FILTRO DE LINHA 5 TOMADAS PADRÃO NOVO COM 2 ME",
+            "slug": "filtro-de-linha-5-tomadas-padrao-novo-com-2-me",
+            "status": "1",
+            "bidding": 1,
+            "price": "41.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 30,
+        "fields": {
+            "name": "FILTRO DE LINHA 5 TOMADAS PADRÃO NOVO COM 5 ME",
+            "slug": "filtro-de-linha-5-tomadas-padrao-novo-com-5-me",
+            "status": "1",
+            "bidding": 1,
+            "price": "52.08",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 31,
+        "fields": {
+            "name": "PINO ADAPTADOR PADRÃO ANTIGO PARA PADRÃO NOVO",
+            "slug": "pino-adaptador-padrao-antigo-para-padrao-novo",
+            "status": "1",
+            "bidding": 1,
+            "price": "5.80",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 32,
+        "fields": {
+            "name": "PINO ADAPTADOR PADRÃO NOVO APRA PADRÃO ANTIGO",
+            "slug": "pino-adaptador-padrao-novo-apra-padrao-antigo",
+            "status": "1",
+            "bidding": 1,
+            "price": "5.80",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 33,
+        "fields": {
+            "name": "CADO DE REDE UTP",
+            "slug": "cado-de-rede-utp",
+            "status": "1",
+            "bidding": 1,
+            "price": "1.50",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 34,
+        "fields": {
+            "name": "CADO ADAPTADOR DE REDE USB 3.0 PARA RJ45 F3, 10/1",
+            "slug": "cado-adaptador-de-rede-usb-30-para-rj45-f3-101",
+            "status": "1",
+            "bidding": 1,
+            "price": "40.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 35,
+        "fields": {
+            "name": "CABO INTERNET CAT6 UTP 4P",
+            "slug": "cabo-internet-cat6-utp-4p",
+            "status": "1",
+            "bidding": 1,
+            "price": "3.50",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 36,
+        "fields": {
+            "name": "CABO DE REDE PRETO CAT6 UTP CAIXA COM 305 METRO",
+            "slug": "cabo-de-rede-preto-cat6-utp-caixa-com-305-metro",
+            "status": "1",
+            "bidding": 1,
+            "price": "950.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 37,
+        "fields": {
+            "name": "CABO DE REDE UTP CAT5E - 305 METROS",
+            "slug": "cabo-de-rede-utp-cat5e-305-metros",
+            "status": "1",
+            "bidding": 1,
+            "price": "460.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 38,
+        "fields": {
+            "name": "CONECTOR MODULAR PLUG RJ45 CAT6",
+            "slug": "conector-modular-plug-rj45-cat6",
+            "status": "1",
+            "bidding": 1,
+            "price": "0.80",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 39,
+        "fields": {
+            "name": "EMENDA RJ45",
+            "slug": "emenda-rj45",
+            "status": "1",
+            "bidding": 1,
+            "price": "1.50",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 40,
+        "fields": {
+            "name": "JACK RJ45 KEYSTONE",
+            "slug": "jack-rj45-keystone",
+            "status": "1",
+            "bidding": 1,
+            "price": "12.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 41,
+        "fields": {
+            "name": "PLACA DE REDE PCI-E 10/100/1000 MBPS",
+            "slug": "placa-de-rede-pci-e-101001000-mbps",
+            "status": "1",
+            "bidding": 1,
+            "price": "85.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 42,
+        "fields": {
+            "name": "PLUG RJ45",
+            "slug": "plug-rj45",
+            "status": "1",
+            "bidding": 1,
+            "price": "1.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    }
+]

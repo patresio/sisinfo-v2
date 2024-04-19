@@ -1,0 +1,302 @@
+[
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "CABO ADAPTADOR COM PLUG, 2XP2",
+            "slug": "cabo-adaptador-com-plug-2xp2-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "17.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "HEADSET - 20 HZ",
+            "slug": "headset-20-hz-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "17.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "MICROFONE",
+            "slug": "microfone-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "189.0",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "WEBCAM",
+            "slug": "webcam-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "161.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "HD SSD 480 GB",
+            "slug": "hd-ssd-480-gb-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "288.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "CASE DE GAVETA PARA HD EXTERNO 2.5",
+            "slug": "case-de-gaveta-para-hd-externo-2-5-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "94.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "PEN DRIVE 32GB",
+            "slug": "pen-drive-32gb-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "40.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "SSD 960 GB",
+            "slug": "ssd-960-gb-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "394.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "SSD EXTERNO 1TB PORTATIL",
+            "slug": "ssd-externo-1tb-portatil-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "526.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "SWITCH 10/100/1000 MBPS 5 PORTAS",
+            "slug": "switch-10-100-1000-mbps-5-portas-5",
+            "status": "1",
+            "bidding": 1,
+            "price": "96.00",
+            "readjustment": 0.0,
+            "supplier": 5
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "SWITCH 10/100/1000 - 16 PORTAS",
+            "slug": "switch-10-100-1000-16-portas-5",
+            "status": "1",
+            "bidding": 1,
+            "price": "329.00",
+            "readjustment": 0.0,
+            "supplier": 5
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "SWITCH 10/100/1000 - 8 PORTAS",
+            "slug": "switch-10-100-1000-8-portas-5",
+            "status": "1",
+            "bidding": 1,
+            "price": "96.00",
+            "readjustment": 0.0,
+            "supplier": 5
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "SWITCH 28 PORTAS 10/100/1000",
+            "slug": "switch-28-portas-10-100-1000-5",
+            "status": "1",
+            "bidding": 1,
+            "price": "1550.00",
+            "readjustment": 0.0,
+            "supplier": 5
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "TELA NT140FHM-N44 V8.1 PARA NOTEBOOK VAIO FE14 VJFE42F11X",
+            "slug": "tela-nt140fhm-n44-v8-1-para-notebook-vaio-fe1-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "646.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "BATERIA 634477 PARA NOTEBOOK VAIO FE14 VJFE42F11X",
+            "slug": "bateria-634477-para-notebook-vaio-fe14-vjfe42-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "220.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "FONTE S29A00 1.2A SA\u00cdDA 19V 2.1A PARA NOTEBOOK VAIO FE14 VJFE42F11X",
+            "slug": "fonte-s29a00-1-2a-saida-19v-2-1a-para-noteboo-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "135.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "TECLADO PARA NOTEBOOK ACER ASPIRE 4749-6871",
+            "slug": "teclado-para-notebook-acer-aspire-4749-6871-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "114.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "TECLADO PARA NOTEBOOK ACER ASPIRE V5-471-6677 MS2360",
+            "slug": "teclado-para-notebook-acer-aspire-v5-471-6677-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "114.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "TECLADO PARA NOTEBOOK LENOVO IDEAPAD 330 81FE0002BR",
+            "slug": "teclado-para-notebook-lenovo-ideapad-330-81fe-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "114.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "TELA PARA NOTEBOOK  LENOVO G50-80 MODELO 80R0",
+            "slug": "tela-para-notebook-lenovo-g50-80-modelo-80r0-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "114.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "NOTEBOOK INTEL CORE I3 8GB SSD 256 TELA 15.6 POLEGADAS",
+            "slug": "notebook-intel-core-i3-8gb-ssd-256-tela-15-6--7",
+            "status": "1",
+            "bidding": 1,
+            "price": "2282.68",
+            "readjustment": 0.0,
+            "supplier": 7
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "NOTEBOOK INTEL CORE I5 8GB 1 TB TELA 15.6 POLEGADAS",
+            "slug": "notebook-intel-core-i5-8gb-1-tb-tela-15-6-pol-7",
+            "status": "1",
+            "bidding": 1,
+            "price": "2530.00",
+            "readjustment": 0.0,
+            "supplier": 7
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "MONITOR LED 21,5 POLEGADAS INTELLINCY / LED-2105",
+            "slug": "monitor-led-215-polegadas-intellincy-led-2105-8",
+            "status": "1",
+            "bidding": 1,
+            "price": "289.90",
+            "readjustment": 0.0,
+            "supplier": 8
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "APARELHO TELEFONICO COM FIO",
+            "slug": "aparelho-telefonico-com-fio-9",
+            "status": "1",
+            "bidding": 1,
+            "price": "60.00",
+            "readjustment": 0.0,
+            "supplier": 9
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "fields": {
+            "name": "APARELHO TELEFONICO SEM FIO",
+            "slug": "aparelho-telefonico-sem-fio-9",
+            "status": "1",
+            "bidding": 1,
+            "price": "126.05",
+            "readjustment": 0.0,
+            "supplier": 9
+        }
+    }
+]
