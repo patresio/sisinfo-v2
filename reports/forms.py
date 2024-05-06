@@ -17,6 +17,7 @@ class ReportForm(forms.ModelForm):
             "justification",
             "professional",
             "pro_accountable",
+            "service",
         ]
 
         def clean_employee(self):

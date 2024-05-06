@@ -67,3 +67,18 @@ class ServiceForm(forms.ModelForm):
                     else:
                         professional = ProfessionalUser.objects.filter(is_tech=True)
                         field.queryset = professional
+
+
+# class OrderofServiceForm(forms.ModelForm):
+#     model = OrderofService
+#     fields = [
+#         "kind_order_of_service",
+#         "number_order_of_service",
+#         "equipment",
+#         "report",
+#         "professional",
+#         "status",
+#         "remote",
+#         "problem",
+#         "solution"
+#     ]

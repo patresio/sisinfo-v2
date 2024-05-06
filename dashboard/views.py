@@ -341,6 +341,7 @@ def materials(request):
     form_material = MaterialForm()
     myFilter = MaterialFilter(request.GET, queryset=materiais)
     materiais = myFilter.qs
+
     context = {
         "form": form_material,
         "materiais": materiais,

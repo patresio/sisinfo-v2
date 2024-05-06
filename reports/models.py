@@ -10,6 +10,7 @@ from bidding_supplier.models import Supplier
 from dashboard.models import Material, Sector
 from equipments.models import Equipment
 from reports.managers import KindInterestRequestMaterialQuerySet
+from services.models import Service
 
 
 # Create your models here.
@@ -44,6 +45,13 @@ class Report(models.Model):
         Equipment,
         verbose_name="equipamento",
         on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+    )
+    service = models.ForeignKey(
+        Service,
+        on_delete=models.SET_NULL,
+        verbose_name="numero do atendimento",
         null=True,
         blank=True,
     )
