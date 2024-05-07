@@ -6,6 +6,7 @@ from django.template.defaultfilters import slugify
 
 from authenticate.models import ProfessionalUser
 from dashboard.models import Sector
+from equipments.models import Equipment
 
 KIND_SERVICE_CALL = {
     ("01", "WHATSAPP"),
@@ -107,45 +108,45 @@ class Service(models.Model):
         return super().save()
 
 
-# class OrderofService(models.Model):
-#     KIND_ORDER_OF_SERVICE = {
-#         ("01", "LIMPEZA"),
-#         ("02", "REVISÃO DE EQUIPAMENTOS"),
-#         ("03", "REVISÃO DE SERVIÇOS"),
-#         ("04", "FORMATAÇÃO"),
-#         ("05", "AGUARDANDO PEÇAS"),
-#         ("9A", "AGUARDANDO TERCEIROS"),
-#         ("9B", "OUTROS"),
-#     }
-#     kind_order_of_service = models.CharField(
-#         "tipo do serviço", max_length=2, choices=KIND_ORDER_OF_SERVICE
-#     )
-#     number_order_of_service = models.CharField(
-#         "número da ordem de serviço", max_length=20, unique=True, blank=True, null=True
-#     )
-#     equipment = models.ForeignKey(
-#         Equipment, on_delete=models.DO_NOTHING, blank=True, null=True
-#     )
-#     report = models.ForeignKey(
-#         Report, on_delete=models.DO_NOTHING, blank=True, null=True
-#     )
-#     service = models.ForeignKey(
-#         Service, on_delete=models.DO_NOTHING, verbose_name="numero do atendimento"
-#     )
-#     professional = models.ForeignKey(
-#         ProfessionalUser,
-#         verbose_name="profissional",
-#         on_delete=models.DO_NOTHING,
-#     )
-#     pro_opened = models.ForeignKey(
-#         ProfessionalUser,
-#         on_delete=models.DO_NOTHING,
-#         verbose_name="profissional responsável que monitorará a ordem de serviço",
-#         related_name="profissional_responsavel_order_of_service",
-#     )
-#     status = models.BooleanField("status", default=True)
-#     remote = models.BooleanField("remoto", default=False)
-#     problem = models.TextField("descrição do problema")
-#     solution = models.TextField("descrição da solução")
-#     created_at = models.DateTimeField("criado em")
-#     updated_at = models.DateTimeField("atualizado em")
+class OrderofService(models.Model):
+    KIND_ORDER_OF_SERVICE = {
+        ("01", "LIMPEZA"),
+        ("02", "REVISÃO DE EQUIPAMENTOS"),
+        ("03", "REVISÃO DE SERVIÇOS"),
+        ("04", "FORMATAÇÃO"),
+        ("05", "AGUARDANDO PEÇAS"),
+        ("9A", "AGUARDANDO TERCEIROS"),
+        ("9B", "OUTROS"),
+    }
+    kind_order_of_service = models.CharField(
+        "tipo do serviço", max_length=2, choices=KIND_ORDER_OF_SERVICE
+    )
+    number_order_of_service = models.CharField(
+        "número da ordem de serviço", max_length=20, unique=True, blank=True, null=True
+    )
+    equipment = models.ForeignKey(
+        Equipment, on_delete=models.DO_NOTHING, blank=True, null=True
+    )
+    service = models.ForeignKey(
+        Service, on_delete=models.DO_NOTHING, verbose_name="numero do atendimento"
+    )
+    report = models.ForeignKey(
+        "reports.Report", on_delete=models.DO_NOTHING, blank=True, null=True
+    )
+    professional = models.ForeignKey(
+        ProfessionalUser,
+        verbose_name="profissional",
+        on_delete=models.DO_NOTHING,
+    )
+    pro_opened = models.ForeignKey(
+        ProfessionalUser,
+        on_delete=models.DO_NOTHING,
+        verbose_name="profissional responsável que monitorará a ordem de serviço",
+        related_name="profissional_responsavel_order_of_service",
+    )
+    status = models.BooleanField("status", default=True)
+    remote = models.BooleanField("remoto", default=False)
+    problem = models.TextField("descrição do problema")
+    solution = models.TextField("descrição da solução")
+    created_at = models.DateTimeField("criado em")
+    updated_at = models.DateTimeField("atualizado em")
