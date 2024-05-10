@@ -5,6 +5,7 @@ from django.core.paginator import Paginator
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 
+from reports.models import Report
 from services.filters import ServiceFilter
 from services.forms import ServiceForm
 from services.models import Service
@@ -56,7 +57,8 @@ def my_services(request):
 @login_required(login_url="login")
 def service_detail(request, slug):
     service = get_object_or_404(Service, slug=slug)
-    context = {"service": service}
+    reports = Report.objects.filter(service=service.id)
+    context = {"service": service, "reports": reports}
     return render(request, "service_detail.html", context)
 
 

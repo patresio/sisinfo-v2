@@ -121,16 +121,18 @@
         });
     })
 
-document.getElementById('id_equipment').childNodes.forEach((e, i, a) => {
-    if (e.value == '{{equipment.id}}'){
-        e.selected = "selected";
-    }
-});
-document.getElementById('id_sector').childNodes.forEach((e, i, a) => {
-    if (e.value == '{{equipment.sector.id}}'){
-        e.selected = "selected";
-    }
-});
+if({{equipment.id}}){
+    document.getElementById('id_equipment').childNodes.forEach((e, i, a) => {
+        if (e.value == '{{equipment.id}}'){
+            e.selected = "selected";
+        }
+    });
+    document.getElementById('id_sector').childNodes.forEach((e, i, a) => {
+        if (e.value == '{{equipment.sector.id}}'){
+            e.selected = "selected";
+        }
+    });
+}
 
 </script>
 
