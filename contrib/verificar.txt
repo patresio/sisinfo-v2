@@ -1,0 +1,15 @@
+- FALTA
+-> EQUIPMENTS
+Falta Transferencia
+
+
+-> SERVICES
+Atendimentos falta Ordem de Serviço + Laudos
+
+
+-> DASHBOARD 
+Colocar nas diretorias quantidade de equipamentos e no setor tambem
+
+
+-> BIDDING
+ajustar pagina de material 
