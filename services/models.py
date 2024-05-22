@@ -125,13 +125,13 @@ class OrderofService(models.Model):
         "número da ordem de serviço", max_length=20, unique=True, blank=True, null=True
     )
     equipment = models.ForeignKey(
-        Equipment, on_delete=models.DO_NOTHING, blank=True, null=True
+        Equipment, on_delete=models.DO_NOTHING, blank=True, null=True, verbose_name="equipamento na os"
     )
     service = models.ForeignKey(
         Service, on_delete=models.DO_NOTHING, verbose_name="numero do atendimento"
     )
     report = models.ForeignKey(
-        "reports.Report", on_delete=models.DO_NOTHING, blank=True, null=True
+        "reports.Report", on_delete=models.DO_NOTHING, blank=True, null=True, verbose_name="laudo da os"
     )
     professional = models.ForeignKey(
         ProfessionalUser,
