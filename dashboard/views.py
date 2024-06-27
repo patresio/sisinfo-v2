@@ -14,7 +14,7 @@ from dashboard.filters import (
 from dashboard.forms import BiddingForm, DirectionForm, MaterialForm, SectorForm
 from dashboard.models import Bidding, Direction, Material, Sector
 from equipments.models import Equipment
-from reports.models import Report
+from reports.models import MaterialReport, Report
 from services.models import Service
 
 
@@ -355,8 +355,10 @@ def materials(request):
 @login_required(login_url="login")
 def material_detail(request, slug):
     material = get_object_or_404(Material, slug=slug)
+    reports = MaterialReport.objects.filter(material=material)
     context = {
         "material": material,
+        "reports": reports,
     }
     return render(request, "licitacao/material_detail.html", context)
 

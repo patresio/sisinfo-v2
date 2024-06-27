@@ -1,0 +1,5657 @@
+[
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 4,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 4,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 4,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 4,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 5,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 5,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 5,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 5,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add diretoria",
+            "content_type": 6,
+            "codename": "add_direction"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change diretoria",
+            "content_type": 6,
+            "codename": "change_direction"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete diretoria",
+            "content_type": 6,
+            "codename": "delete_direction"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view diretoria",
+            "content_type": 6,
+            "codename": "view_direction"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add setor",
+            "content_type": 7,
+            "codename": "add_sector"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change setor",
+            "content_type": 7,
+            "codename": "change_sector"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete setor",
+            "content_type": 7,
+            "codename": "delete_sector"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view setor",
+            "content_type": 7,
+            "codename": "view_sector"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add licitação",
+            "content_type": 8,
+            "codename": "add_bidding"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change licitação",
+            "content_type": 8,
+            "codename": "change_bidding"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete licitação",
+            "content_type": 8,
+            "codename": "delete_bidding"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view licitação",
+            "content_type": 8,
+            "codename": "view_bidding"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add material",
+            "content_type": 9,
+            "codename": "add_material"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change material",
+            "content_type": 9,
+            "codename": "change_material"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete material",
+            "content_type": 9,
+            "codename": "delete_material"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view material",
+            "content_type": 9,
+            "codename": "view_material"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add profissional",
+            "content_type": 10,
+            "codename": "add_professionaluser"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change profissional",
+            "content_type": 10,
+            "codename": "change_professionaluser"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete profissional",
+            "content_type": 10,
+            "codename": "delete_professionaluser"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view profissional",
+            "content_type": 10,
+            "codename": "view_professionaluser"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add fornecedor",
+            "content_type": 11,
+            "codename": "add_supplier"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change fornecedor",
+            "content_type": 11,
+            "codename": "change_supplier"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete fornecedor",
+            "content_type": 11,
+            "codename": "delete_supplier"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view fornecedor",
+            "content_type": 11,
+            "codename": "view_supplier"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add contato",
+            "content_type": 12,
+            "codename": "add_contact"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change contato",
+            "content_type": 12,
+            "codename": "change_contact"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete contato",
+            "content_type": 12,
+            "codename": "delete_contact"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view contato",
+            "content_type": 12,
+            "codename": "view_contact"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add laudo",
+            "content_type": 13,
+            "codename": "add_report"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change laudo",
+            "content_type": 13,
+            "codename": "change_report"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete laudo",
+            "content_type": 13,
+            "codename": "delete_report"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view laudo",
+            "content_type": 13,
+            "codename": "view_report"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 53,
+        "fields": {
+            "name": "Can add materiais do laudo",
+            "content_type": 14,
+            "codename": "add_materialreport"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 54,
+        "fields": {
+            "name": "Can change materiais do laudo",
+            "content_type": 14,
+            "codename": "change_materialreport"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 55,
+        "fields": {
+            "name": "Can delete materiais do laudo",
+            "content_type": 14,
+            "codename": "delete_materialreport"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 56,
+        "fields": {
+            "name": "Can view materiais do laudo",
+            "content_type": 14,
+            "codename": "view_materialreport"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 57,
+        "fields": {
+            "name": "Can add nota fiscal",
+            "content_type": 15,
+            "codename": "add_invoice"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 58,
+        "fields": {
+            "name": "Can change nota fiscal",
+            "content_type": 15,
+            "codename": "change_invoice"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 59,
+        "fields": {
+            "name": "Can delete nota fiscal",
+            "content_type": 15,
+            "codename": "delete_invoice"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 60,
+        "fields": {
+            "name": "Can view nota fiscal",
+            "content_type": 15,
+            "codename": "view_invoice"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 61,
+        "fields": {
+            "name": "Can add solicitação ou empenho",
+            "content_type": 16,
+            "codename": "add_interestrequestmaterial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 62,
+        "fields": {
+            "name": "Can change solicitação ou empenho",
+            "content_type": 16,
+            "codename": "change_interestrequestmaterial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 63,
+        "fields": {
+            "name": "Can delete solicitação ou empenho",
+            "content_type": 16,
+            "codename": "delete_interestrequestmaterial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 64,
+        "fields": {
+            "name": "Can view solicitação ou empenho",
+            "content_type": 16,
+            "codename": "view_interestrequestmaterial"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "dashboard",
+            "model": "direction"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "dashboard",
+            "model": "sector"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "dashboard",
+            "model": "bidding"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "dashboard",
+            "model": "material"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "authenticate",
+            "model": "professionaluser"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": {
+            "app_label": "bidding_supplier",
+            "model": "supplier"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": {
+            "app_label": "bidding_supplier",
+            "model": "contact"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 13,
+        "fields": {
+            "app_label": "reports",
+            "model": "report"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 14,
+        "fields": {
+            "app_label": "reports",
+            "model": "materialreport"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 15,
+        "fields": {
+            "app_label": "reports",
+            "model": "invoice"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 16,
+        "fields": {
+            "app_label": "reports",
+            "model": "interestrequestmaterial"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "0s2y5r06jwssabxq078wy6ric7dke37s",
+        "fields": {
+            "session_data": ".eJxVjEsOgjAUAO_StWna0tKHS_ecgbxfBTWQUFgZ725IWOh2ZjJvM-C-jcNedR0mMVfTgLn8QkJ-6nwYeeB8Xywv87ZOZI_EnrbafhF93c72bzBiHY-vAgtB8QQYffAIUcAxBFB2bc6BqPWZuihJQvESC2pXOGXXxJKcms8XGS44bg:1sMVkH:LJl4ylYhOYf8ggWzmz_2bhQnZDHg9yi2jNhrvaDZLHo",
+            "expire_date": "2024-07-10T16:43:45.156Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "24qzatwgg607qwlqaudyr3l2rb9s85qt",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCnFTq4dO8ZyDAMUjWQlHZlvLuSdKHb997_L-VpW7Pfmix-juqsQB1-WSB-SOki3qncquZa1mUOuid6t01fa5TnZW__DjK1_F0jphjMyaGZ7CiRgxlAjmaYGFNARjAgEZAdWJHgnJWOEjFbtCOSen8A5BI3-A:1r97OX:zH3c1TqPQ_7s8cd3TifX3mO6pHFpJpJW-4QJ63cGjlk",
+            "expire_date": "2023-12-15T17:33:41.020Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "2b5w9oqss8ozw46w9m2nj5fmmeetmkz3",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCnFTq4dO8ZyDAMUjWQlHZlvLuSdKHb997_L-VpW7Pfmix-juqsQB1-WSB-SOki3qncquZa1mUOuid6t01fa5TnZW__DjK1_F0jphjMyaGZ7CiRgxlAjmaYGFNARjAgEZAdWJHgnJWOEjFbtCOSen8A5BI3-A:1rBJN4:WLIvCQ3rJx2lKGzhuoRqzT0saKdMFlb28DEs2KA6wKs",
+            "expire_date": "2023-12-21T18:45:14.734Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "2d3x3zaaurxaxgnsr0xmxovturqqz04x",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAAnbG4dO8ZyMAMUjU0Ke2q8e5K0oXufv57ebsKtK0lbE2WMLG6KKdOv1-k9JTaAT-o3med5rouU9Rd0Qdt-jazvK6H-xco1ErP-sEZyInRpETflS2KY3IohgcBdnFE8ERIIIZGIe-tBbGZ8AzWqvcH9Xg4Mg:1rP1jk:1pvFYhIXlvk0BKkTpejxri9MXazphC7d7EE6o5u_mvY",
+            "expire_date": "2024-01-28T14:45:20.864Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "2heresjygorw8q32etkfopxvurwz4jt3",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSE4vIpL934DmQ6MVA0kpV0Z_92QdKHbe865bxFx30rce17jksRFaHH63WakZ64DpAfWe5PU6rYusxyKPGiXt5by63q4fwcFexm1cpghA02BDQACK3YekY3j5NEEi8YnAs1OaTaewmSJPHE4e-tCFp8v-zY4TQ:1sATH7:yE9GWnZOPycT8EWc4aVrSzYeqYd19eAhStRF13PWcdE",
+            "expire_date": "2024-06-07T11:39:53.265Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "2rck2nt0jekptw0laxgl4zmt8f3utk54",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAAnbG4dO8ZyMAMUjU0Ke2q8e5K0oXufv57ebsKtK0lbE2WMLG6KKdOv1-k9JTaAT-o3med5rouU9Rd0Qdt-jazvK6H-xco1ErP-sEZyInRpETflS2KY3IohgcBdnFE8ERIIIZGIe-tBbGZ8AzWqvcH9Xg4Mg:1rnN1W:OPuMYgytlqK2SqNiLlRCpBQJdKg-8E4RHLq442ehTRs",
+            "expire_date": "2024-04-04T18:20:18.848Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "2ricfpkbvkq5cjpygr0dzxzsf1dh06z5",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAAnbG4dO8ZyMAMUjU0Ke2q8e5K0oXufv57ebsKtK0lbE2WMLG6KKdOv1-k9JTaAT-o3med5rouU9Rd0Qdt-jazvK6H-xco1ErP-sEZyInRpETflS2KY3IohgcBdnFE8ERIIIZGIe-tBbGZ8AzWqvcH9Xg4Mg:1rHUWF:h9C0f98XM_Cl1emiwL_mdI3Zz_JgwkUl8yWHz6fRXdk",
+            "expire_date": "2024-01-07T19:52:15.360Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "3658gga5oyz04r0pgtsqtnxtr0d03ifl",
+        "fields": {
+            "session_data": ".eJxVjEsOgjAUAO_StWna0tKHS_ecgbxfBTWQUFgZ725IWOh2ZjJvM-C-jcNedR0mMVfTgLn8QkJ-6nwYeeB8Xywv87ZOZI_EnrbafhF93c72bzBiHY-vAgtB8QQYffAIUcAxBFB2bc6BqPWZuihJQvESC2pXOGXXxJKcms8XGS44bg:1rwMmf:kAhoSHxIfH77GT7nlxNb8VF9I7zRQ_3g1lnrETQxG9E",
+            "expire_date": "2024-04-29T13:54:09.401Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "6wqa2xmuam2lh2bg1mlaed7zwcqnu9wf",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hBgmAAu3XsGwjAgVUOT0q6Md9cmXej2v_f-S8S0rS1uoyxxYnEWRpx-N0r5UfoO-J76bZZ57usykdwVedAhrzOX5-Vw_w5aGu1bB3BomMiCrgZCQsVM7NGa4isgGKWt8yY4ylUF9ABZaQKPAblQyOL9AcTcNxs:1rFZbB:WLNOK9E22vLVorLEqBZf_n8KjIid1B7TbnQKjPD1t08",
+            "expire_date": "2024-01-02T12:53:25.400Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "6xlay6megluqugdde8gujzfg68bx8ln0",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCnFTq4dO8ZyDAMUjWQlHZlvLuSdKHb997_L-VpW7Pfmix-juqsQB1-WSB-SOki3qncquZa1mUOuid6t01fa5TnZW__DjK1_F0jphjMyaGZ7CiRgxlAjmaYGFNARjAgEZAdWJHgnJWOEjFbtCOSen8A5BI3-A:1rBJGD:jgQco3XoxZIveNUgm2QS0XAolNcxadX5C_g9Xe1ubrw",
+            "expire_date": "2023-12-21T18:38:09.447Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "7nidqheqe01290ybnzop7mrt5yvd5yeb",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAAnbG4dO8ZyMAMUjU0Ke2q8e5K0oXufv57ebsKtK0lbE2WMLG6KKdOv1-k9JTaAT-o3med5rouU9Rd0Qdt-jazvK6H-xco1ErP-sEZyInRpETflS2KY3IohgcBdnFE8ERIIIZGIe-tBbGZ8AzWqvcH9Xg4Mg:1rwgWU:E2mdXSzMryzmOiQMauy4CLlDZANgByU3WfjQougYHzA",
+            "expire_date": "2024-04-30T10:58:46.100Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "a58l1kzyep6pbz1qrj0j4mgozibu723j",
+        "fields": {
+            "session_data": ".eJxVjEsOgjAUAO_StWna0tKHS_ecgbxfBTWQUFgZ725IWOh2ZjJvM-C-jcNedR0mMVfTgLn8QkJ-6nwYeeB8Xywv87ZOZI_EnrbafhF93c72bzBiHY-vAgtB8QQYffAIUcAxBFB2bc6BqPWZuihJQvESC2pXOGXXxJKcms8XGS44bg:1sM7Qw:21_ivy36w4Pprqd13gpBtCmDTKAMexMUSs0YKaLMKFI",
+            "expire_date": "2024-07-09T14:46:10.284Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "b54vlq6nyw6sbwfnum9d9c5nmij7cuae",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAUBf-FtSH0ClhcuvcbyH2AVA0kpV0Z_12bdKHbMzPnpSKuS4lrT3OcRJ3VUR1-N0J-pLoBuWO9Nc2tLvNEelP0Tru-NknPy-7-HRTs5VsPYAbxMIJNeArOIKDPkIUxeRIb0AmnbMJIBDlkIkvGMgQDjOzAq_cH81k4rA:1sM7Nn:jsk6Pcvz00yqGMuhCkrql5xWdbAB3GLVTtY9P9J8_Lc",
+            "expire_date": "2024-07-09T14:42:55.348Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "bg723sp0ylvduf339k9atkqah7yo83v7",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSHAUGBcuvcbyPCSqoGktCvjv2uTLnR7zzn3xTxta_XbyIufEzszLdjpdwwUH7ntJN2p3TqPva3LHPiu8IMOfu0pPy-H-3dQadRvjViEBBeyQCASKpbJCQCtNCbjrLXGZQMBZMgOQUgVtEk2FSA32YiFvT_eqzcs:1sM7Pz:KefHHkkscq-Cw0cRtF49VOk8bVhSgl5JlSXxVUjpmoQ",
+            "expire_date": "2024-07-09T14:45:11.473Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "bslpgexk9asa11sfz20wc9lbs7t40o7a",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAAnbG4dO8ZyMAMUjU0Ke2q8e5K0oXufv57ebsKtK0lbE2WMLG6KKdOv1-k9JTaAT-o3med5rouU9Rd0Qdt-jazvK6H-xco1ErP-sEZyInRpETflS2KY3IohgcBdnFE8ERIIIZGIe-tBbGZ8AzWqvcH9Xg4Mg:1rIyo7:-FOOhsfsJMSCfYINsObScSVgX6py1jl3J_jhBSCOF3Y",
+            "expire_date": "2024-01-11T22:24:51.916Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "eovps3okwg56i3r6lh359rx6528zl1i0",
+        "fields": {
+            "session_data": ".eJxVjDkOgzAURO_iOrLA-GM7ZXrOYP2NmCQCiaWKcveARJE0U8x7M2-TcVtL3had8yDmahowl9-SkJ86HkQeON4ny9O4zgPZQ7EnXWw3ib5up_t3UHAp-7oWqsFV3rO2IYSeqwbUCapEUCbAKkXoI1BKuEfr2YtGpYDsCGIwny8VtTir:1s3xke:1PbnaQr2dX4safCfOeoGkLzvMN7saPAVBu9H6iwcAtk",
+            "expire_date": "2024-05-20T12:47:28.906Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "fu0ejts018wl30h8n6l993gjul9n6ire",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCnFTq4dO8ZyDAMUjWQlHZlvLuSdKHb997_L-VpW7Pfmix-juqsQB1-WSB-SOki3qncquZa1mUOuid6t01fa5TnZW__DjK1_F0jphjMyaGZ7CiRgxlAjmaYGFNARjAgEZAdWJHgnJWOEjFbtCOSen8A5BI3-A:1rA9MW:0uCKNJSuftrExoSpaItAlTyMoGPzovCiyk2jQugl1nM",
+            "expire_date": "2023-12-18T13:51:52.205Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "fvgrlirwlqjdh24tbw9vmmjqhn6h7x0o",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSEOb1y67zcQGAapGkhKuzL-uzbpQrf3nHNfLMRtrWEbtIQ5swuThp1-xxTxQW0n-R7brXPsbV3mxHeFH3TwqWd6Xg_376DGUb-1JhBgikLpfFaAUUEBMNYgCiOlRpVs9GdEnZzzspAkFJRsEgVsJmLvD_wQOGk:1sE5H1:yWAxJasOGeqpeC78-YcUT60C0s0MSnbZGH4T0mnVLjw",
+            "expire_date": "2024-06-17T10:50:43.816Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "g2pm3od32tugr3t5oy01i1a32cwe0ux3",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAUBf-FtSH0ClhcuvcbyH2AVA0kpV0Z_12bdKHbMzPnpSKuS4lrT3OcRJ3VUR1-N0J-pLoBuWO9Nc2tLvNEelP0Tru-NknPy-7-HRTs5VsPYAbxMIJNeArOIKDPkIUxeRIb0AmnbMJIBDlkIkvGMgQDjOzAq_cH81k4rA:1sATPL:wsN1eCQMezOEug5uIK3dhHhVjZVH9vc9v1gpJ44lKTk",
+            "expire_date": "2024-06-07T11:48:23.742Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "gy98ul4qginp9qclfj3h0sjjts52aife",
+        "fields": {
+            "session_data": "eyJfcGFzc3dvcmRfcmVzZXRfdG9rZW4iOiJjNW8zeXQtNjgxOTkwOTg2M2M0NDUyMjU0OGNhZWY0YThjNTA1N2MifQ:1rxOxW:RA7JQDk5MxXaVfjQQWcsXTjjUPQqwxaKSHl1yLn6bOY",
+            "expire_date": "2024-05-02T10:25:38.194Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "i1dfvvr65eylp5w2if4w8555om07eam6",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pCBKaAu3XuGZgYGqRpISrsy3l2bdKHb_977LzXSupRx7TKPU1JnherwuzHFh9QNpDvVW9Ox1WWeWG-K3mnX15bkedndv4NCvXxrMyDEbBmFI_uMQCd_jA7IemYyQ0REAcfogsvZmQAUUg5gvUgAl9X7A-orN-c:1rFckq:Vqc45XwTQobQyoFzuFjYxIiaJE7-RY2lZpCT-8RIMog",
+            "expire_date": "2024-01-02T16:15:36.644Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "j7gqt8vok1oa2ojsxiisagiohd199sv7",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCnFTq4dO8ZyDAMUjWQlHZlvLuSdKHb997_L-VpW7Pfmix-juqsQB1-WSB-SOki3qncquZa1mUOuid6t01fa5TnZW__DjK1_F0jphjMyaGZ7CiRgxlAjmaYGFNARjAgEZAdWJHgnJWOEjFbtCOSen8A5BI3-A:1rBIy8:y_E2NWP8skgroxf35pOqER9dGRef9ApINJTBhAYiCWs",
+            "expire_date": "2023-12-21T18:19:28.924Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "jct7s00u56uojiwdk3tmtfra3sf8psv9",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSEOb1y67zcQGAapGkhKuzL-uzbpQrf3nHNfLMRtrWEbtIQ5swuThp1-xxTxQW0n-R7brXPsbV3mxHeFH3TwqWd6Xg_376DGUb-1JhBgikLpfFaAUUEBMNYgCiOlRpVs9GdEnZzzspAkFJRsEgVsJmLvD_wQOGk:1rwMpj:FUVnvT9eYU0orsbYsx8cCdHq5xaMc7EXFU2NFLbvEsc",
+            "expire_date": "2024-04-29T13:57:19.975Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "jyff60o55cp43i2rpui2dhcwdxvacdvl",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAAnbG4dO8ZyMAMUjU0Ke2q8e5K0oXufv57ebsKtK0lbE2WMLG6KKdOv1-k9JTaAT-o3med5rouU9Rd0Qdt-jazvK6H-xco1ErP-sEZyInRpETflS2KY3IohgcBdnFE8ERIIIZGIe-tBbGZ8AzWqvcH9Xg4Mg:1rFeXw:2N_oqHYwY1SkygdACRyRd1KsOH0wHVR3nETVCPJYtd0",
+            "expire_date": "2024-01-02T18:10:24.050Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "k40gcset13oxc53qrf5n5tfj8jickuuf",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCnFTq4dO8ZyDAMUjWQlHZlvLuSdKHb997_L-VpW7Pfmix-juqsQB1-WSB-SOki3qncquZa1mUOuid6t01fa5TnZW__DjK1_F0jphjMyaGZ7CiRgxlAjmaYGFNARjAgEZAdWJHgnJWOEjFbtCOSen8A5BI3-A:1r97m2:2Pu7yw0adtSZgOTHIwql_DjCDFYsShEDRd5jaU2AdU0",
+            "expire_date": "2023-12-15T17:57:58.268Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "katk8tez3duderrrzo8k9aqagds5cajc",
+        "fields": {
+            "session_data": ".eJxVjEsOgjAUAO_StWna0tKHS_ecgbxfBTWQUFgZ725IWOh2ZjJvM-C-jcNedR0mMVfTgLn8QkJ-6nwYeeB8Xywv87ZOZI_EnrbafhF93c72bzBiHY-vAgtB8QQYffAIUcAxBFB2bc6BqPWZuihJQvESC2pXOGXXxJKcms8XGS44bg:1s5QOW:bGsf-DqxlzmobN6AKtu3xqRG9oVaElQk84yl0zpwqPA",
+            "expire_date": "2024-05-24T13:34:40.597Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "laktonuqn7euum5nr2d40jll5vtn39ii",
+        "fields": {
+            "session_data": ".eJxVjEsOgjAUAO_StWna0tKHS_ecgbxfBTWQUFgZ725IWOh2ZjJvM-C-jcNedR0mMVfTgLn8QkJ-6nwYeeB8Xywv87ZOZI_EnrbafhF93c72bzBiHY-vAgtB8QQYffAIUcAxBFB2bc6BqPWZuihJQvESC2pXOGXXxJKcms8XGS44bg:1sFZHV:nzBcTWPR3AqRP5VTI0szSAwP19xx2Cox6zQsVXxSX7k",
+            "expire_date": "2024-06-21T13:05:21.014Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "m2z9jwvmnfastmepw4wbceyh2o8q6ki2",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAAnbG4dO8ZyMAMUjU0Ke2q8e5K0oXufv57ebsKtK0lbE2WMLG6KKdOv1-k9JTaAT-o3med5rouU9Rd0Qdt-jazvK6H-xco1ErP-sEZyInRpETflS2KY3IohgcBdnFE8ERIIIZGIe-tBbGZ8AzWqvcH9Xg4Mg:1rFuJm:HFImCmLJl_MvdEwsUUlPIpv4YlbKeD7Te6uovU3U6wk",
+            "expire_date": "2024-01-03T11:00:50.811Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "mwjazmoe5g507vc14iqbhyz84blnzbmw",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSEOb1y67zcQGAapGkhKuzL-uzbpQrf3nHNfLMRtrWEbtIQ5swuThp1-xxTxQW0n-R7brXPsbV3mxHeFH3TwqWd6Xg_376DGUb-1JhBgikLpfFaAUUEBMNYgCiOlRpVs9GdEnZzzspAkFJRsEgVsJmLvD_wQOGk:1s7vfM:LIIWsqSKWBk2LH5W-7-3XtcxmhSW9FWkkjwfIhJGpLs",
+            "expire_date": "2024-05-31T11:22:24.022Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "n09n96kexn3ydieetyboxrexlt2i2vrq",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAAnbG4dO8ZyMAMUjU0Ke2q8e5K0oXufv57ebsKtK0lbE2WMLG6KKdOv1-k9JTaAT-o3med5rouU9Rd0Qdt-jazvK6H-xco1ErP-sEZyInRpETflS2KY3IohgcBdnFE8ERIIIZGIe-tBbGZ8AzWqvcH9Xg4Mg:1rFtPf:qGOPxyG24WCYL4GqJ7-YjnhORPxRQEuMdOB4zpQroDM",
+            "expire_date": "2024-01-03T10:02:51.707Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "n1sxec2t6xzu9d1wn45uvq2e7kte19k4",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAAnbG4dO8ZyMAMUjU0Ke2q8e5K0oXufv57ebsKtK0lbE2WMLG6KKdOv1-k9JTaAT-o3med5rouU9Rd0Qdt-jazvK6H-xco1ErP-sEZyInRpETflS2KY3IohgcBdnFE8ERIIIZGIe-tBbGZ8AzWqvcH9Xg4Mg:1rHa12:wxXHpQ775z1REWCJetfbxdVGz5j-wj2EPYgt8MQNHVA",
+            "expire_date": "2024-01-08T01:44:24.293Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "nttwdznuj0wqi69rh5l4x0br5ivi5ae9",
+        "fields": {
+            "session_data": ".eJxVjDsOgzAQRO_iOrL8WWw2ZXrOYC1rE5NEtoShinL3gESRdKN5b-YtAm1rDltLS5ijuAqL4vJbjsTPVA4SH1TuVXIt6zKP8lDkSZscakyv2-n-HWRqeV_73pDlqMhEAPadAyIgZELHZLW1nNjrXu0B9GSYvNOA6CMqMyXXic8XDGU30g:1rG0XY:wHw-HSQ5rMGY3mYwABYf3qUkcRB1yOjGiujaoDNsHrM",
+            "expire_date": "2024-01-03T17:39:28.786Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "oacy5g6iubv94h9b3ysww9g8rf0k1hr3",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAAnbG4dO8ZyMAMUjU0Ke2q8e5K0oXufv57ebsKtK0lbE2WMLG6KKdOv1-k9JTaAT-o3med5rouU9Rd0Qdt-jazvK6H-xco1ErP-sEZyInRpETflS2KY3IohgcBdnFE8ERIIIZGIe-tBbGZ8AzWqvcH9Xg4Mg:1rUPyw:cJAlhPKwRtW04ftw8eGL8d2-m_QvSneQ-tEyHwHCit0",
+            "expire_date": "2024-02-12T11:39:18.469Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "om0ioq3o32lpm9hnhe3h4jqjinptnd3b",
+        "fields": {
+            "session_data": ".eJxVjEsOgjAUAO_StWna0tKHS_ecgbxfBTWQUFgZ725IWOh2ZjJvM-C-jcNedR0mMVfTgLn8QkJ-6nwYeeB8Xywv87ZOZI_EnrbafhF93c72bzBiHY-vAgtB8QQYffAIUcAxBFB2bc6BqPWZuihJQvESC2pXOGXXxJKcms8XGS44bg:1sEplW:Z09mfQ8OqwcFCEabNfiUH_nOyfURX8JBZ0hNybnY19E",
+            "expire_date": "2024-06-19T12:29:18.325Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "pqypl8hba7l5247d1beahh6vm8obwupa",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAUBf-FtSH0ClhcuvcbyH2AVA0kpV0Z_12bdKHbMzPnpSKuS4lrT3OcRJ3VUR1-N0J-pLoBuWO9Nc2tLvNEelP0Tru-NknPy-7-HRTs5VsPYAbxMIJNeArOIKDPkIUxeRIb0AmnbMJIBDlkIkvGMgQDjOzAq_cH81k4rA:1sH5yw:P2mBGF6Vp4qFcYIpQkGKnlCR9CYSzcj4WWowcw4huto",
+            "expire_date": "2024-06-25T18:12:30.514Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "qnklvjzkehw6u9c2qpolcmkm8khk5y1q",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAAnbG4dO8ZyMAMUjU0Ke2q8e5K0oXufv57ebsKtK0lbE2WMLG6KKdOv1-k9JTaAT-o3med5rouU9Rd0Qdt-jazvK6H-xco1ErP-sEZyInRpETflS2KY3IohgcBdnFE8ERIIIZGIe-tBbGZ8AzWqvcH9Xg4Mg:1rhqI7:1kg45nrKbp6IvG_8ZNCGATtWbodAWLkHMpuB3DR6dJI",
+            "expire_date": "2024-03-20T12:22:35.704Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "rpujlj1pw47znrju2s5n3z6adfbyl2xm",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCnFTq4dO8ZyDAMUjWQlHZlvLuSdKHb997_L-VpW7Pfmix-juqsQB1-WSB-SOki3qncquZa1mUOuid6t01fa5TnZW__DjK1_F0jphjMyaGZ7CiRgxlAjmaYGFNARjAgEZAdWJHgnJWOEjFbtCOSen8A5BI3-A:1r8Hxm:dEmNOQFOT3rm9Rngu0wWozKBuJ6VGsKZMDU8HH16TGI",
+            "expire_date": "2023-12-13T10:38:38.812Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "rxfbvd5v00zs2u4vsgv1p3j8hlyphf65",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAUBf-FtSH0ClhcuvcbyH2AVA0kpV0Z_12bdKHbMzPnpSKuS4lrT3OcRJ3VUR1-N0J-pLoBuWO9Nc2tLvNEelP0Tru-NknPy-7-HRTs5VsPYAbxMIJNeArOIKDPkIUxeRIb0AmnbMJIBDlkIkvGMgQDjOzAq_cH81k4rA:1sMpgI:jHumLzqeTw0EPEUqihmvpsDyvsDpPjgX0JzEqCyCHoU",
+            "expire_date": "2024-07-11T14:00:58.315Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "sfbffpka7wbeuyxzn5guvm7m1qirjt9p",
+        "fields": {
+            "session_data": ".eJxVjDkOgzAURO_iOrLA-GM7ZXrOYP2NmCQCiaWKcveARJE0U8x7M2-TcVtL3had8yDmahowl9-SkJ86HkQeON4ny9O4zgPZQ7EnXWw3ib5up_t3UHAp-7oWqsFV3rO2IYSeqwbUCapEUCbAKkXoI1BKuEfr2YtGpYDsCGIwny8VtTir:1rxQ0V:YNsL-FNTLUeX60p8k2LfgKyn62mS_CFy_oVOfcmjt80",
+            "expire_date": "2024-05-02T11:32:47.483Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "te5dv6230chl063r9nk95oz6u5yg9hbm",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCnFTq4dO8ZyDAMUjWQlHZlvLuSdKHb997_L-VpW7Pfmix-juqsQB1-WSB-SOki3qncquZa1mUOuid6t01fa5TnZW__DjK1_F0jphjMyaGZ7CiRgxlAjmaYGFNARjAgEZAdWJHgnJWOEjFbtCOSen8A5BI3-A:1rBJFW:1Stf6CD41l5S-sqXxy94EV2pVnEnIMudIxEvpVGgTjg",
+            "expire_date": "2023-12-21T18:37:26.888Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "wpgzmz7ez0yirelaxb69ki2zw0k5v041",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2pAAnbG4dO8ZyMAMUjU0Ke2q8e5K0oXufv57ebsKtK0lbE2WMLG6KKdOv1-k9JTaAT-o3med5rouU9Rd0Qdt-jazvK6H-xco1ErP-sEZyInRpETflS2KY3IohgcBdnFE8ERIIIZGIe-tBbGZ8AzWqvcH9Xg4Mg:1rwXVE:N6LMYnCKUP8M4mnvh-6NS7Zpfm43hHBgi3hYSgAZiAo",
+            "expire_date": "2024-04-30T01:20:52.512Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "x1vx3m7oso7h0qizj7of0ia53btqeuw5",
+        "fields": {
+            "session_data": ".eJxVjEEOwiAQRe_C2hCnFTq4dO8ZyDAMUjWQlHZlvLuSdKHb997_L-VpW7Pfmix-juqsQB1-WSB-SOki3qncquZa1mUOuid6t01fa5TnZW__DjK1_F0jphjMyaGZ7CiRgxlAjmaYGFNARjAgEZAdWJHgnJWOEjFbtCOSen8A5BI3-A:1rFttj:uO_qJ4jZqGgcl0qlggHkI-gXoDFOz_pVVbIS77yrbOA",
+            "expire_date": "2024-01-03T10:33:55.304Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "ytsfd6mu0134ot79l6jtlor88vej6qf9",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSEOb1y67zcQGAapGkhKuzL-uzbpQrf3nHNfLMRtrWEbtIQ5swuThp1-xxTxQW0n-R7brXPsbV3mxHeFH3TwqWd6Xg_376DGUb-1JhBgikLpfFaAUUEBMNYgCiOlRpVs9GdEnZzzspAkFJRsEgVsJmLvD_wQOGk:1sJC7s:g14yC_Y1wsc75536L9r2plDsWky2DnFXcR6BYFfIggY",
+            "expire_date": "2024-07-01T13:10:24.276Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "z08vjhip21fnvooyejjfao4p6cgpr55j",
+        "fields": {
+            "session_data": ".eJxVjEsOgjAUAO_StWna0tKHS_ecgbxfBTWQUFgZ725IWOh2ZjJvM-C-jcNedR0mMVfTgLn8QkJ-6nwYeeB8Xywv87ZOZI_EnrbafhF93c72bzBiHY-vAgtB8QQYffAIUcAxBFB2bc6BqPWZuihJQvESC2pXOGXXxJKcms8XGS44bg:1rG0UU:ul2bTEH2yPDgjJsMKh6Blt9tlVZRX_dOUUBJD6DcK5k",
+            "expire_date": "2024-01-03T17:36:18.149Z"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 1,
+        "fields": {
+            "name": "Diretoria De Agropecuária E Agricultura",
+            "slug": "diretoria-de-agropecuaria",
+            "accountable": "",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 2,
+        "fields": {
+            "name": "Secretária Municipal De Saúde",
+            "slug": "secretaria-municipal-de-saude",
+            "accountable": "",
+            "kind": "SE"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 3,
+        "fields": {
+            "name": "Diretoria De Obras E Serviços Públicos",
+            "slug": "diretoria-de-obras-e-servicos",
+            "accountable": "",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 4,
+        "fields": {
+            "name": "Gabinete",
+            "slug": "gabinete",
+            "accountable": "",
+            "kind": "GA"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 5,
+        "fields": {
+            "name": "Diretoria De Assistência Social",
+            "slug": "diretoria-de-assistencia-social",
+            "accountable": "",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 6,
+        "fields": {
+            "name": "Diretoria De Desenvolvimento Econômico",
+            "slug": "diretoria-de-desenvolvimento-economico",
+            "accountable": "",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 7,
+        "fields": {
+            "name": "Diretoria De Informática",
+            "slug": "diretoria-de-informatica",
+            "accountable": "",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 8,
+        "fields": {
+            "name": "Departamento Juridico",
+            "slug": "departamento-juridico",
+            "accountable": "",
+            "kind": "DE"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 9,
+        "fields": {
+            "name": "Diretoria De Esportes",
+            "slug": "diretoria-de-esportes",
+            "accountable": "",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 10,
+        "fields": {
+            "name": "Diretoria De Finanças",
+            "slug": "diretoria-de-financas",
+            "accountable": "",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 11,
+        "fields": {
+            "name": "Diretoria De Meio Ambiente",
+            "slug": "diretoria-de-meio-amibiente",
+            "accountable": "",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 12,
+        "fields": {
+            "name": "Diretoria De Projetos",
+            "slug": "diretoria-de-projetos",
+            "accountable": "",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 13,
+        "fields": {
+            "name": "Diretoria De Turismo",
+            "slug": "diretoria-de-turismo",
+            "accountable": "",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 14,
+        "fields": {
+            "name": "Secretária Municipal De Educação",
+            "slug": "secretaria-municipal-de-educacao",
+            "accountable": "",
+            "kind": "SE"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 15,
+        "fields": {
+            "name": "Departamento De Gestão",
+            "slug": "departamento-de-gestao",
+            "accountable": "",
+            "kind": "DE"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 16,
+        "fields": {
+            "name": "Diretoria De Trânsito",
+            "slug": "diretoria-de-transito",
+            "accountable": "",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 17,
+        "fields": {
+            "name": "Diretoria De Cultura",
+            "slug": "diretoria-de-cultura",
+            "accountable": "",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 50,
+        "fields": {
+            "name": "Diretoria De Recursos Humanos",
+            "slug": "diretoria-de-recursos-humanos",
+            "accountable": "Rh",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.direction",
+        "pk": 51,
+        "fields": {
+            "name": "Diretoria De Comunicação",
+            "slug": "diretoria-de-comunicacao",
+            "accountable": "Comunicação",
+            "kind": "DI"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 1,
+        "fields": {
+            "name": "Dívida Ativa",
+            "slug": "divida-ativa",
+            "accountable": "",
+            "direction": 8,
+            "phone": "35433479",
+            "email": "dividaativa@novohorizonte.sp.gov.br",
+            "address": "Rua 28 de Outubro, 483 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 2,
+        "fields": {
+            "name": "Agricultura",
+            "slug": "agricultura",
+            "accountable": "",
+            "direction": 1,
+            "phone": "35421122",
+            "email": null,
+            "address": "Av. da Saudade, 1141 - Jardim Almici\r\nTelefone: 35431766"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 3,
+        "fields": {
+            "name": "Casa Da Agricultura",
+            "slug": "casa-da-agricultura",
+            "accountable": "",
+            "direction": 1,
+            "phone": "35423222",
+            "email": null,
+            "address": "Av. Coronel Junqueira , 858 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 4,
+        "fields": {
+            "name": "Centro De Convivência Do Idoso",
+            "slug": "centro-de-convivencia-do-idoso",
+            "accountable": "",
+            "direction": 5,
+            "phone": "35421042",
+            "email": null,
+            "address": "Rua Goiás, 470 - Jardim São Vicente"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 5,
+        "fields": {
+            "name": "Centro De Geração De Renda",
+            "slug": "centro-de-geracao-de-renda",
+            "accountable": "",
+            "direction": 5,
+            "phone": "35433300",
+            "email": null,
+            "address": "Rua Manoel Paulino de Oliveira, 436 - Jardim Alvorada"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 6,
+        "fields": {
+            "name": "Conselho Tutelar",
+            "slug": "conselho-tutelar",
+            "accountable": "",
+            "direction": 5,
+            "phone": "35424587",
+            "email": null,
+            "address": "Rua Rodrigues Alves, 745 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 7,
+        "fields": {
+            "name": "Cras",
+            "slug": "cras",
+            "accountable": "",
+            "direction": 5,
+            "phone": "35432140",
+            "email": null,
+            "address": "Rua 28 de Outubro, 373 - Centro\r\nTelefone: 35433177"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 8,
+        "fields": {
+            "name": "Creas",
+            "slug": "creas",
+            "accountable": "",
+            "direction": 5,
+            "phone": "35422845",
+            "email": null,
+            "address": "Av. Jornalista Paulo Falzetta, 139 - Vila Patty"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 9,
+        "fields": {
+            "name": "Dads",
+            "slug": "dads",
+            "accountable": "",
+            "direction": 5,
+            "phone": "35421964",
+            "email": null,
+            "address": "Rua 28 de Outubro, 385 - Centro\r\nTelefone: 35433177"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 10,
+        "fields": {
+            "name": "Projeto Social Esplanada",
+            "slug": "projeto-social-esplanada",
+            "accountable": "",
+            "direction": 5,
+            "phone": "35432233",
+            "email": null,
+            "address": "Rua Araçatuba, 470 - Jardim São José"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 42,
+        "fields": {
+            "name": "Biblioteca",
+            "slug": "biblioteca",
+            "accountable": "",
+            "direction": 17,
+            "phone": "35432038",
+            "email": null,
+            "address": "Rua Tenente Ferreira, 1187 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 43,
+        "fields": {
+            "name": "Centro Cultural",
+            "slug": "centro-cultural",
+            "accountable": "",
+            "direction": 17,
+            "phone": "35432204",
+            "email": null,
+            "address": "Rua Carvalho Leme, 534 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 44,
+        "fields": {
+            "name": "Diretoria De Desenvolvimento Economico",
+            "slug": "diretoria-de-desenvolvimento-economico",
+            "accountable": "",
+            "direction": 6,
+            "phone": "35421450",
+            "email": null,
+            "address": "Rua Carvalho Leme, 534 - Centro\r\nTelefone: 35427701"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 45,
+        "fields": {
+            "name": "Poupatempo",
+            "slug": "poupatempo",
+            "accountable": "",
+            "direction": 6,
+            "phone": "35421336",
+            "email": null,
+            "address": "Rua Sete de Setembro, 736 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 46,
+        "fields": {
+            "name": "Centro De Lazer Do Trabalhador",
+            "slug": "centro-de-lazer-do-trabalhador",
+            "accountable": "",
+            "direction": 9,
+            "phone": "0",
+            "email": null,
+            "address": "Rua Jose Alves do Valle, 454 - Jardim Diogo Castilho"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 47,
+        "fields": {
+            "name": "Almoxarifado Da Saúde",
+            "slug": "almoxarifado-da-saude",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35434715",
+            "email": null,
+            "address": "Av. Coronel Junqueira, 115 - Jardim Aeroporto"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 48,
+        "fields": {
+            "name": "Diretoria De Esportes",
+            "slug": "diretoria-de-esportes",
+            "accountable": "",
+            "direction": 9,
+            "phone": "35433622",
+            "email": null,
+            "address": "Rua Victor Gabarino, 115 - Vila Patty"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 49,
+        "fields": {
+            "name": "Quadra Coberta",
+            "slug": "quadra-coberta",
+            "accountable": "",
+            "direction": 9,
+            "phone": "35421531",
+            "email": null,
+            "address": "Rua Victor Gabarino, 166 - Vila Patty"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 50,
+        "fields": {
+            "name": "Caps",
+            "slug": "caps",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35432512",
+            "email": null,
+            "address": "Rua Antonio Sabino, 1069 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 51,
+        "fields": {
+            "name": "Patrimônio",
+            "slug": "patrimonio",
+            "accountable": "",
+            "direction": 10,
+            "phone": "35432878",
+            "email": null,
+            "address": "Rua Tenente Ferreira, 1187 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 52,
+        "fields": {
+            "name": "Centro De Castração Animal",
+            "slug": "centro-de-castracao-animal",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35434700",
+            "email": null,
+            "address": "Rua Jose Alves do Valle, 188 - Jardim Diogo Castilho"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 53,
+        "fields": {
+            "name": "Tributação",
+            "slug": "tributacao",
+            "accountable": "",
+            "direction": 10,
+            "phone": "35434379",
+            "email": null,
+            "address": "Rua 28 de Outubro, 483 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 54,
+        "fields": {
+            "name": "Fiscalização Tributária",
+            "slug": "fiscalizacao-tributaria",
+            "accountable": "",
+            "direction": 10,
+            "phone": "35434379",
+            "email": null,
+            "address": "Rua 28 de Outubro, 483 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 55,
+        "fields": {
+            "name": "Centro De Especialidades",
+            "slug": "centro-de-especialidades",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35434706",
+            "email": null,
+            "address": "Rua Trajano Machado, 1626 - Vila Patty"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 56,
+        "fields": {
+            "name": "Meio Ambiente",
+            "slug": "meio-ambiente",
+            "accountable": "",
+            "direction": 11,
+            "phone": "35421122",
+            "email": null,
+            "address": "Av. da Saudade, 1141 - Jardim Almici\r\nTelefone: 35431766"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 57,
+        "fields": {
+            "name": "Centro De Especialidades Odontológicas",
+            "slug": "centro-de-especialidades-odontologicas",
+            "accountable": "",
+            "direction": 2,
+            "phone": "0",
+            "email": null,
+            "address": "Rua Bernardino Guerra, 76 - Vila Patty"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 58,
+        "fields": {
+            "name": "Lixão",
+            "slug": "lixao",
+            "accountable": "",
+            "direction": 11,
+            "phone": "35427436",
+            "email": null,
+            "address": "Estrada do Taquaral, s/n"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 59,
+        "fields": {
+            "name": "Centro De Fisioterapia",
+            "slug": "centro-de-fisioterapia",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35433391",
+            "email": null,
+            "address": "Rua Bernadino Guerra, 116 - Vila Patty"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 60,
+        "fields": {
+            "name": "Diosp (barracão)",
+            "slug": "diosp",
+            "accountable": "",
+            "direction": 3,
+            "phone": "35424580",
+            "email": null,
+            "address": "Rua Prudente de Moraes, 369 - Jardim Bauman\r\nTelefone: 35424598"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 61,
+        "fields": {
+            "name": "Centro De Saúde",
+            "slug": "centro-de-saude",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35429922",
+            "email": null,
+            "address": "Rua 7 de Setembro, 1175 - Vila Patty"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 62,
+        "fields": {
+            "name": "Cemitério Municipal",
+            "slug": "cemiterio-municipal",
+            "accountable": "",
+            "direction": 3,
+            "phone": "0",
+            "email": null,
+            "address": "Pça Hermelinda Peres Cardoso de Moraes, S/N - Vila Cardoso"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 63,
+        "fields": {
+            "name": "Ponto De Apoio Ubs São Benedito No Jardim São José",
+            "slug": "ponto-de-apoio-ubs-sao-benedito-no-jardim-sao-jose",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35432563",
+            "email": null,
+            "address": "Rua Alexandre Baraldo, 505 - Jardim São José"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 64,
+        "fields": {
+            "name": "Projeto Teacolher",
+            "slug": "projeto-teacolher",
+            "accountable": "",
+            "direction": 2,
+            "phone": "0",
+            "email": null,
+            "address": "Rua João Minari, 245 - Jardim América"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 65,
+        "fields": {
+            "name": "Sucem",
+            "slug": "sucem",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35434705",
+            "email": null,
+            "address": "AV. Cônego Alfredo Reith, 204 - Vila Patty"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 66,
+        "fields": {
+            "name": "Transporte Da Saúde",
+            "slug": "transporte-da-saude",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35433451",
+            "email": null,
+            "address": "Rua Bernardino Guerra, 110 - Vila Patty"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 67,
+        "fields": {
+            "name": "Diretoria De Obras",
+            "slug": "diretoria-de-obras",
+            "accountable": "",
+            "direction": 3,
+            "phone": "35422508",
+            "email": null,
+            "address": "Rua Jose Alves do Valle, 190 - Jardim Diogo Castilho"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 68,
+        "fields": {
+            "name": "Ubs Alvorada",
+            "slug": "ubs-alvorada",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35423464",
+            "email": null,
+            "address": "Rua Antonio Pereira Moutinho, 393 - Jardim Alvorada"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 69,
+        "fields": {
+            "name": "Ubs Central",
+            "slug": "ubs-central",
+            "accountable": "",
+            "direction": 2,
+            "phone": "3542-0401",
+            "email": null,
+            "address": "Rua Carvalho Leme, 362 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 70,
+        "fields": {
+            "name": "Ubs Santa Clara",
+            "slug": "ubs-santa-clara",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35424562",
+            "email": null,
+            "address": "Rua Urupês, 612 - Jardim Santa Clara"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 71,
+        "fields": {
+            "name": "Ubs São Benedito",
+            "slug": "ubs-sao-benedito",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35424428",
+            "email": null,
+            "address": "AV. Antonio Pedro Tohmitão, 189 - Jardim São Benedito"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 72,
+        "fields": {
+            "name": "Ubs São Vicente",
+            "slug": "ubs-sao-vicente",
+            "accountable": "",
+            "direction": 2,
+            "phone": "35423699",
+            "email": null,
+            "address": "Rua Goiás, 490 - Jardim São Vicente"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 73,
+        "fields": {
+            "name": "Casa Do Turismo Administrativo (clube De Rodeio)",
+            "slug": "casa-do-turismo-adm",
+            "accountable": "",
+            "direction": 13,
+            "phone": "0",
+            "email": null,
+            "address": "Rua Araçatuba, 5000 - Jardim São Jose"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 74,
+        "fields": {
+            "name": "Setor De Convênios",
+            "slug": "setor-de-convenios",
+            "accountable": "",
+            "direction": 15,
+            "phone": "35434004",
+            "email": null,
+            "address": "Rua José Alves do Valle, 190 - Jardim Diogo Castilho"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 75,
+        "fields": {
+            "name": "Diretoria De Proj Post E Iluminação Pública",
+            "slug": "diretoria-de-proj-post-e-iluminacao-publica",
+            "accountable": "",
+            "direction": 12,
+            "phone": "35432327",
+            "email": null,
+            "address": "Rua Jose Alves do Valle, 190 - Jardim Diogo Castilho"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 76,
+        "fields": {
+            "name": "Unidade Gestora De Trânsito",
+            "slug": "unidade-gestora-de-transito",
+            "accountable": "",
+            "direction": 16,
+            "phone": "35428024",
+            "email": null,
+            "address": "Rua São José, 593 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 77,
+        "fields": {
+            "name": "Cozinha Piloto",
+            "slug": "cozinha-piloto",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35424452",
+            "email": null,
+            "address": "Rua Bernardino Guerra, 96 - Vila Patty"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 78,
+        "fields": {
+            "name": "Turismo",
+            "slug": "turismo",
+            "accountable": "",
+            "direction": 13,
+            "phone": "0",
+            "email": null,
+            "address": "Pça Dr Euclydes Cardoso Castilho, 69 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 79,
+        "fields": {
+            "name": "Bombeiros",
+            "slug": "bombeiros",
+            "accountable": "",
+            "direction": 4,
+            "phone": "35423510",
+            "email": null,
+            "address": "Av. da Saudade, 1091 - Jardim Almicci"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 80,
+        "fields": {
+            "name": "Creche Escola Vereador Jamil Wady Saúd",
+            "slug": "creche-escola-vereador-jamil-wady-saud",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35421894",
+            "email": null,
+            "address": "Rua Deonice Santana dos Santos, 54 - Jardim São José"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 81,
+        "fields": {
+            "name": "Cejusc",
+            "slug": "cejusc",
+            "accountable": "",
+            "direction": 4,
+            "phone": "35427363",
+            "email": null,
+            "address": "Rua Cesário de Castilho, 793 -  Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 82,
+        "fields": {
+            "name": "Creche Maria Virginia Correa De Godoi",
+            "slug": "creche-maria-virginia-correa-de-godoi",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35431108",
+            "email": null,
+            "address": "Rua Urupês, 791 - Jardim Simpatia"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 83,
+        "fields": {
+            "name": "Creche Escola Julia Gabriel Eid",
+            "slug": "creche-escola-julia-gabriel-eid",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35421476",
+            "email": null,
+            "address": "Rua Nicolau Longhi, 428 - Jardim Popular"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 84,
+        "fields": {
+            "name": "Emei Leonina Baraldo Mansur",
+            "slug": "emei-leonina-baraldo-mansur",
+            "accountable": "",
+            "direction": 14,
+            "phone": "0",
+            "email": null,
+            "address": "Rua Pará, 846 - Vila Bauman"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 85,
+        "fields": {
+            "name": "Creche Rauf Nicolau Eid",
+            "slug": "creche-raul-nicolau-eid",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35421914",
+            "email": null,
+            "address": "Rua Amalia Mestriner Magri, 610"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 86,
+        "fields": {
+            "name": "Escola Manoel Roque",
+            "slug": "escola-manoel-roque",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35411108",
+            "email": null,
+            "address": "Rua Bandeirantes, s/n - Vale Formoso"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 87,
+        "fields": {
+            "name": "Emef Maria Jose De Oliveira",
+            "slug": "emef-maria-jose-de-oliveira",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35421282",
+            "email": null,
+            "address": "Rua Santos Fonseca, 973 - Centro\r\nTelefone: 35422492"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 88,
+        "fields": {
+            "name": "Emef Moacyr De Freitas",
+            "slug": "emef-moacyr-de-freitas",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35423546",
+            "email": null,
+            "address": "Rua Tapuias, 743 - Jardim São Vicente"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 89,
+        "fields": {
+            "name": "Escola Nilva Dalbelo De Lima",
+            "slug": "escola-nilva-dalbelo-de-lima",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35421055",
+            "email": null,
+            "address": "Av. Rosa Tiozzi Roncoleta, 420 - Izaltina"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 90,
+        "fields": {
+            "name": "Emei Roque De Felipe",
+            "slug": "emei-roque-de-felipe",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35431499",
+            "email": null,
+            "address": "Rua Araçatuba, 440 - Jardim São José"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 91,
+        "fields": {
+            "name": "Escola Salete Aparecida Laude (pedagógico)",
+            "slug": "escola-salete-aparecida-laude-pedagogico",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35431620",
+            "email": null,
+            "address": "Av. da Saudade, 955 - Jardim Almici"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 92,
+        "fields": {
+            "name": "Escola Salete Aparecida Laude (projeto)",
+            "slug": "escola-salete-aparecida-laude-projeto",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35421185",
+            "email": null,
+            "address": "Rua Lourival Alonso, 70 - Jardim das Acacias"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 93,
+        "fields": {
+            "name": "Secretaria Da Educação",
+            "slug": "secretaria-da-educacao",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35421196",
+            "email": null,
+            "address": "Rua 28 de outubro, 483 - Centro\r\nTelefone: 35421198"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 94,
+        "fields": {
+            "name": "Setor De Transporte De Alunos",
+            "slug": "setor-de-transporte-de-alunos",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35433317",
+            "email": null,
+            "address": "Rua Prudente de Moraes, 369 - Jardim Bauman"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 95,
+        "fields": {
+            "name": "Creche São Vicente",
+            "slug": "creche-sao-vicente",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35424612",
+            "email": null,
+            "address": "Av. Conego Alfredo Reith, 990 - Jardim São Vicente de Paulo"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 96,
+        "fields": {
+            "name": "Emef Francisco Alvares Florence",
+            "slug": "emef-francisco-alvares-florence",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35421107",
+            "email": null,
+            "address": "Alameda Roberto Della Togna, 1233 - Vila Patty"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 97,
+        "fields": {
+            "name": "Emei Antonia Sartorão Boschezzi 2",
+            "slug": "emei-antonia-sartorao-boschezzi-2",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35431833",
+            "email": null,
+            "address": "Rua Nicolau Longhi, 360 - Jardim Popular"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 98,
+        "fields": {
+            "name": "Emei Antonia Sartorão Boschezzi",
+            "slug": "emei-antonia-sartorao-boschezzi",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35423959",
+            "email": null,
+            "address": "Rua Nicolau Longhi, 360 - Jardim Popular"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 99,
+        "fields": {
+            "name": "Emei Carolina Botura",
+            "slug": "emei-carolina-botura",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35427396",
+            "email": null,
+            "address": "Rua Pindorama, 131 - Jardim Santa Clara"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 100,
+        "fields": {
+            "name": "Emei Deamantina Calisto Da Silva",
+            "slug": "emei-deamantina-calisto-da-silva",
+            "accountable": "",
+            "direction": 14,
+            "phone": "0",
+            "email": null,
+            "address": "Rua Antonio Flamiano, 233 - Jardim Cecap"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 101,
+        "fields": {
+            "name": "Emef Hebe De Almeida Leite Cardoso",
+            "slug": "emef-hebe-de-almeida-leite-cardoso",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35423414",
+            "email": null,
+            "address": "Av. da Saudade, 955 - Jardim Almici \r\nTelefones: 35423527 - 35423668"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 102,
+        "fields": {
+            "name": "Emei Iramaia Aparecida Jardim Biasi",
+            "slug": "emei-iramaia-aparecida-jardim-biasi",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35430678",
+            "email": null,
+            "address": "Rua Guaranis, 637 - Jardim São Vicente"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 103,
+        "fields": {
+            "name": "Cme Janimar Alves Do Valle Andriotti",
+            "slug": "cme-janimar-alves-do-valle-andriotti",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35421013",
+            "email": null,
+            "address": "Rua Sete de Setembro, 659 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 132,
+        "fields": {
+            "name": "Emei Jose Baraldo",
+            "slug": "emei-jose-baraldo",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35421112",
+            "email": null,
+            "address": "Rua João Minari, 150 - Jardim America"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 133,
+        "fields": {
+            "name": "Emef Jose Luis Tomazi Ii",
+            "slug": "emef-jose-luis-tomazi-ii",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35428026",
+            "email": null,
+            "address": "Av. Domingos Baraldo, 1361 - Jardim Santa Clara"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 134,
+        "fields": {
+            "name": "Emef Jose Luis Tomazi I",
+            "slug": "emef-jose-luis-tomazi-i",
+            "accountable": "",
+            "direction": 14,
+            "phone": "35421001",
+            "email": null,
+            "address": "Rua Pindorama, 399 - Jardim Santa Clara"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 135,
+        "fields": {
+            "name": "Diretoria De Recursos Humanos",
+            "slug": "diretoria-de-recursos-humanos",
+            "accountable": "Rh",
+            "direction": 50,
+            "phone": "35439000",
+            "email": "pinheiro.drhu@novohorizonte.sp.gov.br",
+            "address": "Praça Dr. Euclydes Cardoso Castilho, nº 185 – Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 136,
+        "fields": {
+            "name": "Diretoria De Comunicação",
+            "slug": "diretoria-de-comunicacao",
+            "accountable": "Comunicação",
+            "direction": 51,
+            "phone": "3543-9006",
+            "email": "comunicacao@novohorizonte.sp.gov.br",
+            "address": "Praça Dr. Euclides C. Castilho, 185 - Centro"
+        }
+    },
+    {
+        "model": "dashboard.sector",
+        "pk": 137,
+        "fields": {
+            "name": "Finanças",
+            "slug": "financas",
+            "accountable": "Renato Tomazela",
+            "direction": 10,
+            "phone": "35439000",
+            "email": null,
+            "address": "Praça Dr. Euclides Cardoso Castilho, 185, Centro"
+        }
+    },
+    {
+        "model": "dashboard.bidding",
+        "pk": 1,
+        "fields": {
+            "name": "Processo Licitatório 344/23",
+            "slug": "processo-licitatorio-34423",
+            "status": "1",
+            "date": "2024-03-31"
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 1,
+        "fields": {
+            "name": "ANTENA/RÁDIO UNIFI AP PRO",
+            "slug": "antenaradio-unifi-ap-pro",
+            "status": "1",
+            "bidding": 1,
+            "price": "1200.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 2,
+        "fields": {
+            "name": "FONTE POE 48 V 0.5 AMP PARA UNIFI",
+            "slug": "fonte-poe-48-v-05-amp-para-unifi",
+            "status": "1",
+            "bidding": 1,
+            "price": "130.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 3,
+        "fields": {
+            "name": "FONTE POE PARA RÁDIO NANOSTATION GIGABIT DA MA",
+            "slug": "fonte-poe-para-radio-nanostation-gigabit-da-ma",
+            "status": "1",
+            "bidding": 1,
+            "price": "110.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 4,
+        "fields": {
+            "name": "FONTE POE PARA RÁDIO NANOSTATION M5 DA MARCA U",
+            "slug": "fonte-poe-para-radio-nanostation-m5-da-marca-u",
+            "status": "1",
+            "bidding": 1,
+            "price": "80.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 5,
+        "fields": {
+            "name": "ROUTEBOARD MIKROTIK HAP LITE - RB941-2ND-TC",
+            "slug": "routeboard-mikrotik-hap-lite-rb941-2nd-tc",
+            "status": "1",
+            "bidding": 1,
+            "price": "200.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 6,
+        "fields": {
+            "name": "FONTE ATX 500W REAL",
+            "slug": "fonte-atx-500w-real",
+            "status": "1",
+            "bidding": 1,
+            "price": "280.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 7,
+        "fields": {
+            "name": "GABINETE MID TOWER COM 3 VENTILADORES",
+            "slug": "gabinete-mid-tower-com-3-ventiladores",
+            "status": "1",
+            "bidding": 1,
+            "price": "480.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 8,
+        "fields": {
+            "name": "PLACA DE VÍDEO, 12GB, GDDR6; 02 (DUAS) VENTOINHAS",
+            "slug": "placa-de-video-12gb-gddr6-02-duas-ventoinhas",
+            "status": "1",
+            "bidding": 1,
+            "price": "2150.00",
+            "readjustment": 0.0,
+            "supplier": 1
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 9,
+        "fields": {
+            "name": "ESTABILIZADOR 2000 VA",
+            "slug": "estabilizador-2000-va",
+            "status": "1",
+            "bidding": 1,
+            "price": "750.26",
+            "readjustment": 0.0,
+            "supplier": 2
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 10,
+        "fields": {
+            "name": "ESTABILIZADOR 500 VA",
+            "slug": "estabilizador-500-va",
+            "status": "1",
+            "bidding": 1,
+            "price": "202.32",
+            "readjustment": 0.0,
+            "supplier": 2
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 11,
+        "fields": {
+            "name": "NOBREAK BIVOLT 600 VA",
+            "slug": "nobreak-bivolt-600-va",
+            "status": "1",
+            "bidding": 1,
+            "price": "435.00",
+            "readjustment": 0.0,
+            "supplier": 2
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 12,
+        "fields": {
+            "name": "NOBREAK 800 VA BIVOLT AUTOMÁTICO",
+            "slug": "nobreak-800-va-bivolt-automatico",
+            "status": "1",
+            "bidding": 1,
+            "price": "506.91",
+            "readjustment": 0.0,
+            "supplier": 2
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 13,
+        "fields": {
+            "name": "ALICATE DE CRIMPAGEM P/ CABEAMENTO DE REDE RJ4",
+            "slug": "alicate-de-crimpagem-p-cabeamento-de-rede-rj4",
+            "status": "1",
+            "bidding": 1,
+            "price": "19.52",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 14,
+        "fields": {
+            "name": "BATERIA PARA NOBREAK 12V - 7AH - SELADA",
+            "slug": "bateria-para-nobreak-12v-7ah-selada",
+            "status": "1",
+            "bidding": 1,
+            "price": "97.80",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 15,
+        "fields": {
+            "name": "BATERIA PARA NOBREAK ACBA 120800 12V 18AH REGUL",
+            "slug": "bateria-para-nobreak-acba-120800-12v-18ah-regul",
+            "status": "1",
+            "bidding": 1,
+            "price": "318.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 16,
+        "fields": {
+            "name": "BATERIA PLACA MÃE",
+            "slug": "bateria-placa-mae",
+            "status": "1",
+            "bidding": 1,
+            "price": "0.80",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 17,
+        "fields": {
+            "name": "CABO EXTENSOR USB",
+            "slug": "cabo-extensor-usb",
+            "status": "1",
+            "bidding": 1,
+            "price": "5.80",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 18,
+        "fields": {
+            "name": "CABO HDMI PARA HDI",
+            "slug": "cabo-hdmi-para-hdi",
+            "status": "1",
+            "bidding": 1,
+            "price": "10.30",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 19,
+        "fields": {
+            "name": "CABO USB 2.0 PARA IMPRESSORA",
+            "slug": "cabo-usb-20-para-impressora",
+            "status": "1",
+            "bidding": 1,
+            "price": "5.10",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 20,
+        "fields": {
+            "name": "CABO VGA PARA MONITOR",
+            "slug": "cabo-vga-para-monitor",
+            "status": "1",
+            "bidding": 1,
+            "price": "9.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 21,
+        "fields": {
+            "name": "DESENGRIPANTE",
+            "slug": "desengripante",
+            "status": "1",
+            "bidding": 1,
+            "price": "7.96",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 22,
+        "fields": {
+            "name": "DVD-R",
+            "slug": "dvd-r",
+            "status": "1",
+            "bidding": 1,
+            "price": "0.95",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 23,
+        "fields": {
+            "name": "FONTE UNIVERSAL P/ NOTEBOOK",
+            "slug": "fonte-universal-p-notebook",
+            "status": "1",
+            "bidding": 1,
+            "price": "33.63",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 24,
+        "fields": {
+            "name": "LEITOR DE CÓDIGO DE BARRAS COM PEDESTAL",
+            "slug": "leitor-de-codigo-de-barras-com-pedestal",
+            "status": "1",
+            "bidding": 1,
+            "price": "84.01",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 25,
+        "fields": {
+            "name": "PARAFUSO COM PORCA GAIOLA",
+            "slug": "parafuso-com-porca-gaiola",
+            "status": "1",
+            "bidding": 1,
+            "price": "0.91",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 26,
+        "fields": {
+            "name": "PLACA DE VÍDEO 1GB, GDDR3, 64 BITS",
+            "slug": "placa-de-video-1gb-gddr3-64-bits",
+            "status": "1",
+            "bidding": 1,
+            "price": "115.50",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 27,
+        "fields": {
+            "name": "PLACA USB 3.0 PCI EXPRESS 1X PC 4 PORTAS SAÍDAS",
+            "slug": "placa-usb-30-pci-express-1x-pc-4-portas-saidas",
+            "status": "1",
+            "bidding": 1,
+            "price": "70.10",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 28,
+        "fields": {
+            "name": "SPRAY LIMPA CONTATO - 300ML",
+            "slug": "spray-limpa-contato-300ml",
+            "status": "1",
+            "bidding": 1,
+            "price": "11.44",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 29,
+        "fields": {
+            "name": "FILTRO DE LINHA 5 TOMADAS PADRÃO NOVO COM 2 ME",
+            "slug": "filtro-de-linha-5-tomadas-padrao-novo-com-2-me",
+            "status": "1",
+            "bidding": 1,
+            "price": "41.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 30,
+        "fields": {
+            "name": "FILTRO DE LINHA 5 TOMADAS PADRÃO NOVO COM 5 ME",
+            "slug": "filtro-de-linha-5-tomadas-padrao-novo-com-5-me",
+            "status": "1",
+            "bidding": 1,
+            "price": "52.08",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 31,
+        "fields": {
+            "name": "PINO ADAPTADOR PADRÃO ANTIGO PARA PADRÃO NOVO",
+            "slug": "pino-adaptador-padrao-antigo-para-padrao-novo",
+            "status": "1",
+            "bidding": 1,
+            "price": "5.80",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 32,
+        "fields": {
+            "name": "PINO ADAPTADOR PADRÃO NOVO APRA PADRÃO ANTIGO",
+            "slug": "pino-adaptador-padrao-novo-apra-padrao-antigo",
+            "status": "1",
+            "bidding": 1,
+            "price": "5.80",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 33,
+        "fields": {
+            "name": "CADO DE REDE UTP",
+            "slug": "cado-de-rede-utp",
+            "status": "1",
+            "bidding": 1,
+            "price": "1.50",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 34,
+        "fields": {
+            "name": "CADO ADAPTADOR DE REDE USB 3.0 PARA RJ45 F3, 10/1",
+            "slug": "cado-adaptador-de-rede-usb-30-para-rj45-f3-101",
+            "status": "1",
+            "bidding": 1,
+            "price": "40.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 35,
+        "fields": {
+            "name": "CABO INTERNET CAT6 UTP 4P",
+            "slug": "cabo-internet-cat6-utp-4p",
+            "status": "1",
+            "bidding": 1,
+            "price": "3.50",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 36,
+        "fields": {
+            "name": "CABO DE REDE PRETO CAT6 UTP CAIXA COM 305 METRO",
+            "slug": "cabo-de-rede-preto-cat6-utp-caixa-com-305-metro",
+            "status": "1",
+            "bidding": 1,
+            "price": "950.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 37,
+        "fields": {
+            "name": "CABO DE REDE UTP CAT5E - 305 METROS",
+            "slug": "cabo-de-rede-utp-cat5e-305-metros",
+            "status": "1",
+            "bidding": 1,
+            "price": "460.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 38,
+        "fields": {
+            "name": "CONECTOR MODULAR PLUG RJ45 CAT6",
+            "slug": "conector-modular-plug-rj45-cat6",
+            "status": "1",
+            "bidding": 1,
+            "price": "0.80",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 39,
+        "fields": {
+            "name": "EMENDA RJ45",
+            "slug": "emenda-rj45",
+            "status": "1",
+            "bidding": 1,
+            "price": "1.50",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 40,
+        "fields": {
+            "name": "JACK RJ45 KEYSTONE",
+            "slug": "jack-rj45-keystone",
+            "status": "1",
+            "bidding": 1,
+            "price": "12.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 41,
+        "fields": {
+            "name": "PLACA DE REDE PCI-E 10/100/1000 MBPS",
+            "slug": "placa-de-rede-pci-e-101001000-mbps",
+            "status": "1",
+            "bidding": 1,
+            "price": "85.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 42,
+        "fields": {
+            "name": "PLUG RJ45",
+            "slug": "plug-rj45",
+            "status": "1",
+            "bidding": 1,
+            "price": "1.00",
+            "readjustment": 0.0,
+            "supplier": 3
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 43,
+        "fields": {
+            "name": "CABO ADAPTADOR COM PLUG, 2XP2",
+            "slug": "cabo-adaptador-com-plug-2xp2-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "17.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 44,
+        "fields": {
+            "name": "HEADSET - 20 HZ",
+            "slug": "headset-20-hz-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "17.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 45,
+        "fields": {
+            "name": "MICROFONE",
+            "slug": "microfone-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "189.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 46,
+        "fields": {
+            "name": "WEBCAM",
+            "slug": "webcam-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "161.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 47,
+        "fields": {
+            "name": "HD SSD 480 GB",
+            "slug": "hd-ssd-480-gb-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "288.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 48,
+        "fields": {
+            "name": "CASE DE GAVETA PARA HD EXTERNO 2.5",
+            "slug": "case-de-gaveta-para-hd-externo-2-5-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "94.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 49,
+        "fields": {
+            "name": "PEN DRIVE 32GB",
+            "slug": "pen-drive-32gb-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "40.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 50,
+        "fields": {
+            "name": "SSD 960 GB",
+            "slug": "ssd-960-gb-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "394.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 51,
+        "fields": {
+            "name": "SSD EXTERNO 1TB PORTATIL",
+            "slug": "ssd-externo-1tb-portatil-4",
+            "status": "1",
+            "bidding": 1,
+            "price": "526.00",
+            "readjustment": 0.0,
+            "supplier": 4
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 52,
+        "fields": {
+            "name": "SWITCH 10/100/1000 MBPS 5 PORTAS",
+            "slug": "switch-10-100-1000-mbps-5-portas-5",
+            "status": "1",
+            "bidding": 1,
+            "price": "96.00",
+            "readjustment": 0.0,
+            "supplier": 5
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 53,
+        "fields": {
+            "name": "SWITCH 10/100/1000 - 16 PORTAS",
+            "slug": "switch-10-100-1000-16-portas-5",
+            "status": "1",
+            "bidding": 1,
+            "price": "329.00",
+            "readjustment": 0.0,
+            "supplier": 5
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 54,
+        "fields": {
+            "name": "SWITCH 10/100/1000 - 8 PORTAS",
+            "slug": "switch-10-100-1000-8-portas-5",
+            "status": "1",
+            "bidding": 1,
+            "price": "96.00",
+            "readjustment": 0.0,
+            "supplier": 5
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 55,
+        "fields": {
+            "name": "SWITCH 28 PORTAS 10/100/1000",
+            "slug": "switch-28-portas-10-100-1000-5",
+            "status": "1",
+            "bidding": 1,
+            "price": "1550.00",
+            "readjustment": 0.0,
+            "supplier": 5
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 56,
+        "fields": {
+            "name": "TELA NT140FHM-N44 V8.1 PARA NOTEBOOK VAIO FE14 VJFE42F11X",
+            "slug": "tela-nt140fhm-n44-v8-1-para-notebook-vaio-fe1-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "646.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 57,
+        "fields": {
+            "name": "BATERIA 634477 PARA NOTEBOOK VAIO FE14 VJFE42F11X",
+            "slug": "bateria-634477-para-notebook-vaio-fe14-vjfe42-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "220.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 58,
+        "fields": {
+            "name": "FONTE S29A00 1.2A SAÍDA 19V 2.1A PARA NOTEBOOK VAIO FE14 VJFE42F11X",
+            "slug": "fonte-s29a00-1-2a-saida-19v-2-1a-para-noteboo-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "135.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 59,
+        "fields": {
+            "name": "TECLADO PARA NOTEBOOK ACER ASPIRE 4749-6871",
+            "slug": "teclado-para-notebook-acer-aspire-4749-6871-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "114.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 60,
+        "fields": {
+            "name": "TECLADO PARA NOTEBOOK ACER ASPIRE V5-471-6677 MS2360",
+            "slug": "teclado-para-notebook-acer-aspire-v5-471-6677-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "114.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 61,
+        "fields": {
+            "name": "TECLADO PARA NOTEBOOK LENOVO IDEAPAD 330 81FE0002BR",
+            "slug": "teclado-para-notebook-lenovo-ideapad-330-81fe-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "114.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 62,
+        "fields": {
+            "name": "TELA PARA NOTEBOOK  LENOVO G50-80 MODELO 80R0",
+            "slug": "tela-para-notebook-lenovo-g50-80-modelo-80r0-6",
+            "status": "1",
+            "bidding": 1,
+            "price": "114.00",
+            "readjustment": 0.0,
+            "supplier": 6
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 63,
+        "fields": {
+            "name": "NOTEBOOK INTEL CORE I3 8GB SSD 256 TELA 15.6 POLEGADAS",
+            "slug": "notebook-intel-core-i3-8gb-ssd-256-tela-15-6--7",
+            "status": "1",
+            "bidding": 1,
+            "price": "2282.68",
+            "readjustment": 0.0,
+            "supplier": 7
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 64,
+        "fields": {
+            "name": "NOTEBOOK INTEL CORE I5 8GB 1 TB TELA 15.6 POLEGADAS",
+            "slug": "notebook-intel-core-i5-8gb-1-tb-tela-15-6-pol-7",
+            "status": "1",
+            "bidding": 1,
+            "price": "2530.00",
+            "readjustment": 0.0,
+            "supplier": 7
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 65,
+        "fields": {
+            "name": "MONITOR LED 21,5 POLEGADAS INTELLINCY / LED-2105",
+            "slug": "monitor-led-215-polegadas-intellincy-led-2105-8",
+            "status": "1",
+            "bidding": 1,
+            "price": "289.90",
+            "readjustment": 0.0,
+            "supplier": 8
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 66,
+        "fields": {
+            "name": "APARELHO TELEFONICO COM FIO",
+            "slug": "aparelho-telefonico-com-fio-9",
+            "status": "1",
+            "bidding": 1,
+            "price": "60.00",
+            "readjustment": 0.0,
+            "supplier": 9
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 67,
+        "fields": {
+            "name": "APARELHO TELEFONICO SEM FIO",
+            "slug": "aparelho-telefonico-sem-fio-9",
+            "status": "1",
+            "bidding": 1,
+            "price": "126.05",
+            "readjustment": 0.0,
+            "supplier": 9
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 68,
+        "fields": {
+            "name": "Memória RAM 4GB DDR4 2400 Mhz",
+            "slug": "memoria-ram-4gb-ddr4-2400-mhz-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "65.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 69,
+        "fields": {
+            "name": "Cabo de força para pc",
+            "slug": "cabo-de-forca-para-pc-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "6.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 70,
+        "fields": {
+            "name": "Fonte ATX 230 W para computador",
+            "slug": "fonte-atx-230-w-para-computador-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "60.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 71,
+        "fields": {
+            "name": "Gabinete Torre Atx para Computador com 1 baia externa e 2 baias internas ",
+            "slug": "gabinete-torre-atx-para-computador-com-1-baia-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "81.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 72,
+        "fields": {
+            "name": "HD SSD 240 GB",
+            "slug": "hd-ssd-240-gb-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "179.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 73,
+        "fields": {
+            "name": "MEMÓRIA RAM 8GB DDR4 2666 MHZ",
+            "slug": "memoria-ram-8gb-ddr4-2666-mhz-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "120.01",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 74,
+        "fields": {
+            "name": "MOUSE OPTICO USB ",
+            "slug": "mouse-optico-usb-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "6.50",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 75,
+        "fields": {
+            "name": "MOUSE PAD",
+            "slug": "mouse-pad-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "5.99",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 76,
+        "fields": {
+            "name": "par de Caixas de som para computador",
+            "slug": "par-de-caixas-de-som-para-computador-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "28.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 77,
+        "fields": {
+            "name": "Placa Mãe Gigabyte H510m H  Soquete Lga 1200",
+            "slug": "placa-mae-gigabyte-h510m-h-soquete-lga-1200-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "540.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 78,
+        "fields": {
+            "name": "Placa Mãe Gigabyte H610M H DDR4 Intel Soquete LGA 1700",
+            "slug": "placa-mae-gigabyte-h610m-h-ddr4-intel-soquete-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "610.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 79,
+        "fields": {
+            "name": "Processador Cpu Intel Core i3-10100 3.6 GHZ LGA 1200 6 MB",
+            "slug": "processador-cpu-intel-core-i3-10100-3-6-ghz-l-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "599.90",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 80,
+        "fields": {
+            "name": "Processador cpu Intel core i5-11400 2.6 ghz LGA 1200 12mb",
+            "slug": "processador-cpu-intel-core-i5-11400-2-6-ghz-l-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "850.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 81,
+        "fields": {
+            "name": "Processador Intel Core i3-12100 3.3GHz LGA 1700 12MB",
+            "slug": "processador-intel-core-i3-12100-3-3ghz-lga-17-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "740.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 82,
+        "fields": {
+            "name": "Processador Intel Core i5-12400 2.5GHz LGA 1700 18MB",
+            "slug": "processador-intel-core-i5-12400-2-5ghz-lga-17-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "760.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "dashboard.material",
+        "pk": 83,
+        "fields": {
+            "name": "Teclado USB para computador",
+            "slug": "teclado-usb-para-computador-10",
+            "status": "1",
+            "bidding": 1,
+            "price": "24.00",
+            "readjustment": 0.0,
+            "supplier": 10
+        }
+    },
+    {
+        "model": "authenticate.professionaluser",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$XhwYwwnVuDskcXQs2PJLRv$GJQFhPOFYg7GQgDJt6e/QbnuWkUvNVriMC9LJ384zSU=",
+            "last_login": "2024-04-04T18:22:36.376Z",
+            "first_name": "Administrador",
+            "last_name": "Informática",
+            "username": "administrator",
+            "registration": null,
+            "slug": "7f23b216-c45e-41f8-9ed2-0d6cb1b0038f",
+            "email": "ti@novohorizonte.sp.gov.br",
+            "is_active": true,
+            "is_tech": true,
+            "is_admin": true,
+            "first_login": false,
+            "created_at": "2023-11-28T16:08:17.528Z",
+            "updated_at": "2024-04-04T18:22:36.376Z"
+        }
+    },
+    {
+        "model": "authenticate.professionaluser",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$KkehGyu8ewexsuHxD3dREp$E/RCVbeF8lw75aiMqU30Y5ek79fAQfLsgksWM8GgBic=",
+            "last_login": "2023-12-19T14:28:24.069Z",
+            "first_name": "Diogo",
+            "last_name": "Mazeto",
+            "username": "diogo.mazeto",
+            "registration": null,
+            "slug": "a35c6f8f-3fe8-48e8-a31d-4b1050e8ee05",
+            "email": "diogo.l.mazeto@gmail.com",
+            "is_active": false,
+            "is_tech": false,
+            "is_admin": false,
+            "first_login": false,
+            "created_at": "2023-12-19T12:51:48.456Z",
+            "updated_at": "2023-12-28T22:25:36.733Z"
+        }
+    },
+    {
+        "model": "authenticate.professionaluser",
+        "pk": 3,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$AyJxrrQ9hz5wpy20rVuFIw$g4GQG3aLrqli0oypOrZH1AfUTplOvYW3qbuVa+G6E5k=",
+            "last_login": "2024-06-27T14:00:58.293Z",
+            "first_name": "Ricardo",
+            "last_name": "Luis Barbosa Pereira",
+            "username": "patrese",
+            "registration": "4379",
+            "slug": "c7e015ab-637d-4b04-81b1-9bdc2ef33a06",
+            "email": "patresio@gmail.com",
+            "is_active": true,
+            "is_tech": true,
+            "is_admin": true,
+            "first_login": false,
+            "created_at": "2023-12-19T12:56:24.808Z",
+            "updated_at": "2024-06-27T14:00:58.293Z"
+        }
+    },
+    {
+        "model": "authenticate.professionaluser",
+        "pk": 35,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$y63rYMbtU3efxnl8UL1kJh$NK8NaTzw+kwXULSaZ5DH4h+Nq5RmmI8H3fhKo22LQZE=",
+            "last_login": "2024-05-06T12:47:28.894Z",
+            "first_name": "Rafael",
+            "last_name": "Henrique Roncoleta",
+            "username": "rafael.roncoleta",
+            "registration": null,
+            "slug": "ffe4e9a9-d2bf-422a-8f1c-c0982979f3ff",
+            "email": "rafaelnh089@hotmail.com",
+            "is_active": true,
+            "is_tech": false,
+            "is_admin": false,
+            "first_login": false,
+            "created_at": "2023-12-20T10:35:24.003Z",
+            "updated_at": "2024-05-06T12:47:28.895Z"
+        }
+    },
+    {
+        "model": "authenticate.professionaluser",
+        "pk": 36,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$buEGNSx1RtFHSMxu0x2mt0$5GVdMZvJP4MZdeGiMyuO9lQ0FvsFUFnNMcudtBSTUSw=",
+            "last_login": "2024-06-17T13:10:24.254Z",
+            "first_name": "Jose",
+            "last_name": "Luis H. Martins",
+            "username": "zmartins",
+            "registration": "2202",
+            "slug": "9d05a487-b25d-46a9-be45-c7495e75c894",
+            "email": "jhespanhol5@gmail.com",
+            "is_active": true,
+            "is_tech": true,
+            "is_admin": true,
+            "first_login": false,
+            "created_at": "2023-12-20T10:35:54.625Z",
+            "updated_at": "2024-06-17T13:10:24.254Z"
+        }
+    },
+    {
+        "model": "authenticate.professionaluser",
+        "pk": 37,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$KBeFoHK0UFzoY10Isny3wn$2aTIUupwvww8c0auePynzwF4HQVY57GOeWgjfSRZ8vw=",
+            "last_login": "2023-12-20T16:05:43.148Z",
+            "first_name": "Emerson",
+            "last_name": "Garcia Cardoso",
+            "username": "emerson",
+            "registration": "2742",
+            "slug": "573d0e4b-e2c9-4835-948f-4975a13c29a6",
+            "email": "egcardosonh@gmail.com",
+            "is_active": true,
+            "is_tech": true,
+            "is_admin": true,
+            "first_login": false,
+            "created_at": "2023-12-20T16:03:16.100Z",
+            "updated_at": "2023-12-20T16:05:43.148Z"
+        }
+    },
+    {
+        "model": "authenticate.professionaluser",
+        "pk": 38,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$FKSu2llzJtiY26Ej7fxwBr$rIcYtCy7/420bZepKO9NlvI+NAvzvpFTRWWkMFjZCps=",
+            "last_login": "2024-06-26T16:43:45.133Z",
+            "first_name": "Luiz",
+            "last_name": "Ricardo Baptista de Godoy",
+            "username": "luiz",
+            "registration": "4380",
+            "slug": "f28205f6-5b55-4831-9f62-c28fe24f23fa",
+            "email": "luizricardogodoy@gmail.com",
+            "is_active": true,
+            "is_tech": true,
+            "is_admin": false,
+            "first_login": false,
+            "created_at": "2023-12-20T17:33:52.339Z",
+            "updated_at": "2024-06-26T16:43:45.134Z"
+        }
+    },
+    {
+        "model": "authenticate.professionaluser",
+        "pk": 39,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$0FhiO3GhwBUii8oMelg9iv$DfQnPu3sKRRkkR2/m1LE8tc3l9SC16vjNnh6Is+ScuM=",
+            "last_login": "2023-12-20T17:39:28.782Z",
+            "first_name": "William",
+            "last_name": "Fabio Quessada dos Santos",
+            "username": "will",
+            "registration": "4381",
+            "slug": "50b8268c-c031-459a-b880-e3c818f64348",
+            "email": "tinext@tinext.com.br",
+            "is_active": true,
+            "is_tech": true,
+            "is_admin": false,
+            "first_login": false,
+            "created_at": "2023-12-20T17:34:51.483Z",
+            "updated_at": "2023-12-20T17:39:28.782Z"
+        }
+    },
+    {
+        "model": "authenticate.professionaluser",
+        "pk": 40,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$J5M1Jxxe7oBIk4xSqR4fwB$8xBb6DgkpVe1gcAQyQaIq9BEt2Oxb19qmHSyzwONiUo=",
+            "last_login": "2024-06-25T14:45:11.458Z",
+            "first_name": "Pedro",
+            "last_name": "Ferreira Costa do Amaral",
+            "username": "pedro.ferreira",
+            "registration": null,
+            "slug": "caf08965-264b-40e2-9460-89d037db36b4",
+            "email": "pedroferreirac@gmail.com",
+            "is_active": true,
+            "is_tech": false,
+            "is_admin": false,
+            "first_login": false,
+            "created_at": "2024-06-25T14:43:55.404Z",
+            "updated_at": "2024-06-25T14:45:11.458Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 1,
+        "fields": {
+            "company": "Digiart Informatica Novo Horizonte Ltda",
+            "trade": "DIGIART",
+            "cnpj": "45152139000199",
+            "slug": "digiart",
+            "address": "Rua Dr. Altino Arantes, Nº 761\r\nCentro\r\nCEP: 14960-000\r\nNovo Horizonte - SP",
+            "created_at": "2024-04-16T11:01:36.058Z",
+            "update_at": "2024-04-17T11:59:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 2,
+        "fields": {
+            "company": "F.s. Comércio E Serviços Eireli",
+            "trade": "EIRELI",
+            "cnpj": "45152139000199",
+            "slug": "eireli",
+            "address": "",
+            "created_at": "2024-04-16T12:14:20.488Z",
+            "update_at": "2024-04-16T12:14:20.488Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 3,
+        "fields": {
+            "company": "Rei Dos Cartuchos Equipamentos E Suprime",
+            "trade": "REI DOS CARTUCHOS",
+            "cnpj": "45152139000199",
+            "slug": "rei-dos-cartuchos",
+            "address": "",
+            "created_at": "2024-04-16T12:16:46.922Z",
+            "update_at": "2024-04-16T12:16:46.923Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 4,
+        "fields": {
+            "company": "ACSMA COMERCIO LTDA",
+            "trade": "ACSMA",
+            "cnpj": "45152139000199",
+            "slug": "acsma",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 5,
+        "fields": {
+            "company": "LEGACY DISTRIBUIDORA DE INFORMATICA E EL",
+            "trade": "LEGACY",
+            "cnpj": "45152139000199",
+            "slug": "legacy",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 6,
+        "fields": {
+            "company": "PROSUN INFORMATICA LTDA",
+            "trade": "PROSUN",
+            "cnpj": "45152139000199",
+            "slug": "prosun",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 7,
+        "fields": {
+            "company": "RIO PRETO DISTRIBUICAO DE EQUIPAMENTOS D",
+            "trade": "RPDISTRIBUICAO",
+            "cnpj": "45152139000199",
+            "slug": "rio-preto-dist",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 8,
+        "fields": {
+            "company": "SINCES TECNOLOGIA COMERCIO E SERVICOS LT",
+            "trade": "SINCES",
+            "cnpj": "45152139000199",
+            "slug": "sinces",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 9,
+        "fields": {
+            "company": "INFOSAT GAMERS LTDA",
+            "trade": "INFOSAT",
+            "cnpj": "45152139000199",
+            "slug": "infosat",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.supplier",
+        "pk": 10,
+        "fields": {
+            "company": "CHERUBINI INFORMÁTICA ME",
+            "trade": "CHERUBINI",
+            "cnpj": "45152139000199",
+            "slug": "cherubini",
+            "address": "",
+            "created_at": "2024-04-17T10:00:36.058Z",
+            "update_at": "2024-04-17T10:00:48.761Z"
+        }
+    },
+    {
+        "model": "bidding_supplier.contact",
+        "pk": 1,
+        "fields": {
+            "supplier": 1,
+            "kind": "P",
+            "value": "1735423314",
+            "whatsapp": false
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 1,
+        "fields": {
+            "number_report": "20240418007001",
+            "slug": "20240418007001",
+            "sector": 7,
+            "employee": "Maria Inês",
+            "status": "1",
+            "justification": "Computador em questão apresentou falhas na fonte, após oscilação de energia no prédio.",
+            "professional": 35,
+            "pro_accountable": 38,
+            "created_at": "2024-04-18T11:35:14.824Z",
+            "updated_at": "2024-04-18T13:43:07.695Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 2,
+        "fields": {
+            "number_report": "20240430008001",
+            "slug": "20240430008001",
+            "sector": 8,
+            "employee": "Adrielle Semensato",
+            "status": "1",
+            "justification": "O local está com a internet lenta.",
+            "professional": 35,
+            "pro_accountable": 38,
+            "created_at": "2024-04-30T11:51:40.062Z",
+            "updated_at": "2024-04-30T11:51:40.062Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 3,
+        "fields": {
+            "number_report": "20240430071002",
+            "slug": "20240430071002",
+            "sector": 71,
+            "employee": "Karla",
+            "status": "1",
+            "justification": "Monitor fica ligando e desligando repetida vezes.",
+            "professional": 35,
+            "pro_accountable": 38,
+            "created_at": "2024-04-30T11:56:02.503Z",
+            "updated_at": "2024-04-30T11:56:02.503Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 4,
+        "fields": {
+            "number_report": "20240502055001",
+            "slug": "20240502055001",
+            "sector": 55,
+            "employee": "Bruna",
+            "status": "1",
+            "justification": "Necessitam de equipamentos para atender demanda de equipamentos",
+            "professional": 35,
+            "pro_accountable": 38,
+            "created_at": "2024-05-02T11:26:15.443Z",
+            "updated_at": "2024-05-02T11:26:15.443Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 5,
+        "fields": {
+            "number_report": "20240506002001",
+            "slug": "20240506002001",
+            "sector": 2,
+            "employee": "Laiany",
+            "status": "1",
+            "justification": "Notebook não reconhece o HD atual e necessita a troca do mesmo.",
+            "professional": 35,
+            "pro_accountable": 38,
+            "created_at": "2024-05-06T12:48:48.481Z",
+            "updated_at": "2024-05-06T12:48:48.481Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 6,
+        "fields": {
+            "number_report": "20240509061001",
+            "slug": "20240509061001",
+            "sector": 95,
+            "employee": "Rafaela",
+            "status": "1",
+            "justification": "Instalação de Internet para uso de professores e sala de TV",
+            "professional": 35,
+            "pro_accountable": 38,
+            "created_at": "2024-05-09T12:48:50.744Z",
+            "updated_at": "2024-05-09T13:02:33.947Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 7,
+        "fields": {
+            "number_report": "20240509061002",
+            "slug": "20240509061002",
+            "sector": 61,
+            "employee": "Roseclair e Laudicea",
+            "status": "1",
+            "justification": "Computador em questão está ultrapassado, com vários problemas em relação a desempenho.",
+            "professional": 35,
+            "pro_accountable": 38,
+            "created_at": "2024-05-09T12:48:53.218Z",
+            "updated_at": "2024-05-09T12:56:40.401Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 8,
+        "fields": {
+            "number_report": "20240513061001",
+            "slug": "20240513061001",
+            "sector": 61,
+            "employee": "Setor de Compras da Saúde",
+            "status": "1",
+            "justification": "As switchs de 05 portas relacionadas, servem para aumentar pontos de rede a partir de um ponto existente na mesma sala.\r\nA caixa de cabo de rede é para ser utilizada nas ampliações futuras.\r\nA fonte poe é para ligar a antena da ubs do Vale Formoso.\r\nO nobreak é para ser instalado no computador da sala da Farmácia Clínica do Prédio Reformado do Centro de Saúde.",
+            "professional": 36,
+            "pro_accountable": 36,
+            "created_at": "2024-05-13T15:34:48.749Z",
+            "updated_at": "2024-05-13T15:37:06.941Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 9,
+        "fields": {
+            "number_report": "20240515135001",
+            "slug": "20240515135001",
+            "sector": 135,
+            "employee": "RH",
+            "status": "1",
+            "justification": "A relação de material constante deste laudo, é para montar um equipamento com o objetivo de manter em funcionamento o sistema de coleta das batidas dos relógios de ponto, utilizado pela Diretoria de Recursos Humanos.\r\nO equipamento atual encontra-se defasado tecnologicamente, não possuindo condições de processar as informações necessárias.",
+            "professional": 36,
+            "pro_accountable": 36,
+            "created_at": "2024-05-15T11:31:31.068Z",
+            "updated_at": "2024-05-15T11:37:28.261Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 10,
+        "fields": {
+            "number_report": "20240515053002",
+            "slug": "20240515053002",
+            "sector": 53,
+            "employee": "Aline Bernardo de Moraes",
+            "status": "1",
+            "justification": "É necessária a troca do hd do computador, pois o atual encontra-se danificado.",
+            "professional": 36,
+            "pro_accountable": 36,
+            "created_at": "2024-05-15T15:13:15.940Z",
+            "updated_at": "2024-05-15T15:13:15.940Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 11,
+        "fields": {
+            "number_report": "20240517136001",
+            "slug": "20240517136001",
+            "sector": 136,
+            "employee": "Larissa Maria Correa",
+            "status": "1",
+            "justification": "É necessária a troca do hd atual padrão antigo sata que está com desgate por um hd ssd padrão novo, melhorando a velocidade de leitura e gravação do notebook patrimônio 17328.",
+            "professional": 36,
+            "pro_accountable": 36,
+            "created_at": "2024-05-17T11:26:37.360Z",
+            "updated_at": "2024-05-17T11:27:47.354Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 12,
+        "fields": {
+            "number_report": "20240517137002",
+            "slug": "20240517137002",
+            "sector": 137,
+            "employee": "Talita",
+            "status": "1",
+            "justification": "Equipamento atual apresenta problema",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-05-17T16:37:03.139Z",
+            "updated_at": "2024-05-17T16:37:03.139Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 13,
+        "fields": {
+            "number_report": "20240517065003",
+            "slug": "20240517065003",
+            "sector": 65,
+            "employee": "",
+            "status": "1",
+            "justification": "Equipamento atual apresenta problema",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-05-17T18:30:07.805Z",
+            "updated_at": "2024-05-17T18:30:07.805Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 14,
+        "fields": {
+            "number_report": "20240521042001",
+            "slug": "20240521042001",
+            "sector": 42,
+            "employee": "Biblioteca",
+            "status": "1",
+            "justification": "Em virtude de solicitação do Setor de Biblioteca (Rua São Sebastião, nº 414 - Centro) para utilização do aplicativo de controle de ponto, recomendo a aquisição do roteador wifi descrito.",
+            "professional": 36,
+            "pro_accountable": 36,
+            "created_at": "2024-05-21T17:38:49.117Z",
+            "updated_at": "2024-05-21T17:39:55.854Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 15,
+        "fields": {
+            "number_report": "20240521008002",
+            "slug": "20240521008002",
+            "sector": 8,
+            "employee": "Creas",
+            "status": "1",
+            "justification": "No caso de opção pela utilização do WIFI, conforme solicitação via email, no CREAS (Av. Jornalista Paulo Falzetta 139 VILA PATTY), segue a descrição do roteador wifi.",
+            "professional": 36,
+            "pro_accountable": 36,
+            "created_at": "2024-05-21T17:55:32.682Z",
+            "updated_at": "2024-05-21T17:55:32.682Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 16,
+        "fields": {
+            "number_report": "20240523135001",
+            "slug": "20240523135001",
+            "sector": 135,
+            "employee": "Assistente Social - RH",
+            "status": "1",
+            "justification": "É necessária a aquisição de uma fonte atx (em substituição à fonte queimada) e um par de caixas de som para utilização no computador da Assistente Social da Diretoria de Recursos Humanos.",
+            "professional": 36,
+            "pro_accountable": 36,
+            "created_at": "2024-05-23T12:32:01.103Z",
+            "updated_at": "2024-05-23T12:32:01.103Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 17,
+        "fields": {
+            "number_report": "20240523061002",
+            "slug": "20240523061002",
+            "sector": 61,
+            "employee": "Laudiceia",
+            "status": "1",
+            "justification": "Troca dos HDs do setor de regulação, computadores com patrimônio 33533 e 3292.",
+            "professional": 3,
+            "pro_accountable": 3,
+            "created_at": "2024-05-23T14:23:17.216Z",
+            "updated_at": "2024-05-23T14:23:17.216Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 18,
+        "fields": {
+            "number_report": "20240524135001",
+            "slug": "20240524135001",
+            "sector": 135,
+            "employee": "Pierre",
+            "status": "1",
+            "justification": "A pedido do Diretor de RH para atendimento da necessidade atual da Diretoria, segue a especificação do equipamento. A licença de Windows será objeto de outro laudo, assim que a licitação for concluída.",
+            "professional": 3,
+            "pro_accountable": 3,
+            "created_at": "2024-05-24T11:25:47.740Z",
+            "updated_at": "2024-05-24T11:29:07.073Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 19,
+        "fields": {
+            "number_report": "20240524079002",
+            "slug": "20240524079002",
+            "sector": 79,
+            "employee": "Bombeiros",
+            "status": "1",
+            "justification": "Em virtude da necessidade da troca do aparelho atual, segue especificação do aparelho telefônico para aquisição e posterior entrega ao Corpo de Bombeiros.",
+            "professional": 36,
+            "pro_accountable": 36,
+            "created_at": "2024-05-24T15:40:12.036Z",
+            "updated_at": "2024-05-24T15:40:12.036Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 20,
+        "fields": {
+            "number_report": "20240527061001",
+            "slug": "20240527061001",
+            "sector": 61,
+            "employee": "Setor de Compras da Saúde",
+            "status": "1",
+            "justification": "Para o prédio do Centro de Saúde reformado, na sala da farmácia de alto custo é necessário uma switch de 05 portas para substituir a atual que está avariada e a switch de 08 portas é para utilizar na nova sala do compras da saúde, em virtude de possuir somente 01 ponto de rede.",
+            "professional": 36,
+            "pro_accountable": 36,
+            "created_at": "2024-05-27T14:19:53.968Z",
+            "updated_at": "2024-05-27T14:23:08.380Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 21,
+        "fields": {
+            "number_report": "20240605068001",
+            "slug": "20240605068001",
+            "sector": 68,
+            "employee": "Ana",
+            "status": "1",
+            "justification": "Computador apresenta defeitos na placa onboard, necessário aquisição de uma placa offboard",
+            "professional": 3,
+            "pro_accountable": 3,
+            "created_at": "2024-06-05T11:59:28.439Z",
+            "updated_at": "2024-06-05T11:59:28.439Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 22,
+        "fields": {
+            "number_report": "20240605075002",
+            "slug": "20240605075002",
+            "sector": 75,
+            "employee": "Lucilene Filadelfo de Andrade Martins",
+            "status": "1",
+            "justification": "Segue especificação de um computador completo conforme solicitação da Diretora de Projetos Lucilene Filadelfo de Andrade Martins, para disponibilizar para novo funcionário. As licenças microsoft serão especificados em laudo futuro, após o término do processo licitatório.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-05T12:33:37.396Z",
+            "updated_at": "2024-06-05T12:36:03.344Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 23,
+        "fields": {
+            "number_report": "20240606048001",
+            "slug": "20240606048001",
+            "sector": 48,
+            "employee": "Karina",
+            "status": "1",
+            "justification": "O computador em questão fica desligando repentinamente, sendo necessário troca de fonte.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-06T11:58:35.964Z",
+            "updated_at": "2024-06-06T11:58:35.964Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 24,
+        "fields": {
+            "number_report": "20240607075001",
+            "slug": "20240607075001",
+            "sector": 75,
+            "employee": "Lucilene",
+            "status": "1",
+            "justification": "Segue especificação de um computador completo conforme solicitação por e-mail da Diretoria de Projetos, com o objetivo de disponibilizar equipamento para a estagiária Giulia da Silva Castanheira. Fica a critério da Diretoria de Projetos analisar a viabilidade da continuidade da referida aquisição, analisando o recurso orçamentário disponível.\r\nAs licenças Microsoft serão especificados em laudo futuro, após o término do processo licitatório.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-07T10:41:06.319Z",
+            "updated_at": "2024-06-07T10:43:49.940Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 25,
+        "fields": {
+            "number_report": "20240607053002",
+            "slug": "20240607053002",
+            "sector": 53,
+            "employee": "Aline",
+            "status": "1",
+            "justification": "O nobreak em questão, apresenta problema em relação a bateria, sendo necessário a substituição para suprir demanda",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-07T11:38:13.385Z",
+            "updated_at": "2024-06-07T11:38:13.385Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 26,
+        "fields": {
+            "number_report": "20240607093003",
+            "slug": "20240607093003",
+            "sector": 93,
+            "employee": "Creche Janimar",
+            "status": "1",
+            "justification": "Equipamento atual apresenta problemas, ocasionando lentidão, necessário substituição.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-07T13:07:30.651Z",
+            "updated_at": "2024-06-07T13:07:30.651Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 27,
+        "fields": {
+            "number_report": "20240611060001",
+            "slug": "20240611060001",
+            "sector": 60,
+            "employee": "Guarita",
+            "status": "1",
+            "justification": "Computador atual da Guarita vem apresentando problemas, sendo recomendado substituição da CPU, bem como switch de utilização de qualidade inferior por uma de melhor qualidade.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-11T12:40:57.145Z",
+            "updated_at": "2024-06-11T12:45:16.018Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 28,
+        "fields": {
+            "number_report": "20240612137001",
+            "slug": "20240612137001",
+            "sector": 137,
+            "employee": "Renato",
+            "status": "1",
+            "justification": "Para substituir fonte avariada, do computador do diretor de finanças.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-12T12:58:20.951Z",
+            "updated_at": "2024-06-12T12:58:20.951Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 29,
+        "fields": {
+            "number_report": "20240612054002",
+            "slug": "20240612054002",
+            "sector": 53,
+            "employee": "Aline",
+            "status": "1",
+            "justification": "Os dois nobreaks em questão, estão com falhas em suas respectivas baterias.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-12T13:45:31.710Z",
+            "updated_at": "2024-06-13T19:03:12.433Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 30,
+        "fields": {
+            "number_report": "20240612137003",
+            "slug": "20240612137003",
+            "sector": 137,
+            "employee": "Maria Clara (Licitação)",
+            "status": "1",
+            "justification": "Nobreak em questão, necessita de troca de fonte, para fins de atender a demanda de equipamentos.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-12T13:50:45.058Z",
+            "updated_at": "2024-06-12T13:50:45.058Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 31,
+        "fields": {
+            "number_report": "20240613048001",
+            "slug": "20240613048001",
+            "sector": 48,
+            "employee": "Escritório - Diretoria de Esportes",
+            "status": "1",
+            "justification": "Equipamento atual apresenta problemas, necessário Substituição",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-13T16:51:34.996Z",
+            "updated_at": "2024-06-13T16:51:34.996Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 32,
+        "fields": {
+            "number_report": "20240614061001",
+            "slug": "20240614061001",
+            "sector": 61,
+            "employee": "Marcela Girotto",
+            "status": "1",
+            "justification": "Equipamento atual apresenta problema , necessário substituição",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-14T12:09:15.490Z",
+            "updated_at": "2024-06-14T12:09:15.490Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 33,
+        "fields": {
+            "number_report": "20240618135001",
+            "slug": "20240618135001",
+            "sector": 135,
+            "employee": "Thainara",
+            "status": "1",
+            "justification": "Computador em questão queimou a fonte e necessita de troca",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-18T10:44:02.177Z",
+            "updated_at": "2024-06-18T10:44:02.177Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 34,
+        "fields": {
+            "number_report": "20240619061001",
+            "slug": "20240619061001",
+            "sector": 61,
+            "employee": "Regulação",
+            "status": "1",
+            "justification": "Equipamento atual apresenta problema, necessário substituição para bom funcionamento.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-19T11:06:11.010Z",
+            "updated_at": "2024-06-19T11:09:40.924Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 35,
+        "fields": {
+            "number_report": "20240619061002",
+            "slug": "20240619061002",
+            "sector": 61,
+            "employee": "Fernanda",
+            "status": "1",
+            "justification": "Utilização para atendimento de demanda no centro de saúde e demais unidades",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-19T12:19:54.269Z",
+            "updated_at": "2024-06-19T12:19:54.269Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 36,
+        "fields": {
+            "number_report": "20240620091001",
+            "slug": "20240620091001",
+            "sector": 91,
+            "employee": "Renan Rodrigus Solin",
+            "status": "1",
+            "justification": "Equipamento de patrimônio 028309 encontra-se com defeito, necessário troca.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-20T13:40:52.839Z",
+            "updated_at": "2024-06-20T13:40:52.839Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 69,
+        "fields": {
+            "number_report": "20240625061001",
+            "slug": "20240625061001",
+            "sector": 61,
+            "employee": "Fernanda",
+            "status": "1",
+            "justification": "Reposição de estoque",
+            "professional": 40,
+            "pro_accountable": 39,
+            "created_at": "2024-06-25T14:48:13.302Z",
+            "updated_at": "2024-06-25T14:48:13.302Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 70,
+        "fields": {
+            "number_report": "20240625078002",
+            "slug": "20240625078002",
+            "sector": 78,
+            "employee": "André",
+            "status": "1",
+            "justification": "O equipamento nobreak tem o objetivo de manter ligados as câmeras durante as quedas de energia elétrica.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-25T15:28:48.079Z",
+            "updated_at": "2024-06-25T15:28:48.079Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 71,
+        "fields": {
+            "number_report": "20240626061001",
+            "slug": "20240626061001",
+            "sector": 61,
+            "employee": "Roseclair (Regulação)",
+            "status": "1",
+            "justification": "Equipamento atual apresenta problema, necessário substituição.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-26T12:27:15.110Z",
+            "updated_at": "2024-06-26T12:30:13.784Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 72,
+        "fields": {
+            "number_report": "20240626075002",
+            "slug": "20240626075002",
+            "sector": 75,
+            "employee": "Ricardo",
+            "status": "1",
+            "justification": "Troca de CPU que apresenta problemas e melhorias para computador para utilização com programas CAD.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-26T16:48:09.316Z",
+            "updated_at": "2024-06-26T17:50:27.234Z"
+        }
+    },
+    {
+        "model": "reports.report",
+        "pk": 73,
+        "fields": {
+            "number_report": "20240627093001",
+            "slug": "20240627093001",
+            "sector": 93,
+            "employee": "Tomazi I e Tomazi II",
+            "status": "1",
+            "justification": "Equipamentos necessários ligação de computadores de lousa digital das unidades.",
+            "professional": 38,
+            "pro_accountable": 38,
+            "created_at": "2024-06-27T13:41:08.452Z",
+            "updated_at": "2024-06-27T14:46:07.750Z"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 2,
+        "fields": {
+            "report": 1,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 3,
+        "fields": {
+            "report": 2,
+            "material": 54,
+            "quantity": 1,
+            "unitary_price": "96.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 4,
+        "fields": {
+            "report": 3,
+            "material": 65,
+            "quantity": 1,
+            "unitary_price": "289.90"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 5,
+        "fields": {
+            "report": 4,
+            "material": 11,
+            "quantity": 1,
+            "unitary_price": "435.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 6,
+        "fields": {
+            "report": 5,
+            "material": 72,
+            "quantity": 1,
+            "unitary_price": "179.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 7,
+        "fields": {
+            "report": 6,
+            "material": 37,
+            "quantity": 1,
+            "unitary_price": "599.90"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 9,
+        "fields": {
+            "report": 7,
+            "material": 79,
+            "quantity": 1,
+            "unitary_price": "599.90"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 10,
+        "fields": {
+            "report": 7,
+            "material": 73,
+            "quantity": 1,
+            "unitary_price": "120.01"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 11,
+        "fields": {
+            "report": 7,
+            "material": 77,
+            "quantity": 1,
+            "unitary_price": "540.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 12,
+        "fields": {
+            "report": 6,
+            "material": 1,
+            "quantity": 1,
+            "unitary_price": "1200.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 13,
+        "fields": {
+            "report": 8,
+            "material": 52,
+            "quantity": 3,
+            "unitary_price": "96.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 14,
+        "fields": {
+            "report": 8,
+            "material": 54,
+            "quantity": 2,
+            "unitary_price": "96.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 15,
+        "fields": {
+            "report": 8,
+            "material": 37,
+            "quantity": 1,
+            "unitary_price": "460.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 16,
+        "fields": {
+            "report": 8,
+            "material": 3,
+            "quantity": 1,
+            "unitary_price": "110.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 17,
+        "fields": {
+            "report": 8,
+            "material": 11,
+            "quantity": 1,
+            "unitary_price": "435.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 18,
+        "fields": {
+            "report": 9,
+            "material": 69,
+            "quantity": 1,
+            "unitary_price": "6.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 19,
+        "fields": {
+            "report": 9,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 20,
+        "fields": {
+            "report": 9,
+            "material": 71,
+            "quantity": 1,
+            "unitary_price": "81.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 21,
+        "fields": {
+            "report": 9,
+            "material": 72,
+            "quantity": 1,
+            "unitary_price": "179.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 22,
+        "fields": {
+            "report": 9,
+            "material": 73,
+            "quantity": 1,
+            "unitary_price": "120.01"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 23,
+        "fields": {
+            "report": 9,
+            "material": 74,
+            "quantity": 1,
+            "unitary_price": "6.50"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 24,
+        "fields": {
+            "report": 9,
+            "material": 76,
+            "quantity": 1,
+            "unitary_price": "28.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 25,
+        "fields": {
+            "report": 9,
+            "material": 79,
+            "quantity": 1,
+            "unitary_price": "599.90"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 26,
+        "fields": {
+            "report": 9,
+            "material": 83,
+            "quantity": 1,
+            "unitary_price": "24.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 27,
+        "fields": {
+            "report": 9,
+            "material": 77,
+            "quantity": 1,
+            "unitary_price": "540.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 28,
+        "fields": {
+            "report": 10,
+            "material": 72,
+            "quantity": 1,
+            "unitary_price": "179.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 29,
+        "fields": {
+            "report": 11,
+            "material": 72,
+            "quantity": 1,
+            "unitary_price": "179.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 30,
+        "fields": {
+            "report": 12,
+            "material": 34,
+            "quantity": 1,
+            "unitary_price": "40.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 31,
+        "fields": {
+            "report": 12,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 32,
+        "fields": {
+            "report": 13,
+            "material": 16,
+            "quantity": 1,
+            "unitary_price": "0.80"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 33,
+        "fields": {
+            "report": 14,
+            "material": 5,
+            "quantity": 1,
+            "unitary_price": "200.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 34,
+        "fields": {
+            "report": 15,
+            "material": 5,
+            "quantity": 1,
+            "unitary_price": "200.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 35,
+        "fields": {
+            "report": 16,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 36,
+        "fields": {
+            "report": 16,
+            "material": 76,
+            "quantity": 1,
+            "unitary_price": "28.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 37,
+        "fields": {
+            "report": 17,
+            "material": 72,
+            "quantity": 2,
+            "unitary_price": "179.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 38,
+        "fields": {
+            "report": 18,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 39,
+        "fields": {
+            "report": 18,
+            "material": 69,
+            "quantity": 1,
+            "unitary_price": "6.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 40,
+        "fields": {
+            "report": 18,
+            "material": 71,
+            "quantity": 1,
+            "unitary_price": "81.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 41,
+        "fields": {
+            "report": 18,
+            "material": 72,
+            "quantity": 1,
+            "unitary_price": "179.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 42,
+        "fields": {
+            "report": 18,
+            "material": 73,
+            "quantity": 1,
+            "unitary_price": "120.01"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 43,
+        "fields": {
+            "report": 18,
+            "material": 74,
+            "quantity": 1,
+            "unitary_price": "6.50"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 44,
+        "fields": {
+            "report": 18,
+            "material": 75,
+            "quantity": 1,
+            "unitary_price": "5.99"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 45,
+        "fields": {
+            "report": 18,
+            "material": 76,
+            "quantity": 1,
+            "unitary_price": "28.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 46,
+        "fields": {
+            "report": 18,
+            "material": 77,
+            "quantity": 1,
+            "unitary_price": "540.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 47,
+        "fields": {
+            "report": 18,
+            "material": 79,
+            "quantity": 1,
+            "unitary_price": "599.90"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 48,
+        "fields": {
+            "report": 18,
+            "material": 83,
+            "quantity": 1,
+            "unitary_price": "24.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 49,
+        "fields": {
+            "report": 18,
+            "material": 65,
+            "quantity": 1,
+            "unitary_price": "289.90"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 50,
+        "fields": {
+            "report": 18,
+            "material": 11,
+            "quantity": 1,
+            "unitary_price": "435.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 51,
+        "fields": {
+            "report": 19,
+            "material": 67,
+            "quantity": 1,
+            "unitary_price": "126.05"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 52,
+        "fields": {
+            "report": 20,
+            "material": 54,
+            "quantity": 1,
+            "unitary_price": "96.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 53,
+        "fields": {
+            "report": 20,
+            "material": 52,
+            "quantity": 1,
+            "unitary_price": "96.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 54,
+        "fields": {
+            "report": 21,
+            "material": 41,
+            "quantity": 1,
+            "unitary_price": "85.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 55,
+        "fields": {
+            "report": 22,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 56,
+        "fields": {
+            "report": 22,
+            "material": 69,
+            "quantity": 1,
+            "unitary_price": "6.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 57,
+        "fields": {
+            "report": 22,
+            "material": 71,
+            "quantity": 1,
+            "unitary_price": "81.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 58,
+        "fields": {
+            "report": 22,
+            "material": 72,
+            "quantity": 1,
+            "unitary_price": "179.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 59,
+        "fields": {
+            "report": 22,
+            "material": 73,
+            "quantity": 1,
+            "unitary_price": "120.01"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 60,
+        "fields": {
+            "report": 22,
+            "material": 74,
+            "quantity": 1,
+            "unitary_price": "6.50"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 61,
+        "fields": {
+            "report": 22,
+            "material": 75,
+            "quantity": 1,
+            "unitary_price": "5.99"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 62,
+        "fields": {
+            "report": 22,
+            "material": 76,
+            "quantity": 1,
+            "unitary_price": "28.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 63,
+        "fields": {
+            "report": 22,
+            "material": 77,
+            "quantity": 1,
+            "unitary_price": "540.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 64,
+        "fields": {
+            "report": 22,
+            "material": 79,
+            "quantity": 1,
+            "unitary_price": "599.90"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 65,
+        "fields": {
+            "report": 22,
+            "material": 83,
+            "quantity": 1,
+            "unitary_price": "24.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 66,
+        "fields": {
+            "report": 22,
+            "material": 65,
+            "quantity": 1,
+            "unitary_price": "289.90"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 67,
+        "fields": {
+            "report": 22,
+            "material": 11,
+            "quantity": 1,
+            "unitary_price": "435.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 68,
+        "fields": {
+            "report": 23,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 69,
+        "fields": {
+            "report": 24,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 70,
+        "fields": {
+            "report": 24,
+            "material": 69,
+            "quantity": 1,
+            "unitary_price": "6.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 71,
+        "fields": {
+            "report": 24,
+            "material": 71,
+            "quantity": 1,
+            "unitary_price": "81.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 72,
+        "fields": {
+            "report": 24,
+            "material": 72,
+            "quantity": 1,
+            "unitary_price": "179.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 73,
+        "fields": {
+            "report": 24,
+            "material": 73,
+            "quantity": 1,
+            "unitary_price": "120.01"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 74,
+        "fields": {
+            "report": 24,
+            "material": 74,
+            "quantity": 1,
+            "unitary_price": "6.50"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 75,
+        "fields": {
+            "report": 24,
+            "material": 75,
+            "quantity": 1,
+            "unitary_price": "5.99"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 76,
+        "fields": {
+            "report": 24,
+            "material": 76,
+            "quantity": 1,
+            "unitary_price": "28.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 77,
+        "fields": {
+            "report": 24,
+            "material": 77,
+            "quantity": 1,
+            "unitary_price": "540.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 78,
+        "fields": {
+            "report": 24,
+            "material": 79,
+            "quantity": 1,
+            "unitary_price": "599.90"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 79,
+        "fields": {
+            "report": 24,
+            "material": 83,
+            "quantity": 1,
+            "unitary_price": "24.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 80,
+        "fields": {
+            "report": 24,
+            "material": 65,
+            "quantity": 1,
+            "unitary_price": "289.90"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 81,
+        "fields": {
+            "report": 24,
+            "material": 11,
+            "quantity": 1,
+            "unitary_price": "435.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 82,
+        "fields": {
+            "report": 25,
+            "material": 14,
+            "quantity": 1,
+            "unitary_price": "97.80"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 83,
+        "fields": {
+            "report": 26,
+            "material": 47,
+            "quantity": 1,
+            "unitary_price": "288.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 84,
+        "fields": {
+            "report": 27,
+            "material": 69,
+            "quantity": 1,
+            "unitary_price": "6.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 85,
+        "fields": {
+            "report": 27,
+            "material": 71,
+            "quantity": 1,
+            "unitary_price": "81.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 86,
+        "fields": {
+            "report": 27,
+            "material": 78,
+            "quantity": 1,
+            "unitary_price": "610.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 87,
+        "fields": {
+            "report": 27,
+            "material": 81,
+            "quantity": 1,
+            "unitary_price": "740.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 88,
+        "fields": {
+            "report": 27,
+            "material": 73,
+            "quantity": 1,
+            "unitary_price": "120.01"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 89,
+        "fields": {
+            "report": 27,
+            "material": 47,
+            "quantity": 1,
+            "unitary_price": "288.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 90,
+        "fields": {
+            "report": 27,
+            "material": 83,
+            "quantity": 1,
+            "unitary_price": "24.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 91,
+        "fields": {
+            "report": 27,
+            "material": 74,
+            "quantity": 1,
+            "unitary_price": "6.50"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 92,
+        "fields": {
+            "report": 27,
+            "material": 54,
+            "quantity": 1,
+            "unitary_price": "96.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 93,
+        "fields": {
+            "report": 27,
+            "material": 10,
+            "quantity": 1,
+            "unitary_price": "202.32"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 94,
+        "fields": {
+            "report": 28,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 95,
+        "fields": {
+            "report": 29,
+            "material": 14,
+            "quantity": 2,
+            "unitary_price": "97.80"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 96,
+        "fields": {
+            "report": 30,
+            "material": 14,
+            "quantity": 2,
+            "unitary_price": "97.80"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 97,
+        "fields": {
+            "report": 31,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 98,
+        "fields": {
+            "report": 32,
+            "material": 34,
+            "quantity": 1,
+            "unitary_price": "40.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 99,
+        "fields": {
+            "report": 33,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 100,
+        "fields": {
+            "report": 34,
+            "material": 71,
+            "quantity": 1,
+            "unitary_price": "81.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 101,
+        "fields": {
+            "report": 34,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 102,
+        "fields": {
+            "report": 34,
+            "material": 78,
+            "quantity": 1,
+            "unitary_price": "610.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 103,
+        "fields": {
+            "report": 34,
+            "material": 81,
+            "quantity": 1,
+            "unitary_price": "740.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 104,
+        "fields": {
+            "report": 34,
+            "material": 73,
+            "quantity": 1,
+            "unitary_price": "120.01"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 105,
+        "fields": {
+            "report": 34,
+            "material": 47,
+            "quantity": 1,
+            "unitary_price": "288.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 106,
+        "fields": {
+            "report": 34,
+            "material": 83,
+            "quantity": 1,
+            "unitary_price": "24.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 107,
+        "fields": {
+            "report": 34,
+            "material": 74,
+            "quantity": 1,
+            "unitary_price": "6.50"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 108,
+        "fields": {
+            "report": 34,
+            "material": 75,
+            "quantity": 1,
+            "unitary_price": "5.99"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 109,
+        "fields": {
+            "report": 34,
+            "material": 76,
+            "quantity": 1,
+            "unitary_price": "28.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 110,
+        "fields": {
+            "report": 34,
+            "material": 65,
+            "quantity": 1,
+            "unitary_price": "289.90"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 111,
+        "fields": {
+            "report": 34,
+            "material": 10,
+            "quantity": 1,
+            "unitary_price": "202.32"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 112,
+        "fields": {
+            "report": 35,
+            "material": 70,
+            "quantity": 5,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 113,
+        "fields": {
+            "report": 35,
+            "material": 72,
+            "quantity": 2,
+            "unitary_price": "179.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 114,
+        "fields": {
+            "report": 36,
+            "material": 11,
+            "quantity": 1,
+            "unitary_price": "435.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 147,
+        "fields": {
+            "report": 69,
+            "material": 14,
+            "quantity": 1,
+            "unitary_price": "97.80"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 148,
+        "fields": {
+            "report": 70,
+            "material": 11,
+            "quantity": 1,
+            "unitary_price": "435.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 149,
+        "fields": {
+            "report": 71,
+            "material": 69,
+            "quantity": 1,
+            "unitary_price": "6.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 150,
+        "fields": {
+            "report": 71,
+            "material": 71,
+            "quantity": 1,
+            "unitary_price": "81.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 151,
+        "fields": {
+            "report": 71,
+            "material": 70,
+            "quantity": 1,
+            "unitary_price": "60.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 152,
+        "fields": {
+            "report": 71,
+            "material": 78,
+            "quantity": 1,
+            "unitary_price": "610.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 153,
+        "fields": {
+            "report": 71,
+            "material": 81,
+            "quantity": 1,
+            "unitary_price": "740.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 154,
+        "fields": {
+            "report": 71,
+            "material": 73,
+            "quantity": 1,
+            "unitary_price": "120.01"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 155,
+        "fields": {
+            "report": 71,
+            "material": 47,
+            "quantity": 1,
+            "unitary_price": "288.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 156,
+        "fields": {
+            "report": 71,
+            "material": 10,
+            "quantity": 1,
+            "unitary_price": "202.32"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 157,
+        "fields": {
+            "report": 71,
+            "material": 83,
+            "quantity": 1,
+            "unitary_price": "24.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 158,
+        "fields": {
+            "report": 71,
+            "material": 74,
+            "quantity": 1,
+            "unitary_price": "6.50"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 159,
+        "fields": {
+            "report": 72,
+            "material": 50,
+            "quantity": 2,
+            "unitary_price": "288.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 160,
+        "fields": {
+            "report": 72,
+            "material": 78,
+            "quantity": 1,
+            "unitary_price": "610.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 161,
+        "fields": {
+            "report": 72,
+            "material": 82,
+            "quantity": 1,
+            "unitary_price": "760.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 162,
+        "fields": {
+            "report": 72,
+            "material": 71,
+            "quantity": 1,
+            "unitary_price": "81.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 163,
+        "fields": {
+            "report": 72,
+            "material": 69,
+            "quantity": 1,
+            "unitary_price": "6.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 164,
+        "fields": {
+            "report": 72,
+            "material": 73,
+            "quantity": 2,
+            "unitary_price": "120.01"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 165,
+        "fields": {
+            "report": 72,
+            "material": 6,
+            "quantity": 2,
+            "unitary_price": "280.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 166,
+        "fields": {
+            "report": 72,
+            "material": 8,
+            "quantity": 2,
+            "unitary_price": "2150.00"
+        }
+    },
+    {
+        "model": "reports.materialreport",
+        "pk": 167,
+        "fields": {
+            "report": 73,
+            "material": 34,
+            "quantity": 2,
+            "unitary_price": "40.00"
+        }
+    }
+]

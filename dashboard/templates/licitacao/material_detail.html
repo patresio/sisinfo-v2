@@ -7,5 +7,10 @@
         <div>
             <h1>{{ material.name }}</h1>
         </div>
+        {% for report in reports %}
+        <div>
+            <a href="{{ report.report.get_absolute_url }}">{{report.report}}</a>
+        </div>
+        {% endfor %}
     </section>
 {% endblock content %}
