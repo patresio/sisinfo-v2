@@ -9,86 +9,132 @@ Dashboard
 
 {% include "include/_alert.html" %}
 
-<div class="grid grid-cols-4 gap-4 mb-4 mt-4">
-   <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800 w-full max-w-full">
-      <div class="{% dashboard_card %}">
-         <a href="#"
-            class="bg-green-500 text-white p-3 text-center hover:bg-green-800 transition-all duration-500 font-semibold">Meus
-            Atendimentos</a>
-         <h2 class="text-center p-5 font-bold text-5xl text-gray-500">0</h2>
+<div class="mb-8">
+    <h1 class="text-3xl font-bold text-ctp-text">Bem vindo, {{ request.user.fullname|default:"Usuário" }}!</h1>
+    <p class="text-ctp-subtext0">Visão geral do sistema</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+   <!-- Meus Atendimentos -->
+   <div class="relative flex flex-col bg-ctp-surface0 rounded-2xl shadow-sm border border-ctp-surface1 hover:border-ctp-blue transition-colors duration-200">
+      <div class="p-6">
+         <div class="flex items-center justify-between mb-4">
+            <span class="text-ctp-subtext0 text-sm font-medium">Meus Atendimentos</span>
+            <div class="p-2 bg-ctp-green/10 rounded-lg text-ctp-green">
+               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+         </div>
+         <h2 class="text-3xl font-bold text-ctp-text">0</h2>
       </div>
+      <a href="#" class="px-6 py-3 border-t border-ctp-surface1 bg-ctp-surface0/50 rounded-b-2xl text-sm font-medium text-ctp-blue hover:text-ctp-sapphire transition-colors flex items-center justify-between">
+         <span>Ver detalhes</span>
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
    </div>
-   <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800 w-full max-w-full">
-      <div class="{% dashboard_card %}">
-         <a href="#"
-            class="bg-red-500 text-white p-3 text-center hover:bg-red-800 transition-all duration-500 font-semibold">Laudos
-            Responsável</a>
-         <h2 class="text-center p-5 font-bold text-5xl text-gray-500">{{ total_reports_accountable }}</h2>
+
+   <!-- Laudos Responsável -->
+   <div class="relative flex flex-col bg-ctp-surface0 rounded-2xl shadow-sm border border-ctp-surface1 hover:border-ctp-red transition-colors duration-200">
+       <div class="p-6">
+         <div class="flex items-center justify-between mb-4">
+            <span class="text-ctp-subtext0 text-sm font-medium">Laudos Responsável</span>
+            <div class="p-2 bg-ctp-red/10 rounded-lg text-ctp-red">
+               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+            </div>
+         </div>
+         <h2 class="text-3xl font-bold text-ctp-text">{{ total_reports_accountable }}</h2>
       </div>
+      <a href="#" class="px-6 py-3 border-t border-ctp-surface1 bg-ctp-surface0/50 rounded-b-2xl text-sm font-medium text-ctp-red hover:text-ctp-maroon transition-colors flex items-center justify-between">
+         <span>Ver detalhes</span>
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
    </div>
-   <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-      <div class="{% dashboard_card %}">
-         <a href="#"
-            class="bg-indigo-500 text-white p-3 text-center hover:bg-indigo-900 transition-all duration-500 font-semibold">Meus
-            Laudos</a>
-         <h2 class="text-center p-5 font-bold text-5xl text-gray-500">{{ total_reports_user }}</h2>
+
+   <!-- Meus Laudos -->
+   <div class="relative flex flex-col bg-ctp-surface0 rounded-2xl shadow-sm border border-ctp-surface1 hover:border-ctp-mauve transition-colors duration-200">
+      <div class="p-6">
+         <div class="flex items-center justify-between mb-4">
+            <span class="text-ctp-subtext0 text-sm font-medium">Meus Laudos</span>
+            <div class="p-2 bg-ctp-mauve/10 rounded-lg text-ctp-mauve">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+            </div>
+         </div>
+         <h2 class="text-3xl font-bold text-ctp-text">{{ total_reports_user }}</h2>
       </div>
+       <a href="#" class="px-6 py-3 border-t border-ctp-surface1 bg-ctp-surface0/50 rounded-b-2xl text-sm font-medium text-ctp-mauve hover:text-ctp-pink transition-colors flex items-center justify-between">
+         <span>Ver detalhes</span>
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
    </div>
-   <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-      <div class="{% dashboard_card %}">
-         <a href="#"
-            class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500 font-semibold">Total
-            de Laudos</a>
-         <h2 class="text-center p-5 font-bold text-5xl text-gray-500">{{ total_reports }}</h2>
+
+   <!-- Total de Laudos -->
+   <div class="relative flex flex-col bg-ctp-surface0 rounded-2xl shadow-sm border border-ctp-surface1 hover:border-ctp-blue transition-colors duration-200">
+      <div class="p-6">
+         <div class="flex items-center justify-between mb-4">
+            <span class="text-ctp-subtext0 text-sm font-medium">Total de Laudos</span>
+            <div class="p-2 bg-ctp-blue/10 rounded-lg text-ctp-blue">
+               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+            </div>
+         </div>
+         <h2 class="text-3xl font-bold text-ctp-text">{{ total_reports }}</h2>
       </div>
+      <a href="#" class="px-6 py-3 border-t border-ctp-surface1 bg-ctp-surface0/50 rounded-b-2xl text-sm font-medium text-ctp-blue hover:text-ctp-sky transition-colors flex items-center justify-between">
+         <span>Ver detalhes</span>
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
    </div>
 </div>
-<div class="grid grid-cols-3 gap-4 mb-4 mt-14">
-   <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-      <div class="{% dashboard_card %}">
-         <a href="#"
-            class="bg-red-500 text-white p-3 text-center hover:bg-red-800 transition-all duration-500 font-semibold">Ordem
-            de Serviços</a>
-         <h2 class="text-center p-5 font-bold text-5xl text-gray-500">0</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+   <!-- Ordem de Serviços -->
+   <div class="relative flex flex-col bg-ctp-surface0 rounded-2xl shadow-sm border border-ctp-surface1 hover:border-ctp-yellow transition-colors duration-200">
+      <div class="p-6">
+         <div class="flex items-center justify-between mb-4">
+            <span class="text-ctp-subtext0 text-sm font-medium">Ordem de Serviços</span>
+            <div class="p-2 bg-ctp-yellow/10 rounded-lg text-ctp-yellow">
+               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+         </div>
+         <h2 class="text-3xl font-bold text-ctp-text">0</h2>
       </div>
+       <a href="#" class="px-6 py-3 border-t border-ctp-surface1 bg-ctp-surface0/50 rounded-b-2xl text-sm font-medium text-ctp-yellow hover:text-ctp-peach transition-colors flex items-center justify-between">
+         <span>Ver detalhes</span>
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
    </div>
-   <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800 w-full max-w-full">
-      <div class="{% dashboard_card %}">
-         <a href="#"
-            class="bg-blue-500 text-white p-3 text-center hover:bg-blue-800 transition-all duration-500 font-semibold">Diretorias</a>
-         <h2 class="text-center p-5 font-bold text-5xl text-gray-500">{{ total_directions }}</h2>
+
+   <!-- Diretorias -->
+   <div class="relative flex flex-col bg-ctp-surface0 rounded-2xl shadow-sm border border-ctp-surface1 hover:border-ctp-teal transition-colors duration-200">
+      <div class="p-6">
+         <div class="flex items-center justify-between mb-4">
+            <span class="text-ctp-subtext0 text-sm font-medium">Diretorias</span>
+            <div class="p-2 bg-ctp-teal/10 rounded-lg text-ctp-teal">
+               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+            </div>
+         </div>
+         <h2 class="text-3xl font-bold text-ctp-text">{{ total_directions }}</h2>
       </div>
+       <a href="#" class="px-6 py-3 border-t border-ctp-surface1 bg-ctp-surface0/50 rounded-b-2xl text-sm font-medium text-ctp-teal hover:text-ctp-green transition-colors flex items-center justify-between">
+         <span>Ver detalhes</span>
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
    </div>
-   <div class="flex items-center justify-center h-24 rounded bg-gray-50 dark:bg-gray-800">
-      <div class="{% dashboard_card %}">
-         <a href="#"
-            class="bg-indigo-500 text-white p-3 text-center hover:bg-indigo-800 transition-all duration-500 font-semibold">Setores</a>
-         <h2 class="text-center p-5 font-bold text-5xl text-gray-500">{{ total_sectors }}</h2>
+
+   <!-- Setores -->
+   <div class="relative flex flex-col bg-ctp-surface0 rounded-2xl shadow-sm border border-ctp-surface1 hover:border-ctp-lavender transition-colors duration-200">
+      <div class="p-6">
+         <div class="flex items-center justify-between mb-4">
+            <span class="text-ctp-subtext0 text-sm font-medium">Setores</span>
+            <div class="p-2 bg-ctp-lavender/10 rounded-lg text-ctp-lavender">
+               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+            </div>
+         </div>
+         <h2 class="text-3xl font-bold text-ctp-text">{{ total_sectors }}</h2>
       </div>
+       <a href="#" class="px-6 py-3 border-t border-ctp-surface1 bg-ctp-surface0/50 rounded-b-2xl text-sm font-medium text-ctp-lavender hover:text-ctp-mauve transition-colors flex items-center justify-between">
+         <span>Ver detalhes</span>
+         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+      </a>
    </div>
 </div>
-<!--
-      <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
-         <p class="text-2xl text-gray-400 dark:text-gray-500">
-            Grid 4
-         </p>
-      </div>
-      <div class="grid grid-cols-2 gap-4 mb-4">
-         <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-               Grid 5
-            </p>
-         </div>
-         <div class="flex items-center justify-center rounded bg-gray-50 h-28 dark:bg-gray-800">
-            <p class="text-2xl text-gray-400 dark:text-gray-500">
-               Grid 6
-            </p>
-         </div>
-      </div>
-      <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-50 dark:bg-gray-800">
-         <p class="text-2xl text-gray-400 dark:text-gray-500">
-            Grid 7
-         </p>
-      </div>
-      -->
+
 {% endblock content %}

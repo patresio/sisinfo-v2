@@ -4,80 +4,80 @@ register = template.Library()
 
 @register.simple_tag
 def btn_primary():
-    return "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+    return "inline-flex items-center justify-center px-4 py-2 bg-ctp-blue border border-transparent rounded-md font-semibold text-xs text-ctp-crust uppercase tracking-widest hover:bg-ctp-sapphire focus:outline-none focus:border-ctp-sky focus:ring focus:ring-ctp-sky active:bg-ctp-blue disabled:opacity-25 transition"
 
 @register.simple_tag
 def btn_success():
-    return "focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+    return "inline-flex items-center justify-center px-4 py-2 bg-ctp-green border border-transparent rounded-md font-semibold text-xs text-ctp-crust uppercase tracking-widest hover:bg-ctp-teal focus:outline-none focus:border-ctp-green focus:ring focus:ring-ctp-green active:bg-ctp-green disabled:opacity-25 transition"
 
 @register.simple_tag
 def btn_danger():
-    return "focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+    return "inline-flex items-center justify-center px-4 py-2 bg-ctp-red border border-transparent rounded-md font-semibold text-xs text-ctp-crust uppercase tracking-widest hover:bg-ctp-maroon focus:outline-none focus:border-ctp-red focus:ring focus:ring-ctp-red active:bg-ctp-red disabled:opacity-25 transition"
 
 @register.simple_tag
 def btn_warning():
-    return "focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900"
+    return "inline-flex items-center justify-center px-4 py-2 bg-ctp-yellow border border-transparent rounded-md font-semibold text-xs text-ctp-crust uppercase tracking-widest hover:bg-ctp-peach focus:outline-none focus:border-ctp-yellow focus:ring focus:ring-ctp-yellow active:bg-ctp-yellow disabled:opacity-25 transition"
 
 @register.simple_tag
 def btn_secondary():
-    return "text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+    return "inline-flex items-center justify-center px-4 py-2 bg-ctp-surface1 border border-transparent rounded-md font-semibold text-xs text-ctp-text uppercase tracking-widest hover:bg-ctp-surface2 focus:outline-none focus:border-ctp-surface2 focus:ring focus:ring-ctp-surface0 active:bg-ctp-surface1 disabled:opacity-25 transition"
 
 @register.simple_tag
 def card_base():
-    return "relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transform scale-110"
+    return "relative flex flex-col mt-6 text-ctp-text bg-ctp-surface0 shadow-sm rounded-xl w-full border border-ctp-surface1"
 
 @register.simple_tag
 def header_container():
-    return "flex items-center justify-end h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-6"
+    return "flex items-center justify-between mb-6 rounded-lg bg-ctp-surface0 p-6 shadow-sm border border-ctp-surface1"
 
 @register.simple_tag
 def header_title():
-    return "mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+    return "text-2xl font-bold leading-none tracking-tight text-ctp-text"
 
 @register.simple_tag
 def header_mark():
-    return "px-2 text-white bg-blue-700 rounded dark:bg-blue-500"
+    return "px-2 text-ctp-crust bg-ctp-blue rounded mr-2"
 
 @register.simple_tag
 def search_container():
-    return "flex-col justify-start rounded bg-gray-100 h-full dark:bg-gray-800 p-4 max-w-full w-full"
+    return "flex flex-col justify-start rounded-lg bg-ctp-surface0 shadow-sm border border-ctp-surface1 p-6 w-full"
 
 @register.simple_tag
 def table_container():
-    return "relative overflow-x-auto shadow-md sm:rounded-lg max-w-full w-full px-10"
+    return "relative overflow-x-auto shadow-sm sm:rounded-lg w-full border border-ctp-surface1 bg-ctp-surface0"
 
 @register.simple_tag
 def table_base():
-    return "w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+    return "w-full text-sm text-left text-ctp-subtext0"
 
 @register.simple_tag
 def table_head():
-    return "text-xs text-white uppercase bg-blue-700 dark:bg-gray-700 dark:text-gray-400"
+    return "text-xs text-ctp-text uppercase bg-ctp-surface1 border-b border-ctp-surface2"
 
 @register.simple_tag
 def table_row():
-    return "odd:bg-white odd:dark:bg-gray-900 even:bg-gray-100 even:dark:bg-gray-800 border-b dark:border-gray-700"
+    return "bg-ctp-surface0 border-b border-ctp-surface1 hover:bg-ctp-surface1 transition-colors"
 
 @register.simple_tag
 def input_label():
-    return "peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+    return "block mb-2 text-sm font-medium text-ctp-text"
 
 @register.simple_tag
 def page_container():
-    return "flex items-center max-w-full w-full h-auto mb-4 rounded bg-gray-100 dark:bg-gray-800 p-6 gap-3 justify-center flex-wrap"
+    return "flex items-center w-full mb-6 rounded-lg bg-ctp-surface0 p-6 shadow-sm border border-ctp-surface1 gap-4 flex-wrap"
 
 @register.simple_tag
 def search_button():
-    return "text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 flex justify-center items-center gap-4 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+    return "text-ctp-crust bg-ctp-blue hover:bg-ctp-sapphire focus:ring-4 focus:ring-ctp-sky font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none transition-colors"
 
 @register.simple_tag
 def form_container():
-    return "flex-col justify-start rounded bg-gray-100 h-full dark:bg-gray-800 p-4 max-w-full w-full"
+    return "flex flex-col justify-start rounded-lg bg-ctp-surface0 shadow-sm border border-ctp-surface1 p-6 w-full"
 
 @register.simple_tag
 def dashboard_card():
-    return "flex flex-col bg-white rounded-lg shadow-md w-full m-6 overflow-hidden sm:w-52"
+    return "flex flex-col bg-ctp-surface0 rounded-2xl shadow-sm border border-ctp-surface1 overflow-hidden w-full h-full"
 
 @register.simple_tag
 def login_container():
-    return "w-full max-w-sm p-4 bg-gray-50 border border-gray-800 rounded-tl-2xl shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700"
+    return "w-full max-w-sm p-6 bg-ctp-surface0 border border-ctp-surface1 rounded-2xl shadow-md"
